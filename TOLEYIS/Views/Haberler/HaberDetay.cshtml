@@ -1,0 +1,190 @@
+﻿@using TOLEYIS.Models;
+@model ViewModel
+
+@*@using TOLEYIS.Models;
+    @model IEnumerable<TOLEYIS.Models.Haber>*@
+@{
+    /**/
+
+    var shareTitle = "";
+}
+@{
+    TOLEYIS_Entities db = new TOLEYIS_Entities();
+    ViewBag.Title = "HaberDetay";
+    Layout = "~/Views/Shared/DuzYaziLayout.cshtml";
+    ViewBag.Baslik = "Haber Detayı";
+    ViewBag.Sekme = "Haberler ve Duyurular";
+}
+@foreach (var m in Model.Habers)
+{
+    <meta property="og:url" content="@Request.Url.ToString()" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@m.BaslikTR" />
+    <meta property="og:description" content="Your description" />
+    <meta property="og:image:secure_url" content="@ViewBag.dosyayolu@m.Kapak" />
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<link href="~/assets/css/haberslider.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+@*<meta property="og:url" content="https://www.your-domain.com/your-page.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TOLEYİS" />
+    <meta property="og:description" content="TÜRKİYE OTEL LOKANTA DİNLENME YERLERİ İŞCİLERİ SENDİKASI" />
+    <meta property="og:image" content="https://www.your-domain.com/path/image.jpg" />*@
+<!--Page Header End-->
+<!--News Details Start-->
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            @Html.Action("Sidebar", "Haberler")
+
+            <div class="col-xl-7 col-lg-6">
+                <div class="haberslider">
+                    <div class="news-details__left">
+                        <div id="simpleModal" class="modal">
+                            <div class="modal-content">
+                                <span class="closeBtn">&times;</span>
+                                <!-- Swiper modal -->
+                                <div id="swiper-container-modal" class="swiper-container-modal">
+                                    <div class="swiper-wrapper">
+                                        @foreach (var m in ViewData["slider"] as IEnumerable<TOLEYIS.Models.HabGal>)
+                                        {
+                                            if (m.Ad == null)
+                                            {
+                                                <div class="swiper-slide swiper-slide-modal">
+                                                    <div class="swiper-zoom-container">
+                                                        <img class="swiper-lazy swiper-lazy-modal" data-src="~/assets/images/backgrounds/calisanlogo.png">
+                                                    </div>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div class="swiper-slide swiper-slide-modal">
+                                                    <div class="swiper-zoom-container">
+                                                        <img class="swiper-lazy swiper-lazy-modal" data-src="@ViewBag.dosyayolu/@m.Ad">
+                                                    </div>
+                                                </div>
+
+                                            }
+                                        }
+                                    </div>
+                                    @if (ViewBag.gorselsayi > 1)
+                                    {
+                                        <div id="swiper-button-next-modal" class="swiper-button-next"></div>
+                                        <div id="swiper-button-prev-modal" class="swiper-button-prev"></div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Swiper -->
+                        <div class="swiper swiper-container-main" style=" margin-left: 0; ">
+                            <div class="swiper-wrapper">
+                                @foreach (var m in ViewData["slider"] as IEnumerable<TOLEYIS.Models.HabGal>)
+                                {
+                                    if (m.Ad == null)
+                                    {
+                                        <div class="swiper-slide minimum-height"><img class="swiper-slide-img" src="~/assets/images/backgrounds/calisanlogo.png"></div>
+
+                                    }
+                                    else
+                                    {
+                                        <div class="swiper-slide minimum-height"><img class="swiper-slide-img" src="@ViewBag.dosyayolu/@m.Ad"></div>
+                                    }
+                                }
+                            </div>
+                            @if (ViewBag.gorselsayi > 1)
+                            {
+                                <div class="swiper-button-next" style=" color: aliceblue; "></div>
+                                <div class="swiper-button-prev" style=" color: aliceblue; "></div>
+                            }
+                        </div>
+
+                        <!-- Swiper thumbnails -->
+                        <div class="swiper gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                @*<div class="swiper-slide swiper-slide-thumbs">
+                                        <img src="https://live.staticflickr.com/6079/6136071267_797265d54d.jpg">
+                                    </div>*@
+
+                            </div>
+                        </div>
+                    </div>
+
+                    @foreach (var m in Model.Habers)
+                    {
+                        <div class="news-details__content">
+                            <a href="#" style=" color: #fe6d10; font-weight:400;"> @ViewBag.Ulusal</a>
+                            <ul class="list-unstyled news-details__meta" style="float:right;">
+                                <li>
+                                    <a href="#"><i class="far fa-calendar-alt"></i> @Convert.ToDateTime(m.Tarih).ToString("dd MMMM yyyy")<br /></a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled news-details__meta" style="float:right;">
+                                <div class="news-details__social-list">
+                                    <p>Paylaş:</p>
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=@Url.Encode(Request.Url.ToString());src=sdkpreparse" target="_blank" class="clr-fb"><i class="fab fa-facebook-square"></i></a>
+                                    <a href="https://twitter.com/intent/tweet?original_referer={@Request.Url.ToString()}&text={@m.BaslikTR}&url={URL}&via={TWITTER-ACCOUNT}"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </ul>
+                            <h3 class="news-details__title">@m.BaslikTR</h3>
+                            <p class="news-details__text-one">@Html.Raw(m.texteditorTR)</p>
+                            <br />
+                            <div class="row">
+                                @{
+                                    var haberId = m.Id;
+
+                                    var onceki = db.Haber.OrderByDescending(d => d.Id).Where(x => x.Sil != true && (x.BitTarih > DateTime.Today || x.BitTarih == null)).FirstOrDefault(d => d.Id < haberId);
+
+                                    if (onceki != null)
+                                    {
+                                        <div class="col-md-4">
+                                            <a href="/Haberler/HaberDetay/@onceki.Id" class="thm-btn news-one__btn" style="background: #f6f4f1; color: #87848d;"><i class="fas fa-arrow-left" style="color: #fe6d10;"></i>   Önceki Haber</a>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="col-md-4">
+                                        </div>
+                                    }
+                                    <div class="col-md-4">
+                                    </div>
+                                    var sonraki = db.Haber.OrderBy(d => d.Id).Where(x => x.Sil != true && (x.BitTarih > DateTime.Today || x.BitTarih == null)).FirstOrDefault(d => d.Id > haberId);
+
+                                    if (sonraki != null)
+                                    {
+                                        <div class="col-md-4">
+                                            <a href="/Haberler/HaberDetay/@sonraki.Id" class="thm-btn news-one__btn" style="background: #f6f4f1; color: #87848d;">Sonraki Haber  <i class="fas fa-arrow-right" style="color: #fe6d10; "></i></a>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="col-md-4">
+                                        </div>
+                                    }
+
+                                }
+
+                            </div>
+
+                        </div>
+                        @*</div>*@
+                    }
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Details End-->
+<!-- Load Facebook SDK for JavaScript -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="~/assets/js/haberslider.js"></script>
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/tr_TR/sdk.js#xfbml=1&version=v13.0" nonce="5yqxN6Nq"></script>

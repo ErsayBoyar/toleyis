@@ -1,0 +1,82 @@
+﻿
+@{
+    Layout = null;
+}
+
+<div class="main-nav__main-navigation clearfix">
+    <ul class=" main-nav__navigation-box float-left">
+        <li>
+            <a href="/AnaSayfa/Index">ANASAYFA</a>
+        </li>
+        <li class="dropdown">
+            <a href="#">TOLEYİS</a>
+            <ul>
+                <li><a href="/Toleyis/Tarihce">Tarihçe</a></li>
+                <li><a href="/Toleyis/GenelYonetim">Genel Yönetim</a></li>
+                <li><a href="/Toleyis/SubeDetay">Şubeler</a></li>
+                @*<li><a href="/Toleyis/BolgeTemsilcilik">Bölge Temsilcileri</a></li>*@
+                <li><a href="/Toleyis/IlTemsilcilik">İl Temsilcileri</a></li>
+                <li><a href="/Toleyis/Orgutlu">Üye İş Yerleri</a></li>
+                <li><a href="/Toleyis/Kurulusİlkeleri">Kuruluş İlkeleri</a></li>
+                <li><a href="/Toleyis/CalismaSekli">Çalışma Şekli</a></li>
+                <li><a href="/Toleyis/FaaliyetAlanlari">Faaliyet Alanları</a></li>
+                <li><a href="/Toleyis/Uyesayi">Üye Sayısı</a></li>
+            </ul><!-- /.sub-menu -->
+        </li>
+        <li>
+            <a href="/Haberler/Haber">HABERLER</a>
+            <ul>
+                @foreach (var m in Model)
+                {
+                    <li><a href="/Haberler/Haber/@m.Id">@m.Ad</a></li>
+                }
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">GALERİ</a>
+            <ul>
+                <li><a href="/Gorsel/FotoGaleri">Fotoğraflar</a></li>
+                <li><a href="/Gorsel/FotoArsiv">Fotoğraf Arşivi</a></li>
+                <li><a href="/Gorsel/Video">Videolar</a></li>
+            </ul><!-- /.sub-menu -->
+        </li>
+        <li class="dropdown">
+            <a href="#">BİLGİ</a>
+            <ul>
+                <li><a href="/Bilgi/AnlasmaliKurumlar">Anlaşmalı Kurumlar</a></li>
+                <li><a href="/Bilgi/SoruCevap">Soru Cevap</a></li>
+                @*<li><a href="/Bilgi/Nurer">Nurer Sigorta</a></li>*@
+                <li><a href="/Bilgi/Enflasyon">Enflasyon Bilgileri</a></li>
+                <li><a href="/Bilgi/PratikBilgiler">Pratik Bilgiler</a></li>
+                <li><a href="/Bilgi/TufeUfe">TÜFE-ÜFE</a></li>
+                <li><a href="/Bilgi/AclikYoksulluk">Açlık-Yoksulluk Sınırı</a></li>
+            </ul><!-- /.sub-menu -->
+        </li>
+        <li class="dropdown">
+            <a href="#">HUKUK</a>
+            <ul>
+                <li><a href="/Hukuk/Kararnameler">Kararnameler</a></li>
+                <li><a href="/Hukuk/Genelgeler">Genelgeler</a></li>
+                <li><a href="/Hukuk/Kanunlar">Kanunlar</a></li>
+                <li><a href="/Hukuk/Yonetmelikler">Yönetmelikler</a></li>
+                <li><a href="/Hukuk/Tebligler">Tebliğler</a></li>
+            </ul><!-- /.sub-menu -->
+        </li>
+        <li class="dropdown">
+            <a href="/Iletisim/Index">İLETİŞİM</a>
+            <!--<ul>-->
+            @*@foreach (var m in Model)*@
+            @*{
+                    <li><a href="/Iletisim/Index/@m.Id">@m.AdTR</a></li>
+                }*@
+            <!--</ul>--><!-- /.sub-menu -->
+            <ul>
+                <li><a href="/Toleyis/GenelMerkez">Genel Merkez</a></li>
+                <li><a href="/Toleyis/SubeDetay">Şubeler</a></li>
+                @*<li><a href="/Toleyis/BolgeTemsilcilik">Bölge Temsilcileri</a></li>*@
+                <li><a href="/Toleyis/IlTemsilcilik">İl Temsilcileri</a></li>
+            </ul><!-- /.sub-menu -->
+
+        </li>
+    </ul>
+</div><!-- /.navbar-collapse -->

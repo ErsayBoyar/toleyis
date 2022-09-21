@@ -1,0 +1,71 @@
+﻿@model IEnumerable<TOLEYIS.Models.Iletisim>
+@{
+    ViewBag.Title = "Subeler";
+    Layout = "~/Views/Shared/DuzYaziLayoutEN.cshtml";
+    ViewBag.Baslik = "Contact Form";
+    ViewBag.Sekme = "Contact";
+
+}
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<!--Page Header End-->
+<!--News Details Start-->
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            @Html.Action("Sidebar", "Contact")
+            <div class="col-md-9">                
+                <section class="contact-page">
+                    <div class="container">
+                        <div class="iletisim-title text-center">
+                            <h4>Contact</h4>
+                            <h2>Form</h2>
+                        </div>
+
+                        <div class="contact-form">
+                            @using (Html.BeginForm("Post", "Contact", FormMethod.Post, new { @class = "contact-form-validated contact-one__form" }))
+                            {
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="contact-form__input-box">
+                                            <input type="text" placeholder="Name" name="Ad">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="contact-form__input-box">
+                                            <input type="text" placeholder="Surname" name="Soyad">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="contact-form__input-box">
+                                            <input type="email" placeholder="E-Mail" name="Eposta">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="contact-form__input-box">
+                                            <input type="text" placeholder="Phone number" name="Telefon">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="contact-form__input-box">
+                                            <textarea name="mesaj" placeholder="Write Your Message"></textarea>
+                                        </div>
+                                        <button type="submit" class="thm-btn contact-form__btn">Send</button>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Details End-->
+<section class="contact-page-google-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d96318.56453822537!2d28.90429833575026!3d41.02623733910827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x14caba29eee2b4f3%3A0xb90e0302ca0fc471!2sAksaray%2C%20Toleyis%2C%20K%C3%BC%C3%A7%C3%BCk%20Langa%20Cad.%2C%20Fatih%2FIstanbul%20-%20Europe!3m2!1d41.0071544!2d28.952029699999997!5e0!3m2!1str!2str!4v1641132377736!5m2!1str!2str" class="contact-page-google-map__one" allowfullscreen></iframe>
+</section>
+

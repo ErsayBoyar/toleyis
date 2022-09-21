@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Tebligler";
+    Layout = "~/Views/Shared/DuzYaziLayoutEN.cshtml";
+    ViewBag.Baslik = "Communique";
+    ViewBag.Sekme = "Law";
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<!--Page Header End-->
+<!--News Details Start-->
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            @Html.Action("SidebarHukuk", "Law")
+            <div class="col-xl-7 col-lg-6">
+                <div class="news-details__left">
+                    <div class="news-details__content">
+                        <h3 class="news-details__title">Communique</h3>
+                        <ul class="welcome-one__list list-unstyled-duy">
+                            @foreach (var m in Model)
+                            {
+                                <li><a href="@m.Link" target="_blank" style="color: #88858e"><span class="icon-confirmation"></span><u>@m.BaslikTR</u></a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Details End-->

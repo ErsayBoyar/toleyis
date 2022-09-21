@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TOLEYIS_ModelStoreContainer" CdmEntityContainer="TOLEYIS_Entities1">
+    <EntitySetMapping Name="Aclik">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Aclik">
+        <MappingFragment StoreEntitySet="Aclik">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+          <ScalarProperty Name="Ayid" ColumnName="Ayid" />
+          <ScalarProperty Name="Yilid" ColumnName="Yilid" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AclikDosya">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.AclikDosya">
+        <MappingFragment StoreEntitySet="AclikDosya">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="AclikID" ColumnName="AclikID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AltMenu">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.AltMenu">
+        <MappingFragment StoreEntitySet="AltMenu">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AdTR" ColumnName="AdTR" />
+          <ScalarProperty Name="AdEn" ColumnName="AdEn" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+          <ScalarProperty Name="YeniSekme" ColumnName="YeniSekme" />
+          <ScalarProperty Name="Sira" ColumnName="Sira" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AltSlider">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.AltSlider">
+        <MappingFragment StoreEntitySet="AltSlider">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+          <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+          <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnlasmaliKurumlar">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.AnlasmaliKurumlar">
+        <MappingFragment StoreEntitySet="AnlasmaliKurumlar">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="textEditor" ColumnName="textEditor" />
+          <ScalarProperty Name="ILID" ColumnName="ILID" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Arsiv">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Arsiv">
+        <MappingFragment StoreEntitySet="Arsiv">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+          <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArsivGaleri">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.ArsivGaleri">
+        <MappingFragment StoreEntitySet="ArsivGaleri">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="ArsivID" ColumnName="ArsivID" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ay">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Ay">
+        <MappingFragment StoreEntitySet="Ay">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BolgeTemsilcilik">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.BolgeTemsilcilik">
+        <MappingFragment StoreEntitySet="BolgeTemsilcilik">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Temsilci" ColumnName="Temsilci" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Faks" ColumnName="Faks" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Calisanlarimiz">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Calisanlarimiz">
+        <MappingFragment StoreEntitySet="Calisanlarimiz">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="GorevTR" ColumnName="GorevTR" />
+          <ScalarProperty Name="GorevEN" ColumnName="GorevEN" />
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="Sira" ColumnName="Sira" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EDevlet">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.EDevlet">
+        <MappingFragment StoreEntitySet="EDevlet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="IsyeriUnvan" ColumnName="IsyeriUnvan" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CinsiyetId" ColumnName="CinsiyetId" />
+          <ScalarProperty Name="UyelikTarihi" ColumnName="UyelikTarihi" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Enflasyon">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Enflasyon">
+        <MappingFragment StoreEntitySet="Enflasyon">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Aylik1" ColumnName="Aylik1" />
+          <ScalarProperty Name="Aylik6" ColumnName="Aylik6" />
+          <ScalarProperty Name="Aylik12" ColumnName="Aylik12" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FaydaliLinkler">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.FaydaliLinkler">
+        <MappingFragment StoreEntitySet="FaydaliLinkler">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FotoKategori">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.FotoKategori">
+        <MappingFragment StoreEntitySet="FotoKategori">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Galeri">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Galeri">
+        <MappingFragment StoreEntitySet="Galeri">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="KateID" ColumnName="KateID" />
+          <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="DosyaURL" ColumnName="DosyaURL" />
+          <ScalarProperty Name="KapakURL" ColumnName="KapakURL" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="TolId" ColumnName="TolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Galeri_">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Galeri_">
+        <MappingFragment StoreEntitySet="Galeri_">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="KateID" ColumnName="KateID" />
+          <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="DosyaURL" ColumnName="DosyaURL" />
+          <ScalarProperty Name="KapakURL" ColumnName="KapakURL" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GaleriFoto">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.GaleriFoto">
+        <MappingFragment StoreEntitySet="GaleriFoto">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="GaleriID" ColumnName="GaleriID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GaleriTur">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.GaleriTur">
+        <MappingFragment StoreEntitySet="GaleriTur">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GenelMerkez">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.GenelMerkez">
+        <MappingFragment StoreEntitySet="GenelMerkez">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Faks" ColumnName="Faks" />
+          <ScalarProperty Name="EPosta" ColumnName="EPosta" />
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Haber">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Haber">
+        <MappingFragment StoreEntitySet="Haber">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+          <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+          <ScalarProperty Name="texteditorTR" ColumnName="texteditorTR" />
+          <ScalarProperty Name="texteditorEN" ColumnName="texteditorEN" />
+          <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="BitTarih" ColumnName="BitTarih" />
+          <ScalarProperty Name="Ulusal" ColumnName="Ulusal" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="TolId" ColumnName="TolId" />
+          <ScalarProperty Name="Banner" ColumnName="Banner" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Haber_">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Haber_">
+        <MappingFragment StoreEntitySet="Haber_">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+          <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+          <ScalarProperty Name="texteditorTR" ColumnName="texteditorTR" />
+          <ScalarProperty Name="texteditorEN" ColumnName="texteditorEN" />
+          <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="BitTarih" ColumnName="BitTarih" />
+          <ScalarProperty Name="Ulusal" ColumnName="Ulusal" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HaberGaleri">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.HaberGaleri">
+        <MappingFragment StoreEntitySet="HaberGaleri">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="HaberID" ColumnName="HaberID" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HaberKategori">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.HaberKategori">
+        <MappingFragment StoreEntitySet="HaberKategori">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HaberTur">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.HaberTur">
+        <MappingFragment StoreEntitySet="HaberTur">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hukuk">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Hukuk">
+        <MappingFragment StoreEntitySet="Hukuk">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+          <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HukukTur">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.HukukTur">
+        <MappingFragment StoreEntitySet="HukukTur">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IL">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.IL">
+        <MappingFragment StoreEntitySet="IL">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="SubeID" ColumnName="SubeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ILce">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.ILce">
+        <MappingFragment StoreEntitySet="ILce">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="ILID" ColumnName="ILID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Iletisim">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Iletisim">
+        <MappingFragment StoreEntitySet="Iletisim">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="SubeID" ColumnName="SubeID" />
+          <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+          <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+          <ScalarProperty Name="AdTR" ColumnName="AdTR" />
+          <ScalarProperty Name="AdEN" ColumnName="AdEN" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
+          <ScalarProperty Name="Faks" ColumnName="Faks" />
+          <ScalarProperty Name="EPosta" ColumnName="EPosta" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="ilID" ColumnName="ilID" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IletisimForm">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.IletisimForm">
+        <MappingFragment StoreEntitySet="IletisimForm">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ILTemsilcileri">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.ILTemsilcileri">
+        <MappingFragment StoreEntitySet="ILTemsilcileri">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="ilID" ColumnName="ilID" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="iletisimTur">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.iletisimTur">
+        <MappingFragment StoreEntitySet="iletisimTur">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AdTR" ColumnName="AdTR" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="AdEN" ColumnName="AdEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kullanici">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.kullanici">
+        <MappingFragment StoreEntitySet="kullanici">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="ResetSifre" ColumnName="ResetSifre" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MainSayfa">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.MainSayfa">
+        <MappingFragment StoreEntitySet="MainSayfa">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AdTR" ColumnName="AdTR" />
+          <ScalarProperty Name="AdEn" ColumnName="AdEn" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="YeniSekme" ColumnName="YeniSekme" />
+          <ScalarProperty Name="AltMenu" ColumnName="AltMenu" />
+          <ScalarProperty Name="Sira" ColumnName="Sira" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobilIslem">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.MobilIslem">
+        <MappingFragment StoreEntitySet="MobilIslem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Sira" ColumnName="Sira" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nurer">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Nurer">
+        <MappingFragment StoreEntitySet="Nurer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+          <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+          <ScalarProperty Name="texteditorTR" ColumnName="texteditorTR" />
+          <ScalarProperty Name="texteditorEN" ColumnName="texteditorEN" />
+          <ScalarProperty Name="Soru1" ColumnName="Soru1" />
+          <ScalarProperty Name="Cevap1" ColumnName="Cevap1" />
+          <ScalarProperty Name="Soru2" ColumnName="Soru2" />
+          <ScalarProperty Name="Cevap2" ColumnName="Cevap2" />
+          <ScalarProperty Name="Soru3" ColumnName="Soru3" />
+          <ScalarProperty Name="Cevap3" ColumnName="Cevap3" />
+          <ScalarProperty Name="Soru4" ColumnName="Soru4" />
+          <ScalarProperty Name="Cevap4" ColumnName="Cevap4" />
+          <ScalarProperty Name="Soru5" ColumnName="Soru5" />
+          <ScalarProperty Name="Cevap5" ColumnName="Cevap5" />
+          <ScalarProperty Name="Ad1" ColumnName="Ad1" />
+          <ScalarProperty Name="Telefon1" ColumnName="Telefon1" />
+          <ScalarProperty Name="Eposta1" ColumnName="Eposta1" />
+          <ScalarProperty Name="Ad2" ColumnName="Ad2" />
+          <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
+          <ScalarProperty Name="Eposta2" ColumnName="Eposta2" />
+          <ScalarProperty Name="Ad3" ColumnName="Ad3" />
+          <ScalarProperty Name="Telefon3" ColumnName="Telefon3" />
+          <ScalarProperty Name="Eposta3" ColumnName="Eposta3" />
+          <ScalarProperty Name="Ad4" ColumnName="Ad4" />
+          <ScalarProperty Name="Telefon4" ColumnName="Telefon4" />
+          <ScalarProperty Name="Eposta4" ColumnName="Eposta4" />
+          <ScalarProperty Name="Ad5" ColumnName="Ad5" />
+          <ScalarProperty Name="Telefon5" ColumnName="Telefon5" />
+          <ScalarProperty Name="Eposta5" ColumnName="Eposta5" />
+          <ScalarProperty Name="Ad6" ColumnName="Ad6" />
+          <ScalarProperty Name="Telefon6" ColumnName="Telefon6" />
+          <ScalarProperty Name="Eposta6" ColumnName="Eposta6" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="GenelAd" ColumnName="GenelAd" />
+          <ScalarProperty Name="GenelTelefon" ColumnName="GenelTelefon" />
+          <ScalarProperty Name="GenelAdres" ColumnName="GenelAdres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NurerCalisan">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.NurerCalisan">
+        <MappingFragment StoreEntitySet="NurerCalisan">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NurerSoruCevap">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.NurerSoruCevap">
+        <MappingFragment StoreEntitySet="NurerSoruCevap">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orgutlu">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Orgutlu">
+        <MappingFragment StoreEntitySet="Orgutlu">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ilID" ColumnName="ilID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="TolId" ColumnName="TolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pratik">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Pratik">
+        <MappingFragment StoreEntitySet="Pratik">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PratikBilgiler">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.PratikBilgiler">
+        <MappingFragment StoreEntitySet="PratikBilgiler">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+          <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+          <ScalarProperty Name="texteditorTR" ColumnName="texteditorTR" />
+          <ScalarProperty Name="texteditorEN" ColumnName="texteditorEN" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PratikDosya">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.PratikDosya">
+        <MappingFragment StoreEntitySet="PratikDosya">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Yol" ColumnName="Yol" />
+          <ScalarProperty Name="PratikID" ColumnName="PratikID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sayfa">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Sayfa">
+        <MappingFragment StoreEntitySet="Sayfa">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="MainSayfaId" ColumnName="MainSayfaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SayfaYetki">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.SayfaYetki">
+        <MappingFragment StoreEntitySet="SayfaYetki">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SayfaId" ColumnName="SayfaId" />
+          <ScalarProperty Name="KulliciId" ColumnName="KulliciId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiteUyelik">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.SiteUyelik">
+        <MappingFragment StoreEntitySet="SiteUyelik">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="Onay" ColumnName="Onay" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="Parola" ColumnName="Parola" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SonKonusma">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.SonKonusma">
+        <MappingFragment StoreEntitySet="SonKonusma">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+          <ScalarProperty Name="Texteditor" ColumnName="Texteditor" />
+          <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SoruCevap">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.SoruCevap">
+        <MappingFragment StoreEntitySet="SoruCevap">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+          <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+          <ScalarProperty Name="texteditorTR" ColumnName="texteditorTR" />
+          <ScalarProperty Name="texteditorEN" ColumnName="texteditorEN" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subeler">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Subeler">
+        <MappingFragment StoreEntitySet="Subeler">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="ilID" ColumnName="ilID" />
+          <ScalarProperty Name="Temsilci" ColumnName="Temsilci" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubeTemsilci">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.SubeTemsilci">
+        <MappingFragment StoreEntitySet="SubeTemsilci">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="SubeId" ColumnName="SubeId" />
+          <ScalarProperty Name="Sira" ColumnName="Sira" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TefeTufe">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.TefeTufe">
+        <MappingFragment StoreEntitySet="TefeTufe">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+          <ScalarProperty Name="Ayid" ColumnName="Ayid" />
+          <ScalarProperty Name="Yilid" ColumnName="Yilid" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TefeTufeDosya">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.TefeTufeDosya">
+        <MappingFragment StoreEntitySet="TefeTufeDosya">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="TeteTufeID" ColumnName="TeteTufeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Toleyis">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Toleyis">
+        <MappingFragment StoreEntitySet="Toleyis">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="baslikTR" ColumnName="baslikTR" />
+          <ScalarProperty Name="baslikEN" ColumnName="baslikEN" />
+          <ScalarProperty Name="texteditorTR" ColumnName="texteditorTR" />
+          <ScalarProperty Name="texteditorEN" ColumnName="texteditorEN" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UstSlider">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.UstSlider">
+        <MappingFragment StoreEntitySet="UstSlider">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+          <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+          <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UyeSay">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.UyeSay">
+        <MappingFragment StoreEntitySet="UyeSay">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Toplamisci" ColumnName="Toplamisci" />
+          <ScalarProperty Name="Uyesayisi" ColumnName="Uyesayisi" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UyeSayisiManuel">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.UyeSayisiManuel">
+        <MappingFragment StoreEntitySet="UyeSayisiManuel">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UyeSayisi" ColumnName="UyeSayisi" />
+          <ScalarProperty Name="Metin" ColumnName="Metin" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yil">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Yil">
+        <MappingFragment StoreEntitySet="Yil">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yonetim">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Yonetim">
+        <MappingFragment StoreEntitySet="Yonetim">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="OzgecmisTR" ColumnName="OzgecmisTR" />
+          <ScalarProperty Name="OzgecmisEN" ColumnName="OzgecmisEN" />
+          <ScalarProperty Name="Gorev" ColumnName="Gorev" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="UnvanID" ColumnName="UnvanID" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YonetimUnvan">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.YonetimUnvan">
+        <MappingFragment StoreEntitySet="YonetimUnvan">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ziyaret">
+      <EntityTypeMapping TypeName="TOLEYIS_Model.Ziyaret">
+        <MappingFragment StoreEntitySet="Ziyaret">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

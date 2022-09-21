@@ -1,0 +1,3361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TOLEYIS_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Aclik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kapak" Type="nvarchar(max)" />
+          <Property Name="Ayid" Type="int" />
+          <Property Name="Yilid" Type="int" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="AclikDosya">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="AclikID" Type="int" />
+        </EntityType>
+        <EntityType Name="AltMenu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdTR" Type="nvarchar(max)" />
+          <Property Name="AdEn" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar(max)" />
+          <Property Name="MenuId" Type="int" />
+          <Property Name="YeniSekme" Type="bit" />
+          <Property Name="Sira" Type="int" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="AltSlider">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BaslikTR" Type="nvarchar(max)" />
+          <Property Name="BaslikEN" Type="nvarchar(max)" />
+          <Property Name="Kapak" Type="nvarchar(max)" />
+          <Property Name="Tarih" Type="datetime" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="AnlasmaliKurumlar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="textEditor" Type="nvarchar(max)" />
+          <Property Name="ILID" Type="int" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="Arsiv">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Baslik" Type="nvarchar(max)" />
+          <Property Name="Kapak" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="ArsivGaleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="ArsivID" Type="int" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="Ay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="BolgeTemsilcilik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="Temsilci" Type="nvarchar(max)" />
+          <Property Name="Adres" Type="nvarchar(max)" />
+          <Property Name="Telefon" Type="nvarchar(max)" />
+          <Property Name="Faks" Type="nvarchar(max)" />
+          <Property Name="Eposta" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="Calisanlarimiz">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdSoyad" Type="nvarchar(max)" />
+          <Property Name="GorevTR" Type="nvarchar(max)" />
+          <Property Name="GorevEN" Type="nvarchar(max)" />
+          <Property Name="Resim" Type="nvarchar(max)" />
+          <Property Name="Sira" Type="int" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="EDevlet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdSoyad" Type="nvarchar(max)" />
+          <Property Name="IsyeriUnvan" Type="nvarchar(max)" />
+          <Property Name="TC" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="CinsiyetId" Type="nvarchar(max)" />
+          <Property Name="UyelikTarihi" Type="date" />
+          <Property Name="Telefon" Type="nvarchar(max)" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="Soyad" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Enflasyon">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Tarih" Type="datetime" />
+          <Property Name="Aylik1" Type="nvarchar(max)" />
+          <Property Name="Aylik6" Type="nvarchar(max)" />
+          <Property Name="Aylik12" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="FaydaliLinkler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Baslik" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="FotoKategori">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Galeri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TurID" Type="int" />
+          <Property Name="KateID" Type="int" />
+          <Property Name="BaslikTR" Type="nvarchar(max)" />
+          <Property Name="Tarih" Type="date" />
+          <Property Name="DosyaURL" Type="nvarchar(max)" />
+          <Property Name="KapakURL" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+          <Property Name="TolId" Type="int" />
+        </EntityType>
+        <EntityType Name="Galeri_">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TurID" Type="int" />
+          <Property Name="KateID" Type="int" />
+          <Property Name="BaslikTR" Type="nvarchar(max)" />
+          <Property Name="Tarih" Type="date" />
+          <Property Name="DosyaURL" Type="nvarchar(max)" />
+          <Property Name="KapakURL" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="GaleriFoto">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="GaleriID" Type="int" />
+        </EntityType>
+        <EntityType Name="GaleriTur">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="GenelMerkez">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Adres" Type="nvarchar(max)" />
+          <Property Name="Telefon" Type="nvarchar(max)" />
+          <Property Name="Faks" Type="nvarchar(max)" />
+          <Property Name="EPosta" Type="nvarchar(max)" />
+          <Property Name="Resim" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="Haber">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BaslikTR" Type="nvarchar(max)" />
+          <Property Name="BaslikEN" Type="nvarchar(max)" />
+          <Property Name="texteditorTR" Type="nvarchar(max)" />
+          <Property Name="texteditorEN" Type="nvarchar(max)" />
+          <Property Name="Kapak" Type="nvarchar(max)" />
+          <Property Name="Tarih" Type="datetime" />
+          <Property Name="PDF" Type="nvarchar(max)" />
+          <Property Name="TurID" Type="int" />
+          <Property Name="KategoriID" Type="int" />
+          <Property Name="BitTarih" Type="datetime" />
+          <Property Name="Ulusal" Type="bit" />
+          <Property Name="Sil" Type="bit" />
+          <Property Name="TolId" Type="int" />
+          <Property Name="Banner" Type="bit" />
+        </EntityType>
+        <EntityType Name="Haber_">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BaslikTR" Type="nvarchar(max)" />
+          <Property Name="BaslikEN" Type="nvarchar(max)" />
+          <Property Name="texteditorTR" Type="nvarchar(max)" />
+          <Property Name="texteditorEN" Type="nvarchar(max)" />
+          <Property Name="Kapak" Type="nvarchar(max)" />
+          <Property Name="Tarih" Type="datetime" />
+          <Property Name="PDF" Type="nvarchar(max)" />
+          <Property Name="TurID" Type="int" />
+          <Property Name="BitTarih" Type="datetime" />
+          <Property Name="Ulusal" Type="bit" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="HaberGaleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="HaberID" Type="int" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="HaberKategori">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="Aktif" Type="bit" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="HaberTur">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Hukuk">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BaslikTR" Type="nvarchar(max)" />
+          <Property Name="BaslikEN" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar(max)" />
+          <Property Name="TurID" Type="int" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="HukukTur">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="IL">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="SubeID" Type="int" />
+        </EntityType>
+        <EntityType Name="ILce">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="ILID" Type="int" />
+        </EntityType>
+        <EntityType Name="Iletisim">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TurID" Type="int" />
+          <Property Name="SubeID" Type="int" />
+          <Property Name="BaslikTR" Type="nvarchar(max)" />
+          <Property Name="BaslikEN" Type="nvarchar(max)" />
+          <Property Name="AdTR" Type="nvarchar(max)" />
+          <Property Name="AdEN" Type="nvarchar(max)" />
+          <Property Name="Adres" Type="nvarchar(max)" />
+          <Property Name="Telefon" Type="nvarchar(max)" />
+          <Property Name="Telefon2" Type="nvarchar(max)" />
+          <Property Name="Faks" Type="nvarchar(max)" />
+          <Property Name="EPosta" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+          <Property Name="Unvan" Type="nvarchar(max)" />
+          <Property Name="ilID" Type="int" />
+          <Property Name="Foto" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="IletisimForm">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="Soyad" Type="nvarchar(max)" />
+          <Property Name="Eposta" Type="nvarchar(max)" />
+          <Property Name="Telefon" Type="nvarchar(max)" />
+          <Property Name="Mesaj" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ILTemsilcileri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdSoyad" Type="nvarchar(max)" />
+          <Property Name="Telefon" Type="nvarchar(max)" />
+          <Property Name="Resim" Type="nvarchar(max)" />
+          <Property Name="ilID" Type="int" Nullable="false" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="iletisimTur">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdTR" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+          <Property Name="AdEN" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="kullanici">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdSoyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Telefon" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sifre" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="RoleId" Type="int" />
+          <Property Name="ResetSifre" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="MainSayfa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdTR" Type="nvarchar(max)" />
+          <Property Name="AdEn" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar(max)" />
+          <Property Name="YeniSekme" Type="bit" />
+          <Property Name="AltMenu" Type="bit" />
+          <Property Name="Sira" Type="int" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="MobilIslem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar(max)" />
+          <Property Name="Sira" Type="int" />
+        </EntityType>
+        <EntityType Name="Nurer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BaslikTR" Type="nvarchar(max)" />
+          <Property Name="BaslikEN" Type="nvarchar(max)" />
+          <Property Name="texteditorTR" Type="nvarchar(max)" />
+          <Property Name="texteditorEN" Type="nvarchar(max)" />
+          <Property Name="Soru1" Type="nvarchar(max)" />
+          <Property Name="Cevap1" Type="nvarchar(max)" />
+          <Property Name="Soru2" Type="nvarchar(max)" />
+          <Property Name="Cevap2" Type="nvarchar(max)" />
+          <Property Name="Soru3" Type="nvarchar(max)" />
+          <Property Name="Cevap3" Type="nvarchar(max)" />
+          <Property Name="Soru4" Type="nvarchar(max)" />
+          <Property Name="Cevap4" Type="nvarchar(max)" />
+          <Property Name="Soru5" Type="nvarchar(max)" />
+          <Property Name="Cevap5" Type="nvarchar(max)" />
+          <Property Name="Ad1" Type="nvarchar(max)" />
+          <Property Name="Telefon1" Type="nvarchar(max)" />
+          <Property Name="Eposta1" Type="nvarchar(max)" />
+          <Property Name="Ad2" Type="nvarchar(max)" />
+          <Property Name="Telefon2" Type="nvarchar(max)" />
+          <Property Name="Eposta2" Type="nvarchar(max)" />
+          <Property Name="Ad3" Type="nvarchar(max)" />
+          <Property Name="Telefon3" Type="nvarchar(max)" />
+          <Property Name="Eposta3" Type="nvarchar(max)" />
+          <Property Name="Ad4" Type="nvarchar(max)" />
+          <Property Name="Telefon4" Type="nvarchar(max)" />
+          <Property Name="Eposta4" Type="nvarchar(max)" />
+          <Property Name="Ad5" Type="nvarchar(max)" />
+          <Property Name="Telefon5" Type="nvarchar(max)" />
+          <Property Name="Eposta5" Type="nvarchar(max)" />
+          <Property Name="Ad6" Type="nvarchar(max)" />
+          <Property Name="Telefon6" Type="nvarchar(max)" />
+          <Property Name="Eposta6" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+          <Property Name="GenelAd" Type="nvarchar(max)" />
+          <Property Name="GenelTelefon" Type="nvarchar(max)" />
+          <Property Name="GenelAdres" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="NurerCalisan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Phone" Type="nvarchar(max)" />
+          <Property Name="Mail" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="NurerSoruCevap">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Question" Type="nvarchar(max)" />
+          <Property Name="Answer" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Orgutlu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ilID" Type="int" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="Resim" Type="nvarchar(max)" />
+          <Property Name="Website" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+          <Property Name="TolId" Type="int" />
+        </EntityType>
+        <EntityType Name="Pratik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Tarih" Type="date" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="PratikBilgiler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BaslikTR" Type="nvarchar(max)" />
+          <Property Name="BaslikEN" Type="nvarchar(max)" />
+          <Property Name="texteditorTR" Type="nvarchar(max)" />
+          <Property Name="texteditorEN" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="PratikDosya">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Yol" Type="nvarchar(max)" />
+          <Property Name="PratikID" Type="int" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Sayfa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar" MaxLength="250" />
+          <Property Name="MainSayfaId" Type="int" />
+        </EntityType>
+        <EntityType Name="SayfaYetki">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SayfaId" Type="int" Nullable="false" />
+          <Property Name="KulliciId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SiteUyelik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="Soyad" Type="nvarchar(max)" />
+          <Property Name="TC" Type="nvarchar(max)" />
+          <Property Name="Eposta" Type="nvarchar(max)" />
+          <Property Name="Onay" Type="bit" />
+          <Property Name="Sil" Type="bit" />
+          <Property Name="Parola" Type="nvarchar(max)" />
+          <Property Name="Token" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="SonKonusma">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Baslik" Type="nvarchar(max)" />
+          <Property Name="Texteditor" Type="nvarchar(max)" />
+          <Property Name="Kapak" Type="nvarchar(max)" />
+          <Property Name="Tarih" Type="datetime" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="SoruCevap">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BaslikTR" Type="nvarchar(max)" />
+          <Property Name="BaslikEN" Type="nvarchar(max)" />
+          <Property Name="texteditorTR" Type="nvarchar(max)" />
+          <Property Name="texteditorEN" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="Subeler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="ilID" Type="int" />
+          <Property Name="Temsilci" Type="nvarchar(max)" />
+          <Property Name="Adres" Type="nvarchar(max)" />
+          <Property Name="Telefon" Type="nvarchar(max)" />
+          <Property Name="Eposta" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="SubeTemsilci">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="Unvan" Type="nvarchar(max)" />
+          <Property Name="Resim" Type="nvarchar(max)" />
+          <Property Name="SubeId" Type="int" />
+          <Property Name="Sira" Type="int" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="TefeTufe">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kapak" Type="nvarchar(max)" />
+          <Property Name="Ayid" Type="int" />
+          <Property Name="Yilid" Type="int" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="TefeTufeDosya">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="TeteTufeID" Type="int" />
+        </EntityType>
+        <EntityType Name="Toleyis">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="baslikTR" Type="nvarchar(max)" />
+          <Property Name="baslikEN" Type="nvarchar(max)" />
+          <Property Name="texteditorTR" Type="nvarchar(max)" />
+          <Property Name="texteditorEN" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="UstSlider">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BaslikTR" Type="nvarchar(max)" />
+          <Property Name="BaslikEN" Type="nvarchar(max)" />
+          <Property Name="Kapak" Type="nvarchar(max)" />
+          <Property Name="Tarih" Type="datetime" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="UyeSay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Tarih" Type="datetime" />
+          <Property Name="Toplamisci" Type="int" />
+          <Property Name="Uyesayisi" Type="int" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="UyeSayisiManuel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UyeSayisi" Type="nvarchar(max)" />
+          <Property Name="Metin" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="Yil">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="Yonetim">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="Soyad" Type="nvarchar(max)" />
+          <Property Name="OzgecmisTR" Type="nvarchar(max)" />
+          <Property Name="OzgecmisEN" Type="nvarchar(max)" />
+          <Property Name="Gorev" Type="nvarchar(max)" />
+          <Property Name="Foto" Type="nvarchar(max)" />
+          <Property Name="UnvanID" Type="int" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="YonetimUnvan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" />
+          <Property Name="Sil" Type="bit" />
+        </EntityType>
+        <EntityType Name="Ziyaret">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IP" Type="nvarchar(max)" />
+          <Property Name="Tarih" Type="date" />
+        </EntityType>
+        <Association Name="FK_Aclik_Ay">
+          <End Role="Ay" Type="Self.Ay" Multiplicity="0..1" />
+          <End Role="Aclik" Type="Self.Aclik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ay">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Aclik">
+              <PropertyRef Name="Ayid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Aclik_Yil">
+          <End Role="Yil" Type="Self.Yil" Multiplicity="0..1" />
+          <End Role="Aclik" Type="Self.Aclik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Yil">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Aclik">
+              <PropertyRef Name="Yilid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AclikDosya_Aclik">
+          <End Role="Aclik" Type="Self.Aclik" Multiplicity="0..1" />
+          <End Role="AclikDosya" Type="Self.AclikDosya" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aclik">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AclikDosya">
+              <PropertyRef Name="AclikID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AltMenu_Menu">
+          <End Role="Menu" Type="Self.Menu" Multiplicity="0..1" />
+          <End Role="AltMenu" Type="Self.AltMenu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Menu">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AltMenu">
+              <PropertyRef Name="MenuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnlasmaliKurumlar_IL">
+          <End Role="IL" Type="Self.IL" Multiplicity="0..1" />
+          <End Role="AnlasmaliKurumlar" Type="Self.AnlasmaliKurumlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IL">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnlasmaliKurumlar">
+              <PropertyRef Name="ILID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArsivGaleri_Arsiv">
+          <End Role="Arsiv" Type="Self.Arsiv" Multiplicity="0..1" />
+          <End Role="ArsivGaleri" Type="Self.ArsivGaleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Arsiv">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ArsivGaleri">
+              <PropertyRef Name="ArsivID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Galeri_FotoKategori">
+          <End Role="FotoKategori" Type="Self.FotoKategori" Multiplicity="0..1" />
+          <End Role="Galeri" Type="Self.Galeri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FotoKategori">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Galeri">
+              <PropertyRef Name="KateID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Galeri_GaleriTur">
+          <End Role="GaleriTur" Type="Self.GaleriTur" Multiplicity="0..1" />
+          <End Role="Galeri" Type="Self.Galeri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GaleriTur">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Galeri">
+              <PropertyRef Name="TurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GaleriFoto_Galeri">
+          <End Role="Galeri" Type="Self.Galeri" Multiplicity="0..1" />
+          <End Role="GaleriFoto" Type="Self.GaleriFoto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Galeri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GaleriFoto">
+              <PropertyRef Name="GaleriID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Haber_HaberKategori">
+          <End Role="HaberKategori" Type="Self.HaberKategori" Multiplicity="0..1" />
+          <End Role="Haber" Type="Self.Haber" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HaberKategori">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Haber">
+              <PropertyRef Name="KategoriID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Haber_HaberTur">
+          <End Role="HaberTur" Type="Self.HaberTur" Multiplicity="0..1" />
+          <End Role="Haber_" Type="Self.Haber_" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HaberTur">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Haber_">
+              <PropertyRef Name="TurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Haber_HaberTur1">
+          <End Role="HaberTur" Type="Self.HaberTur" Multiplicity="0..1" />
+          <End Role="Haber" Type="Self.Haber" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HaberTur">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Haber">
+              <PropertyRef Name="TurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HaberGaleri_Haber">
+          <End Role="Haber" Type="Self.Haber" Multiplicity="0..1" />
+          <End Role="HaberGaleri" Type="Self.HaberGaleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Haber">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HaberGaleri">
+              <PropertyRef Name="HaberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Hukuk_HukukTur">
+          <End Role="HukukTur" Type="Self.HukukTur" Multiplicity="0..1" />
+          <End Role="Hukuk" Type="Self.Hukuk" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HukukTur">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Hukuk">
+              <PropertyRef Name="TurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IL_Subeler">
+          <End Role="Subeler" Type="Self.Subeler" Multiplicity="0..1" />
+          <End Role="IL" Type="Self.IL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subeler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IL">
+              <PropertyRef Name="SubeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ILce_IL">
+          <End Role="IL" Type="Self.IL" Multiplicity="0..1" />
+          <End Role="ILce" Type="Self.ILce" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IL">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ILce">
+              <PropertyRef Name="ILID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Iletisim_IL">
+          <End Role="IL" Type="Self.IL" Multiplicity="0..1" />
+          <End Role="Iletisim" Type="Self.Iletisim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IL">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Iletisim">
+              <PropertyRef Name="ilID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Iletisim_iletisimTur">
+          <End Role="iletisimTur" Type="Self.iletisimTur" Multiplicity="0..1" />
+          <End Role="Iletisim" Type="Self.Iletisim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="iletisimTur">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Iletisim">
+              <PropertyRef Name="TurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Iletisim_Subeler">
+          <End Role="Subeler" Type="Self.Subeler" Multiplicity="0..1" />
+          <End Role="Iletisim" Type="Self.Iletisim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subeler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Iletisim">
+              <PropertyRef Name="SubeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ILTemsilcileri_IL">
+          <End Role="IL" Type="Self.IL" Multiplicity="1" />
+          <End Role="ILTemsilcileri" Type="Self.ILTemsilcileri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IL">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ILTemsilcileri">
+              <PropertyRef Name="ilID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_kullanici_Roles">
+          <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+          <End Role="kullanici" Type="Self.kullanici" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="kullanici">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orgutlu_IL">
+          <End Role="IL" Type="Self.IL" Multiplicity="0..1" />
+          <End Role="Orgutlu" Type="Self.Orgutlu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IL">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Orgutlu">
+              <PropertyRef Name="ilID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PratikDosya_Pratik">
+          <End Role="Pratik" Type="Self.Pratik" Multiplicity="0..1" />
+          <End Role="PratikDosya" Type="Self.PratikDosya" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pratik">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PratikDosya">
+              <PropertyRef Name="PratikID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sayfa_MainSayfa">
+          <End Role="MainSayfa" Type="Self.MainSayfa" Multiplicity="0..1" />
+          <End Role="Sayfa" Type="Self.Sayfa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MainSayfa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Sayfa">
+              <PropertyRef Name="MainSayfaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SayfaYetki_kullanici">
+          <End Role="kullanici" Type="Self.kullanici" Multiplicity="1" />
+          <End Role="SayfaYetki" Type="Self.SayfaYetki" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="kullanici">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SayfaYetki">
+              <PropertyRef Name="KulliciId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SayfaYetki_Sayfa">
+          <End Role="Sayfa" Type="Self.Sayfa" Multiplicity="1" />
+          <End Role="SayfaYetki" Type="Self.SayfaYetki" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sayfa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SayfaYetki">
+              <PropertyRef Name="SayfaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subeler_IL">
+          <End Role="IL" Type="Self.IL" Multiplicity="0..1" />
+          <End Role="Subeler" Type="Self.Subeler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IL">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Subeler">
+              <PropertyRef Name="ilID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SubeTemsilci_Iletisim">
+          <End Role="Subeler" Type="Self.Subeler" Multiplicity="0..1" />
+          <End Role="SubeTemsilci" Type="Self.SubeTemsilci" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subeler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SubeTemsilci">
+              <PropertyRef Name="SubeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SubeTemsilci_Subeler">
+          <End Role="Subeler" Type="Self.Subeler" Multiplicity="0..1" />
+          <End Role="SubeTemsilci" Type="Self.SubeTemsilci" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subeler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SubeTemsilci">
+              <PropertyRef Name="SubeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TefeTufe_Ay">
+          <End Role="Ay" Type="Self.Ay" Multiplicity="0..1" />
+          <End Role="TefeTufe" Type="Self.TefeTufe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ay">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TefeTufe">
+              <PropertyRef Name="Ayid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TefeTufe_Yil">
+          <End Role="Yil" Type="Self.Yil" Multiplicity="0..1" />
+          <End Role="TefeTufe" Type="Self.TefeTufe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Yil">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TefeTufe">
+              <PropertyRef Name="Yilid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TefeTufeDosya_TefeTufe">
+          <End Role="TefeTufe" Type="Self.TefeTufe" Multiplicity="0..1" />
+          <End Role="TefeTufeDosya" Type="Self.TefeTufeDosya" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TefeTufe">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TefeTufeDosya">
+              <PropertyRef Name="TeteTufeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Yonetim_YonetimUnvan">
+          <End Role="YonetimUnvan" Type="Self.YonetimUnvan" Multiplicity="0..1" />
+          <End Role="Yonetim" Type="Self.Yonetim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="YonetimUnvan">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Yonetim">
+              <PropertyRef Name="UnvanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="TOLEYIS_ModelStoreContainer">
+          <EntitySet Name="Aclik" EntityType="Self.Aclik" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AclikDosya" EntityType="Self.AclikDosya" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AltMenu" EntityType="Self.AltMenu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AltSlider" EntityType="Self.AltSlider" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AnlasmaliKurumlar" EntityType="Self.AnlasmaliKurumlar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Arsiv" EntityType="Self.Arsiv" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ArsivGaleri" EntityType="Self.ArsivGaleri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ay" EntityType="Self.Ay" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BolgeTemsilcilik" EntityType="Self.BolgeTemsilcilik" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Calisanlarimiz" EntityType="Self.Calisanlarimiz" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EDevlet" EntityType="Self.EDevlet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Enflasyon" EntityType="Self.Enflasyon" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FaydaliLinkler" EntityType="Self.FaydaliLinkler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FotoKategori" EntityType="Self.FotoKategori" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Galeri" EntityType="Self.Galeri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Galeri_" EntityType="Self.Galeri_" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GaleriFoto" EntityType="Self.GaleriFoto" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GaleriTur" EntityType="Self.GaleriTur" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GenelMerkez" EntityType="Self.GenelMerkez" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Haber" EntityType="Self.Haber" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Haber_" EntityType="Self.Haber_" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HaberGaleri" EntityType="Self.HaberGaleri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HaberKategori" EntityType="Self.HaberKategori" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HaberTur" EntityType="Self.HaberTur" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Hukuk" EntityType="Self.Hukuk" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HukukTur" EntityType="Self.HukukTur" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IL" EntityType="Self.IL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ILce" EntityType="Self.ILce" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Iletisim" EntityType="Self.Iletisim" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IletisimForm" EntityType="Self.IletisimForm" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ILTemsilcileri" EntityType="Self.ILTemsilcileri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="iletisimTur" EntityType="Self.iletisimTur" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="kullanici" EntityType="Self.kullanici" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MainSayfa" EntityType="Self.MainSayfa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Menu" EntityType="Self.Menu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MobilIslem" EntityType="Self.MobilIslem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Nurer" EntityType="Self.Nurer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NurerCalisan" EntityType="Self.NurerCalisan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NurerSoruCevap" EntityType="Self.NurerSoruCevap" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Orgutlu" EntityType="Self.Orgutlu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pratik" EntityType="Self.Pratik" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PratikBilgiler" EntityType="Self.PratikBilgiler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PratikDosya" EntityType="Self.PratikDosya" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sayfa" EntityType="Self.Sayfa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SayfaYetki" EntityType="Self.SayfaYetki" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SiteUyelik" EntityType="Self.SiteUyelik" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SonKonusma" EntityType="Self.SonKonusma" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SoruCevap" EntityType="Self.SoruCevap" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Subeler" EntityType="Self.Subeler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SubeTemsilci" EntityType="Self.SubeTemsilci" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TefeTufe" EntityType="Self.TefeTufe" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TefeTufeDosya" EntityType="Self.TefeTufeDosya" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Toleyis" EntityType="Self.Toleyis" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UstSlider" EntityType="Self.UstSlider" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UyeSay" EntityType="Self.UyeSay" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UyeSayisiManuel" EntityType="Self.UyeSayisiManuel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Yil" EntityType="Self.Yil" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Yonetim" EntityType="Self.Yonetim" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="YonetimUnvan" EntityType="Self.YonetimUnvan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ziyaret" EntityType="Self.Ziyaret" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Aclik_Ay" Association="Self.FK_Aclik_Ay">
+            <End Role="Ay" EntitySet="Ay" />
+            <End Role="Aclik" EntitySet="Aclik" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Aclik_Yil" Association="Self.FK_Aclik_Yil">
+            <End Role="Yil" EntitySet="Yil" />
+            <End Role="Aclik" EntitySet="Aclik" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AclikDosya_Aclik" Association="Self.FK_AclikDosya_Aclik">
+            <End Role="Aclik" EntitySet="Aclik" />
+            <End Role="AclikDosya" EntitySet="AclikDosya" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AltMenu_Menu" Association="Self.FK_AltMenu_Menu">
+            <End Role="Menu" EntitySet="Menu" />
+            <End Role="AltMenu" EntitySet="AltMenu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnlasmaliKurumlar_IL" Association="Self.FK_AnlasmaliKurumlar_IL">
+            <End Role="IL" EntitySet="IL" />
+            <End Role="AnlasmaliKurumlar" EntitySet="AnlasmaliKurumlar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArsivGaleri_Arsiv" Association="Self.FK_ArsivGaleri_Arsiv">
+            <End Role="Arsiv" EntitySet="Arsiv" />
+            <End Role="ArsivGaleri" EntitySet="ArsivGaleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Galeri_FotoKategori" Association="Self.FK_Galeri_FotoKategori">
+            <End Role="FotoKategori" EntitySet="FotoKategori" />
+            <End Role="Galeri" EntitySet="Galeri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Galeri_GaleriTur" Association="Self.FK_Galeri_GaleriTur">
+            <End Role="GaleriTur" EntitySet="GaleriTur" />
+            <End Role="Galeri" EntitySet="Galeri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GaleriFoto_Galeri" Association="Self.FK_GaleriFoto_Galeri">
+            <End Role="Galeri" EntitySet="Galeri" />
+            <End Role="GaleriFoto" EntitySet="GaleriFoto" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Haber_HaberKategori" Association="Self.FK_Haber_HaberKategori">
+            <End Role="HaberKategori" EntitySet="HaberKategori" />
+            <End Role="Haber" EntitySet="Haber" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Haber_HaberTur" Association="Self.FK_Haber_HaberTur">
+            <End Role="HaberTur" EntitySet="HaberTur" />
+            <End Role="Haber_" EntitySet="Haber_" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Haber_HaberTur1" Association="Self.FK_Haber_HaberTur1">
+            <End Role="HaberTur" EntitySet="HaberTur" />
+            <End Role="Haber" EntitySet="Haber" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HaberGaleri_Haber" Association="Self.FK_HaberGaleri_Haber">
+            <End Role="Haber" EntitySet="Haber" />
+            <End Role="HaberGaleri" EntitySet="HaberGaleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Hukuk_HukukTur" Association="Self.FK_Hukuk_HukukTur">
+            <End Role="HukukTur" EntitySet="HukukTur" />
+            <End Role="Hukuk" EntitySet="Hukuk" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IL_Subeler" Association="Self.FK_IL_Subeler">
+            <End Role="Subeler" EntitySet="Subeler" />
+            <End Role="IL" EntitySet="IL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ILce_IL" Association="Self.FK_ILce_IL">
+            <End Role="IL" EntitySet="IL" />
+            <End Role="ILce" EntitySet="ILce" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Iletisim_IL" Association="Self.FK_Iletisim_IL">
+            <End Role="IL" EntitySet="IL" />
+            <End Role="Iletisim" EntitySet="Iletisim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Iletisim_iletisimTur" Association="Self.FK_Iletisim_iletisimTur">
+            <End Role="iletisimTur" EntitySet="iletisimTur" />
+            <End Role="Iletisim" EntitySet="Iletisim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Iletisim_Subeler" Association="Self.FK_Iletisim_Subeler">
+            <End Role="Subeler" EntitySet="Subeler" />
+            <End Role="Iletisim" EntitySet="Iletisim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ILTemsilcileri_IL" Association="Self.FK_ILTemsilcileri_IL">
+            <End Role="IL" EntitySet="IL" />
+            <End Role="ILTemsilcileri" EntitySet="ILTemsilcileri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_kullanici_Roles" Association="Self.FK_kullanici_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="kullanici" EntitySet="kullanici" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orgutlu_IL" Association="Self.FK_Orgutlu_IL">
+            <End Role="IL" EntitySet="IL" />
+            <End Role="Orgutlu" EntitySet="Orgutlu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PratikDosya_Pratik" Association="Self.FK_PratikDosya_Pratik">
+            <End Role="Pratik" EntitySet="Pratik" />
+            <End Role="PratikDosya" EntitySet="PratikDosya" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sayfa_MainSayfa" Association="Self.FK_Sayfa_MainSayfa">
+            <End Role="MainSayfa" EntitySet="MainSayfa" />
+            <End Role="Sayfa" EntitySet="Sayfa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SayfaYetki_kullanici" Association="Self.FK_SayfaYetki_kullanici">
+            <End Role="kullanici" EntitySet="kullanici" />
+            <End Role="SayfaYetki" EntitySet="SayfaYetki" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SayfaYetki_Sayfa" Association="Self.FK_SayfaYetki_Sayfa">
+            <End Role="Sayfa" EntitySet="Sayfa" />
+            <End Role="SayfaYetki" EntitySet="SayfaYetki" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subeler_IL" Association="Self.FK_Subeler_IL">
+            <End Role="IL" EntitySet="IL" />
+            <End Role="Subeler" EntitySet="Subeler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SubeTemsilci_Iletisim" Association="Self.FK_SubeTemsilci_Iletisim">
+            <End Role="Subeler" EntitySet="Subeler" />
+            <End Role="SubeTemsilci" EntitySet="SubeTemsilci" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SubeTemsilci_Subeler" Association="Self.FK_SubeTemsilci_Subeler">
+            <End Role="Subeler" EntitySet="Subeler" />
+            <End Role="SubeTemsilci" EntitySet="SubeTemsilci" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TefeTufe_Ay" Association="Self.FK_TefeTufe_Ay">
+            <End Role="Ay" EntitySet="Ay" />
+            <End Role="TefeTufe" EntitySet="TefeTufe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TefeTufe_Yil" Association="Self.FK_TefeTufe_Yil">
+            <End Role="Yil" EntitySet="Yil" />
+            <End Role="TefeTufe" EntitySet="TefeTufe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TefeTufeDosya_TefeTufe" Association="Self.FK_TefeTufeDosya_TefeTufe">
+            <End Role="TefeTufe" EntitySet="TefeTufe" />
+            <End Role="TefeTufeDosya" EntitySet="TefeTufeDosya" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Yonetim_YonetimUnvan" Association="Self.FK_Yonetim_YonetimUnvan">
+            <End Role="YonetimUnvan" EntitySet="YonetimUnvan" />
+            <End Role="Yonetim" EntitySet="Yonetim" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TOLEYIS_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Aclik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kapak" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ayid" Type="Int32" />
+          <Property Name="Yilid" Type="Int32" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="Ay" Relationship="Self.FK_Aclik_Ay" FromRole="Aclik" ToRole="Ay" />
+          <NavigationProperty Name="Yil" Relationship="Self.FK_Aclik_Yil" FromRole="Aclik" ToRole="Yil" />
+          <NavigationProperty Name="AclikDosya" Relationship="Self.FK_AclikDosya_Aclik" FromRole="Aclik" ToRole="AclikDosya" />
+        </EntityType>
+        <EntityType Name="AclikDosya">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AclikID" Type="Int32" />
+          <NavigationProperty Name="Aclik" Relationship="Self.FK_AclikDosya_Aclik" FromRole="AclikDosya" ToRole="Aclik" />
+        </EntityType>
+        <EntityType Name="AltMenu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AdEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MenuId" Type="Int32" />
+          <Property Name="YeniSekme" Type="Boolean" />
+          <Property Name="Sira" Type="Int32" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="Menu" Relationship="Self.FK_AltMenu_Menu" FromRole="AltMenu" ToRole="Menu" />
+        </EntityType>
+        <EntityType Name="AltSlider">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BaslikTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BaslikEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Kapak" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="AnlasmaliKurumlar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="textEditor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ILID" Type="Int32" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="IL" Relationship="Self.FK_AnlasmaliKurumlar_IL" FromRole="AnlasmaliKurumlar" ToRole="IL" />
+        </EntityType>
+        <EntityType Name="Arsiv">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Baslik" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Kapak" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="ArsivGaleri" Relationship="Self.FK_ArsivGaleri_Arsiv" FromRole="Arsiv" ToRole="ArsivGaleri" />
+        </EntityType>
+        <EntityType Name="ArsivGaleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ArsivID" Type="Int32" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="Arsiv" Relationship="Self.FK_ArsivGaleri_Arsiv" FromRole="ArsivGaleri" ToRole="Arsiv" />
+        </EntityType>
+        <EntityType Name="Ay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="Aclik" Relationship="Self.FK_Aclik_Ay" FromRole="Ay" ToRole="Aclik" />
+          <NavigationProperty Name="TefeTufe" Relationship="Self.FK_TefeTufe_Ay" FromRole="Ay" ToRole="TefeTufe" />
+        </EntityType>
+        <EntityType Name="BolgeTemsilcilik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Temsilci" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Faks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eposta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Calisanlarimiz">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GorevTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GorevEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Resim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sira" Type="Int32" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="EDevlet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsyeriUnvan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CinsiyetId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UyelikTarihi" Type="DateTime" Precision="0" />
+          <Property Name="Telefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Soyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Enflasyon">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="Aylik1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Aylik6" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Aylik12" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="FaydaliLinkler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Baslik" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="FotoKategori">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Galeri" Relationship="Self.FK_Galeri_FotoKategori" FromRole="FotoKategori" ToRole="Galeri" />
+        </EntityType>
+        <EntityType Name="Galeri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TurID" Type="Int32" />
+          <Property Name="KateID" Type="Int32" />
+          <Property Name="BaslikTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="0" />
+          <Property Name="DosyaURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="KapakURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+          <Property Name="TolId" Type="Int32" />
+          <NavigationProperty Name="FotoKategori" Relationship="Self.FK_Galeri_FotoKategori" FromRole="Galeri" ToRole="FotoKategori" />
+          <NavigationProperty Name="GaleriTur" Relationship="Self.FK_Galeri_GaleriTur" FromRole="Galeri" ToRole="GaleriTur" />
+          <NavigationProperty Name="GaleriFoto" Relationship="Self.FK_GaleriFoto_Galeri" FromRole="Galeri" ToRole="GaleriFoto" />
+        </EntityType>
+        <EntityType Name="Galeri_">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TurID" Type="Int32" />
+          <Property Name="KateID" Type="Int32" />
+          <Property Name="BaslikTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="0" />
+          <Property Name="DosyaURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="KapakURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="GaleriFoto">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GaleriID" Type="Int32" />
+          <NavigationProperty Name="Galeri" Relationship="Self.FK_GaleriFoto_Galeri" FromRole="GaleriFoto" ToRole="Galeri" />
+        </EntityType>
+        <EntityType Name="GaleriTur">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Galeri" Relationship="Self.FK_Galeri_GaleriTur" FromRole="GaleriTur" ToRole="Galeri" />
+        </EntityType>
+        <EntityType Name="GenelMerkez">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Faks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EPosta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Resim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Haber">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BaslikTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BaslikEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="texteditorTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="texteditorEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Kapak" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="PDF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TurID" Type="Int32" />
+          <Property Name="KategoriID" Type="Int32" />
+          <Property Name="BitTarih" Type="DateTime" Precision="3" />
+          <Property Name="Ulusal" Type="Boolean" />
+          <Property Name="Sil" Type="Boolean" />
+          <Property Name="TolId" Type="Int32" />
+          <Property Name="Banner" Type="Boolean" />
+          <NavigationProperty Name="HaberKategori" Relationship="Self.FK_Haber_HaberKategori" FromRole="Haber" ToRole="HaberKategori" />
+          <NavigationProperty Name="HaberTur" Relationship="Self.FK_Haber_HaberTur1" FromRole="Haber" ToRole="HaberTur" />
+          <NavigationProperty Name="HaberGaleri" Relationship="Self.FK_HaberGaleri_Haber" FromRole="Haber" ToRole="HaberGaleri" />
+        </EntityType>
+        <EntityType Name="Haber_">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BaslikTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BaslikEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="texteditorTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="texteditorEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Kapak" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="PDF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TurID" Type="Int32" />
+          <Property Name="BitTarih" Type="DateTime" Precision="3" />
+          <Property Name="Ulusal" Type="Boolean" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="HaberTur" Relationship="Self.FK_Haber_HaberTur" FromRole="Haber_" ToRole="HaberTur" />
+        </EntityType>
+        <EntityType Name="HaberGaleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="HaberID" Type="Int32" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="Haber" Relationship="Self.FK_HaberGaleri_Haber" FromRole="HaberGaleri" ToRole="Haber" />
+        </EntityType>
+        <EntityType Name="HaberKategori">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Aktif" Type="Boolean" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="Haber" Relationship="Self.FK_Haber_HaberKategori" FromRole="HaberKategori" ToRole="Haber" />
+        </EntityType>
+        <EntityType Name="HaberTur">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Haber" Relationship="Self.FK_Haber_HaberTur1" FromRole="HaberTur" ToRole="Haber" />
+          <NavigationProperty Name="Haber_" Relationship="Self.FK_Haber_HaberTur" FromRole="HaberTur" ToRole="Haber_" />
+        </EntityType>
+        <EntityType Name="Hukuk">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BaslikTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BaslikEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TurID" Type="Int32" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="HukukTur" Relationship="Self.FK_Hukuk_HukukTur" FromRole="Hukuk" ToRole="HukukTur" />
+        </EntityType>
+        <EntityType Name="HukukTur">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Hukuk" Relationship="Self.FK_Hukuk_HukukTur" FromRole="HukukTur" ToRole="Hukuk" />
+        </EntityType>
+        <EntityType Name="IL">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SubeID" Type="Int32" />
+          <NavigationProperty Name="AnlasmaliKurumlar" Relationship="Self.FK_AnlasmaliKurumlar_IL" FromRole="IL" ToRole="AnlasmaliKurumlar" />
+          <NavigationProperty Name="Subeler" Relationship="Self.FK_IL_Subeler" FromRole="IL" ToRole="Subeler" />
+          <NavigationProperty Name="ILce" Relationship="Self.FK_ILce_IL" FromRole="IL" ToRole="ILce" />
+          <NavigationProperty Name="Iletisim" Relationship="Self.FK_Iletisim_IL" FromRole="IL" ToRole="Iletisim" />
+          <NavigationProperty Name="ILTemsilcileri" Relationship="Self.FK_ILTemsilcileri_IL" FromRole="IL" ToRole="ILTemsilcileri" />
+          <NavigationProperty Name="Orgutlu" Relationship="Self.FK_Orgutlu_IL" FromRole="IL" ToRole="Orgutlu" />
+          <NavigationProperty Name="Subeler1" Relationship="Self.FK_Subeler_IL" FromRole="IL" ToRole="Subeler" />
+        </EntityType>
+        <EntityType Name="ILce">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ILID" Type="Int32" />
+          <NavigationProperty Name="IL" Relationship="Self.FK_ILce_IL" FromRole="ILce" ToRole="IL" />
+        </EntityType>
+        <EntityType Name="Iletisim">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TurID" Type="Int32" />
+          <Property Name="SubeID" Type="Int32" />
+          <Property Name="BaslikTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BaslikEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AdTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AdEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Faks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EPosta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+          <Property Name="Unvan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ilID" Type="Int32" />
+          <Property Name="Foto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IL" Relationship="Self.FK_Iletisim_IL" FromRole="Iletisim" ToRole="IL" />
+          <NavigationProperty Name="iletisimTur" Relationship="Self.FK_Iletisim_iletisimTur" FromRole="Iletisim" ToRole="iletisimTur" />
+          <NavigationProperty Name="Subeler" Relationship="Self.FK_Iletisim_Subeler" FromRole="Iletisim" ToRole="Subeler" />
+        </EntityType>
+        <EntityType Name="IletisimForm">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Soyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eposta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Mesaj" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ILTemsilcileri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Resim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ilID" Type="Int32" Nullable="false" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="IL" Relationship="Self.FK_ILTemsilcileri_IL" FromRole="ILTemsilcileri" ToRole="IL" />
+        </EntityType>
+        <EntityType Name="iletisimTur">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+          <Property Name="AdEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Iletisim" Relationship="Self.FK_Iletisim_iletisimTur" FromRole="iletisimTur" ToRole="Iletisim" />
+        </EntityType>
+        <EntityType Name="kullanici">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sifre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RoleId" Type="Int32" />
+          <Property Name="ResetSifre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="Roles" Relationship="Self.FK_kullanici_Roles" FromRole="kullanici" ToRole="Roles" />
+          <NavigationProperty Name="SayfaYetki" Relationship="Self.FK_SayfaYetki_kullanici" FromRole="kullanici" ToRole="SayfaYetki" />
+        </EntityType>
+        <EntityType Name="MainSayfa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Sayfa" Relationship="Self.FK_Sayfa_MainSayfa" FromRole="MainSayfa" ToRole="Sayfa" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AdEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="YeniSekme" Type="Boolean" />
+          <Property Name="AltMenu" Type="Boolean" />
+          <Property Name="Sira" Type="Int32" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="AltMenu1" Relationship="Self.FK_AltMenu_Menu" FromRole="Menu" ToRole="AltMenu" />
+        </EntityType>
+        <EntityType Name="MobilIslem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sira" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Nurer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BaslikTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BaslikEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="texteditorTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="texteditorEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Soru1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cevap1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Soru2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cevap2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Soru3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cevap3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Soru4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cevap4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Soru5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cevap5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ad1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eposta1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ad2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eposta2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ad3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eposta3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ad4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eposta4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ad5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eposta5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ad6" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon6" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eposta6" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+          <Property Name="GenelAd" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GenelTelefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GenelAdres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="NurerCalisan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="NurerSoruCevap">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Question" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Answer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Orgutlu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ilID" Type="Int32" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Resim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Website" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+          <Property Name="TolId" Type="Int32" />
+          <NavigationProperty Name="IL" Relationship="Self.FK_Orgutlu_IL" FromRole="Orgutlu" ToRole="IL" />
+        </EntityType>
+        <EntityType Name="Pratik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tarih" Type="DateTime" Precision="0" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="PratikDosya" Relationship="Self.FK_PratikDosya_Pratik" FromRole="Pratik" ToRole="PratikDosya" />
+        </EntityType>
+        <EntityType Name="PratikBilgiler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BaslikTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BaslikEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="texteditorTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="texteditorEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="PratikDosya">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Yol" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PratikID" Type="Int32" />
+          <NavigationProperty Name="Pratik" Relationship="Self.FK_PratikDosya_Pratik" FromRole="PratikDosya" ToRole="Pratik" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="kullanici" Relationship="Self.FK_kullanici_Roles" FromRole="Roles" ToRole="kullanici" />
+        </EntityType>
+        <EntityType Name="Sayfa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="MainSayfaId" Type="Int32" />
+          <NavigationProperty Name="MainSayfa" Relationship="Self.FK_Sayfa_MainSayfa" FromRole="Sayfa" ToRole="MainSayfa" />
+          <NavigationProperty Name="SayfaYetki" Relationship="Self.FK_SayfaYetki_Sayfa" FromRole="Sayfa" ToRole="SayfaYetki" />
+        </EntityType>
+        <EntityType Name="SayfaYetki">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SayfaId" Type="Int32" Nullable="false" />
+          <Property Name="KulliciId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="kullanici" Relationship="Self.FK_SayfaYetki_kullanici" FromRole="SayfaYetki" ToRole="kullanici" />
+          <NavigationProperty Name="Sayfa" Relationship="Self.FK_SayfaYetki_Sayfa" FromRole="SayfaYetki" ToRole="Sayfa" />
+        </EntityType>
+        <EntityType Name="SiteUyelik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Soyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eposta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Onay" Type="Boolean" />
+          <Property Name="Sil" Type="Boolean" />
+          <Property Name="Parola" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Token" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SonKonusma">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Baslik" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Texteditor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Kapak" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="SoruCevap">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BaslikTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BaslikEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="texteditorTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="texteditorEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Subeler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ilID" Type="Int32" />
+          <Property Name="Temsilci" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eposta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="IL" Relationship="Self.FK_IL_Subeler" FromRole="Subeler" ToRole="IL" />
+          <NavigationProperty Name="IL1" Relationship="Self.FK_Subeler_IL" FromRole="Subeler" ToRole="IL" />
+          <NavigationProperty Name="Iletisim" Relationship="Self.FK_Iletisim_Subeler" FromRole="Subeler" ToRole="Iletisim" />
+          <NavigationProperty Name="SubeTemsilci" Relationship="Self.FK_SubeTemsilci_Iletisim" FromRole="Subeler" ToRole="SubeTemsilci" />
+          <NavigationProperty Name="SubeTemsilci1" Relationship="Self.FK_SubeTemsilci_Subeler" FromRole="Subeler" ToRole="SubeTemsilci" />
+        </EntityType>
+        <EntityType Name="SubeTemsilci">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Unvan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Resim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SubeId" Type="Int32" />
+          <Property Name="Sira" Type="Int32" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="Subeler" Relationship="Self.FK_SubeTemsilci_Iletisim" FromRole="SubeTemsilci" ToRole="Subeler" />
+          <NavigationProperty Name="Subeler1" Relationship="Self.FK_SubeTemsilci_Subeler" FromRole="SubeTemsilci" ToRole="Subeler" />
+        </EntityType>
+        <EntityType Name="TefeTufe">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kapak" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ayid" Type="Int32" />
+          <Property Name="Yilid" Type="Int32" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="Ay" Relationship="Self.FK_TefeTufe_Ay" FromRole="TefeTufe" ToRole="Ay" />
+          <NavigationProperty Name="Yil" Relationship="Self.FK_TefeTufe_Yil" FromRole="TefeTufe" ToRole="Yil" />
+          <NavigationProperty Name="TefeTufeDosya" Relationship="Self.FK_TefeTufeDosya_TefeTufe" FromRole="TefeTufe" ToRole="TefeTufeDosya" />
+        </EntityType>
+        <EntityType Name="TefeTufeDosya">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TeteTufeID" Type="Int32" />
+          <NavigationProperty Name="TefeTufe" Relationship="Self.FK_TefeTufeDosya_TefeTufe" FromRole="TefeTufeDosya" ToRole="TefeTufe" />
+        </EntityType>
+        <EntityType Name="Toleyis">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="baslikTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="baslikEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="texteditorTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="texteditorEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="UstSlider">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BaslikTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BaslikEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Kapak" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="UyeSay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="Toplamisci" Type="Int32" />
+          <Property Name="Uyesayisi" Type="Int32" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="UyeSayisiManuel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UyeSayisi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Metin" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Yil">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="Aclik" Relationship="Self.FK_Aclik_Yil" FromRole="Yil" ToRole="Aclik" />
+          <NavigationProperty Name="TefeTufe" Relationship="Self.FK_TefeTufe_Yil" FromRole="Yil" ToRole="TefeTufe" />
+        </EntityType>
+        <EntityType Name="Yonetim">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Soyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OzgecmisTR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OzgecmisEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Gorev" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Foto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UnvanID" Type="Int32" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="YonetimUnvan" Relationship="Self.FK_Yonetim_YonetimUnvan" FromRole="Yonetim" ToRole="YonetimUnvan" />
+        </EntityType>
+        <EntityType Name="YonetimUnvan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sil" Type="Boolean" />
+          <NavigationProperty Name="Yonetim" Relationship="Self.FK_Yonetim_YonetimUnvan" FromRole="YonetimUnvan" ToRole="Yonetim" />
+        </EntityType>
+        <EntityType Name="Ziyaret">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="0" />
+        </EntityType>
+        <Association Name="FK_Aclik_Ay">
+          <End Role="Ay" Type="Self.Ay" Multiplicity="0..1" />
+          <End Role="Aclik" Type="Self.Aclik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ay">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Aclik">
+              <PropertyRef Name="Ayid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Aclik_Yil">
+          <End Role="Yil" Type="Self.Yil" Multiplicity="0..1" />
+          <End Role="Aclik" Type="Self.Aclik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Yil">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Aclik">
+              <PropertyRef Name="Yilid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AclikDosya_Aclik">
+          <End Role="Aclik" Type="Self.Aclik" Multiplicity="0..1" />
+          <End Role="AclikDosya" Type="Self.AclikDosya" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aclik">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AclikDosya">
+              <PropertyRef Name="AclikID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AltMenu_Menu">
+          <End Role="Menu" Type="Self.Menu" Multiplicity="0..1" />
+          <End Role="AltMenu" Type="Self.AltMenu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Menu">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AltMenu">
+              <PropertyRef Name="MenuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnlasmaliKurumlar_IL">
+          <End Role="IL" Type="Self.IL" Multiplicity="0..1" />
+          <End Role="AnlasmaliKurumlar" Type="Self.AnlasmaliKurumlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IL">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnlasmaliKurumlar">
+              <PropertyRef Name="ILID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArsivGaleri_Arsiv">
+          <End Role="Arsiv" Type="Self.Arsiv" Multiplicity="0..1" />
+          <End Role="ArsivGaleri" Type="Self.ArsivGaleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Arsiv">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ArsivGaleri">
+              <PropertyRef Name="ArsivID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TefeTufe_Ay">
+          <End Role="Ay" Type="Self.Ay" Multiplicity="0..1" />
+          <End Role="TefeTufe" Type="Self.TefeTufe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ay">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TefeTufe">
+              <PropertyRef Name="Ayid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Galeri_FotoKategori">
+          <End Role="FotoKategori" Type="Self.FotoKategori" Multiplicity="0..1" />
+          <End Role="Galeri" Type="Self.Galeri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FotoKategori">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Galeri">
+              <PropertyRef Name="KateID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Galeri_GaleriTur">
+          <End Role="GaleriTur" Type="Self.GaleriTur" Multiplicity="0..1" />
+          <End Role="Galeri" Type="Self.Galeri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GaleriTur">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Galeri">
+              <PropertyRef Name="TurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GaleriFoto_Galeri">
+          <End Role="Galeri" Type="Self.Galeri" Multiplicity="0..1" />
+          <End Role="GaleriFoto" Type="Self.GaleriFoto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Galeri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GaleriFoto">
+              <PropertyRef Name="GaleriID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Haber_HaberKategori">
+          <End Role="HaberKategori" Type="Self.HaberKategori" Multiplicity="0..1" />
+          <End Role="Haber" Type="Self.Haber" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HaberKategori">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Haber">
+              <PropertyRef Name="KategoriID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Haber_HaberTur1">
+          <End Role="HaberTur" Type="Self.HaberTur" Multiplicity="0..1" />
+          <End Role="Haber" Type="Self.Haber" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HaberTur">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Haber">
+              <PropertyRef Name="TurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HaberGaleri_Haber">
+          <End Role="Haber" Type="Self.Haber" Multiplicity="0..1" />
+          <End Role="HaberGaleri" Type="Self.HaberGaleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Haber">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HaberGaleri">
+              <PropertyRef Name="HaberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Haber_HaberTur">
+          <End Role="HaberTur" Type="Self.HaberTur" Multiplicity="0..1" />
+          <End Role="Haber_" Type="Self.Haber_" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HaberTur">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Haber_">
+              <PropertyRef Name="TurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Hukuk_HukukTur">
+          <End Role="HukukTur" Type="Self.HukukTur" Multiplicity="0..1" />
+          <End Role="Hukuk" Type="Self.Hukuk" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HukukTur">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Hukuk">
+              <PropertyRef Name="TurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IL_Subeler">
+          <End Role="Subeler" Type="Self.Subeler" Multiplicity="0..1" />
+          <End Role="IL" Type="Self.IL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subeler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IL">
+              <PropertyRef Name="SubeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ILce_IL">
+          <End Role="IL" Type="Self.IL" Multiplicity="0..1" />
+          <End Role="ILce" Type="Self.ILce" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IL">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ILce">
+              <PropertyRef Name="ILID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Iletisim_IL">
+          <End Role="IL" Type="Self.IL" Multiplicity="0..1" />
+          <End Role="Iletisim" Type="Self.Iletisim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IL">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Iletisim">
+              <PropertyRef Name="ilID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ILTemsilcileri_IL">
+          <End Role="IL" Type="Self.IL" Multiplicity="1" />
+          <End Role="ILTemsilcileri" Type="Self.ILTemsilcileri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IL">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ILTemsilcileri">
+              <PropertyRef Name="ilID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orgutlu_IL">
+          <End Role="IL" Type="Self.IL" Multiplicity="0..1" />
+          <End Role="Orgutlu" Type="Self.Orgutlu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IL">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Orgutlu">
+              <PropertyRef Name="ilID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subeler_IL">
+          <End Role="IL" Type="Self.IL" Multiplicity="0..1" />
+          <End Role="Subeler" Type="Self.Subeler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IL">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Subeler">
+              <PropertyRef Name="ilID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Iletisim_iletisimTur">
+          <End Role="iletisimTur" Type="Self.iletisimTur" Multiplicity="0..1" />
+          <End Role="Iletisim" Type="Self.Iletisim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="iletisimTur">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Iletisim">
+              <PropertyRef Name="TurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Iletisim_Subeler">
+          <End Role="Subeler" Type="Self.Subeler" Multiplicity="0..1" />
+          <End Role="Iletisim" Type="Self.Iletisim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subeler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Iletisim">
+              <PropertyRef Name="SubeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_kullanici_Roles">
+          <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+          <End Role="kullanici" Type="Self.kullanici" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="kullanici">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SayfaYetki_kullanici">
+          <End Role="kullanici" Type="Self.kullanici" Multiplicity="1" />
+          <End Role="SayfaYetki" Type="Self.SayfaYetki" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="kullanici">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SayfaYetki">
+              <PropertyRef Name="KulliciId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sayfa_MainSayfa">
+          <End Role="MainSayfa" Type="Self.MainSayfa" Multiplicity="0..1" />
+          <End Role="Sayfa" Type="Self.Sayfa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MainSayfa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Sayfa">
+              <PropertyRef Name="MainSayfaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PratikDosya_Pratik">
+          <End Role="Pratik" Type="Self.Pratik" Multiplicity="0..1" />
+          <End Role="PratikDosya" Type="Self.PratikDosya" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pratik">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PratikDosya">
+              <PropertyRef Name="PratikID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SayfaYetki_Sayfa">
+          <End Role="Sayfa" Type="Self.Sayfa" Multiplicity="1" />
+          <End Role="SayfaYetki" Type="Self.SayfaYetki" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sayfa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SayfaYetki">
+              <PropertyRef Name="SayfaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SubeTemsilci_Iletisim">
+          <End Role="Subeler" Type="Self.Subeler" Multiplicity="0..1" />
+          <End Role="SubeTemsilci" Type="Self.SubeTemsilci" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subeler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SubeTemsilci">
+              <PropertyRef Name="SubeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SubeTemsilci_Subeler">
+          <End Role="Subeler" Type="Self.Subeler" Multiplicity="0..1" />
+          <End Role="SubeTemsilci" Type="Self.SubeTemsilci" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subeler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SubeTemsilci">
+              <PropertyRef Name="SubeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TefeTufe_Yil">
+          <End Role="Yil" Type="Self.Yil" Multiplicity="0..1" />
+          <End Role="TefeTufe" Type="Self.TefeTufe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Yil">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TefeTufe">
+              <PropertyRef Name="Yilid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TefeTufeDosya_TefeTufe">
+          <End Role="TefeTufe" Type="Self.TefeTufe" Multiplicity="0..1" />
+          <End Role="TefeTufeDosya" Type="Self.TefeTufeDosya" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TefeTufe">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TefeTufeDosya">
+              <PropertyRef Name="TeteTufeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Yonetim_YonetimUnvan">
+          <End Role="YonetimUnvan" Type="Self.YonetimUnvan" Multiplicity="0..1" />
+          <End Role="Yonetim" Type="Self.Yonetim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="YonetimUnvan">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Yonetim">
+              <PropertyRef Name="UnvanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="TOLEYIS_Entities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Aclik" EntityType="Self.Aclik" />
+          <EntitySet Name="AclikDosya" EntityType="Self.AclikDosya" />
+          <EntitySet Name="AltMenu" EntityType="Self.AltMenu" />
+          <EntitySet Name="AltSlider" EntityType="Self.AltSlider" />
+          <EntitySet Name="AnlasmaliKurumlar" EntityType="Self.AnlasmaliKurumlar" />
+          <EntitySet Name="Arsiv" EntityType="Self.Arsiv" />
+          <EntitySet Name="ArsivGaleri" EntityType="Self.ArsivGaleri" />
+          <EntitySet Name="Ay" EntityType="Self.Ay" />
+          <EntitySet Name="BolgeTemsilcilik" EntityType="Self.BolgeTemsilcilik" />
+          <EntitySet Name="Calisanlarimiz" EntityType="Self.Calisanlarimiz" />
+          <EntitySet Name="EDevlet" EntityType="Self.EDevlet" />
+          <EntitySet Name="Enflasyon" EntityType="Self.Enflasyon" />
+          <EntitySet Name="FaydaliLinkler" EntityType="Self.FaydaliLinkler" />
+          <EntitySet Name="FotoKategori" EntityType="Self.FotoKategori" />
+          <EntitySet Name="Galeri" EntityType="Self.Galeri" />
+          <EntitySet Name="Galeri_" EntityType="Self.Galeri_" />
+          <EntitySet Name="GaleriFoto" EntityType="Self.GaleriFoto" />
+          <EntitySet Name="GaleriTur" EntityType="Self.GaleriTur" />
+          <EntitySet Name="GenelMerkez" EntityType="Self.GenelMerkez" />
+          <EntitySet Name="Haber" EntityType="Self.Haber" />
+          <EntitySet Name="Haber_" EntityType="Self.Haber_" />
+          <EntitySet Name="HaberGaleri" EntityType="Self.HaberGaleri" />
+          <EntitySet Name="HaberKategori" EntityType="Self.HaberKategori" />
+          <EntitySet Name="HaberTur" EntityType="Self.HaberTur" />
+          <EntitySet Name="Hukuk" EntityType="Self.Hukuk" />
+          <EntitySet Name="HukukTur" EntityType="Self.HukukTur" />
+          <EntitySet Name="IL" EntityType="Self.IL" />
+          <EntitySet Name="ILce" EntityType="Self.ILce" />
+          <EntitySet Name="Iletisim" EntityType="Self.Iletisim" />
+          <EntitySet Name="IletisimForm" EntityType="Self.IletisimForm" />
+          <EntitySet Name="ILTemsilcileri" EntityType="Self.ILTemsilcileri" />
+          <EntitySet Name="iletisimTur" EntityType="Self.iletisimTur" />
+          <EntitySet Name="kullanici" EntityType="Self.kullanici" />
+          <EntitySet Name="MainSayfa" EntityType="Self.MainSayfa" />
+          <EntitySet Name="Menu" EntityType="Self.Menu" />
+          <EntitySet Name="MobilIslem" EntityType="Self.MobilIslem" />
+          <EntitySet Name="Nurer" EntityType="Self.Nurer" />
+          <EntitySet Name="NurerCalisan" EntityType="Self.NurerCalisan" />
+          <EntitySet Name="NurerSoruCevap" EntityType="Self.NurerSoruCevap" />
+          <EntitySet Name="Orgutlu" EntityType="Self.Orgutlu" />
+          <EntitySet Name="Pratik" EntityType="Self.Pratik" />
+          <EntitySet Name="PratikBilgiler" EntityType="Self.PratikBilgiler" />
+          <EntitySet Name="PratikDosya" EntityType="Self.PratikDosya" />
+          <EntitySet Name="Roles" EntityType="Self.Roles" />
+          <EntitySet Name="Sayfa" EntityType="Self.Sayfa" />
+          <EntitySet Name="SayfaYetki" EntityType="Self.SayfaYetki" />
+          <EntitySet Name="SiteUyelik" EntityType="Self.SiteUyelik" />
+          <EntitySet Name="SonKonusma" EntityType="Self.SonKonusma" />
+          <EntitySet Name="SoruCevap" EntityType="Self.SoruCevap" />
+          <EntitySet Name="Subeler" EntityType="Self.Subeler" />
+          <EntitySet Name="SubeTemsilci" EntityType="Self.SubeTemsilci" />
+          <EntitySet Name="TefeTufe" EntityType="Self.TefeTufe" />
+          <EntitySet Name="TefeTufeDosya" EntityType="Self.TefeTufeDosya" />
+          <EntitySet Name="Toleyis" EntityType="Self.Toleyis" />
+          <EntitySet Name="UstSlider" EntityType="Self.UstSlider" />
+          <EntitySet Name="UyeSay" EntityType="Self.UyeSay" />
+          <EntitySet Name="UyeSayisiManuel" EntityType="Self.UyeSayisiManuel" />
+          <EntitySet Name="Yil" EntityType="Self.Yil" />
+          <EntitySet Name="Yonetim" EntityType="Self.Yonetim" />
+          <EntitySet Name="YonetimUnvan" EntityType="Self.YonetimUnvan" />
+          <EntitySet Name="Ziyaret" EntityType="Self.Ziyaret" />
+          <AssociationSet Name="FK_Aclik_Ay" Association="Self.FK_Aclik_Ay">
+            <End Role="Ay" EntitySet="Ay" />
+            <End Role="Aclik" EntitySet="Aclik" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Aclik_Yil" Association="Self.FK_Aclik_Yil">
+            <End Role="Yil" EntitySet="Yil" />
+            <End Role="Aclik" EntitySet="Aclik" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AclikDosya_Aclik" Association="Self.FK_AclikDosya_Aclik">
+            <End Role="Aclik" EntitySet="Aclik" />
+            <End Role="AclikDosya" EntitySet="AclikDosya" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AltMenu_Menu" Association="Self.FK_AltMenu_Menu">
+            <End Role="Menu" EntitySet="Menu" />
+            <End Role="AltMenu" EntitySet="AltMenu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnlasmaliKurumlar_IL" Association="Self.FK_AnlasmaliKurumlar_IL">
+            <End Role="IL" EntitySet="IL" />
+            <End Role="AnlasmaliKurumlar" EntitySet="AnlasmaliKurumlar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArsivGaleri_Arsiv" Association="Self.FK_ArsivGaleri_Arsiv">
+            <End Role="Arsiv" EntitySet="Arsiv" />
+            <End Role="ArsivGaleri" EntitySet="ArsivGaleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TefeTufe_Ay" Association="Self.FK_TefeTufe_Ay">
+            <End Role="Ay" EntitySet="Ay" />
+            <End Role="TefeTufe" EntitySet="TefeTufe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Galeri_FotoKategori" Association="Self.FK_Galeri_FotoKategori">
+            <End Role="FotoKategori" EntitySet="FotoKategori" />
+            <End Role="Galeri" EntitySet="Galeri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Galeri_GaleriTur" Association="Self.FK_Galeri_GaleriTur">
+            <End Role="GaleriTur" EntitySet="GaleriTur" />
+            <End Role="Galeri" EntitySet="Galeri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GaleriFoto_Galeri" Association="Self.FK_GaleriFoto_Galeri">
+            <End Role="Galeri" EntitySet="Galeri" />
+            <End Role="GaleriFoto" EntitySet="GaleriFoto" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Haber_HaberKategori" Association="Self.FK_Haber_HaberKategori">
+            <End Role="HaberKategori" EntitySet="HaberKategori" />
+            <End Role="Haber" EntitySet="Haber" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Haber_HaberTur1" Association="Self.FK_Haber_HaberTur1">
+            <End Role="HaberTur" EntitySet="HaberTur" />
+            <End Role="Haber" EntitySet="Haber" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HaberGaleri_Haber" Association="Self.FK_HaberGaleri_Haber">
+            <End Role="Haber" EntitySet="Haber" />
+            <End Role="HaberGaleri" EntitySet="HaberGaleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Haber_HaberTur" Association="Self.FK_Haber_HaberTur">
+            <End Role="HaberTur" EntitySet="HaberTur" />
+            <End Role="Haber_" EntitySet="Haber_" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Hukuk_HukukTur" Association="Self.FK_Hukuk_HukukTur">
+            <End Role="HukukTur" EntitySet="HukukTur" />
+            <End Role="Hukuk" EntitySet="Hukuk" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IL_Subeler" Association="Self.FK_IL_Subeler">
+            <End Role="Subeler" EntitySet="Subeler" />
+            <End Role="IL" EntitySet="IL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ILce_IL" Association="Self.FK_ILce_IL">
+            <End Role="IL" EntitySet="IL" />
+            <End Role="ILce" EntitySet="ILce" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Iletisim_IL" Association="Self.FK_Iletisim_IL">
+            <End Role="IL" EntitySet="IL" />
+            <End Role="Iletisim" EntitySet="Iletisim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ILTemsilcileri_IL" Association="Self.FK_ILTemsilcileri_IL">
+            <End Role="IL" EntitySet="IL" />
+            <End Role="ILTemsilcileri" EntitySet="ILTemsilcileri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orgutlu_IL" Association="Self.FK_Orgutlu_IL">
+            <End Role="IL" EntitySet="IL" />
+            <End Role="Orgutlu" EntitySet="Orgutlu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subeler_IL" Association="Self.FK_Subeler_IL">
+            <End Role="IL" EntitySet="IL" />
+            <End Role="Subeler" EntitySet="Subeler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Iletisim_iletisimTur" Association="Self.FK_Iletisim_iletisimTur">
+            <End Role="iletisimTur" EntitySet="iletisimTur" />
+            <End Role="Iletisim" EntitySet="Iletisim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Iletisim_Subeler" Association="Self.FK_Iletisim_Subeler">
+            <End Role="Subeler" EntitySet="Subeler" />
+            <End Role="Iletisim" EntitySet="Iletisim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_kullanici_Roles" Association="Self.FK_kullanici_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="kullanici" EntitySet="kullanici" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SayfaYetki_kullanici" Association="Self.FK_SayfaYetki_kullanici">
+            <End Role="kullanici" EntitySet="kullanici" />
+            <End Role="SayfaYetki" EntitySet="SayfaYetki" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sayfa_MainSayfa" Association="Self.FK_Sayfa_MainSayfa">
+            <End Role="MainSayfa" EntitySet="MainSayfa" />
+            <End Role="Sayfa" EntitySet="Sayfa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PratikDosya_Pratik" Association="Self.FK_PratikDosya_Pratik">
+            <End Role="Pratik" EntitySet="Pratik" />
+            <End Role="PratikDosya" EntitySet="PratikDosya" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SayfaYetki_Sayfa" Association="Self.FK_SayfaYetki_Sayfa">
+            <End Role="Sayfa" EntitySet="Sayfa" />
+            <End Role="SayfaYetki" EntitySet="SayfaYetki" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SubeTemsilci_Iletisim" Association="Self.FK_SubeTemsilci_Iletisim">
+            <End Role="Subeler" EntitySet="Subeler" />
+            <End Role="SubeTemsilci" EntitySet="SubeTemsilci" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SubeTemsilci_Subeler" Association="Self.FK_SubeTemsilci_Subeler">
+            <End Role="Subeler" EntitySet="Subeler" />
+            <End Role="SubeTemsilci" EntitySet="SubeTemsilci" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TefeTufe_Yil" Association="Self.FK_TefeTufe_Yil">
+            <End Role="Yil" EntitySet="Yil" />
+            <End Role="TefeTufe" EntitySet="TefeTufe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TefeTufeDosya_TefeTufe" Association="Self.FK_TefeTufeDosya_TefeTufe">
+            <End Role="TefeTufe" EntitySet="TefeTufe" />
+            <End Role="TefeTufeDosya" EntitySet="TefeTufeDosya" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Yonetim_YonetimUnvan" Association="Self.FK_Yonetim_YonetimUnvan">
+            <End Role="YonetimUnvan" EntitySet="YonetimUnvan" />
+            <End Role="Yonetim" EntitySet="Yonetim" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TOLEYIS_ModelStoreContainer" CdmEntityContainer="TOLEYIS_Entities1">
+          <EntitySetMapping Name="Aclik">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Aclik">
+              <MappingFragment StoreEntitySet="Aclik">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+                <ScalarProperty Name="Ayid" ColumnName="Ayid" />
+                <ScalarProperty Name="Yilid" ColumnName="Yilid" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AclikDosya">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.AclikDosya">
+              <MappingFragment StoreEntitySet="AclikDosya">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="AclikID" ColumnName="AclikID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AltMenu">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.AltMenu">
+              <MappingFragment StoreEntitySet="AltMenu">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AdTR" ColumnName="AdTR" />
+                <ScalarProperty Name="AdEn" ColumnName="AdEn" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+                <ScalarProperty Name="YeniSekme" ColumnName="YeniSekme" />
+                <ScalarProperty Name="Sira" ColumnName="Sira" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AltSlider">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.AltSlider">
+              <MappingFragment StoreEntitySet="AltSlider">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+                <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+                <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AnlasmaliKurumlar">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.AnlasmaliKurumlar">
+              <MappingFragment StoreEntitySet="AnlasmaliKurumlar">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="textEditor" ColumnName="textEditor" />
+                <ScalarProperty Name="ILID" ColumnName="ILID" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Arsiv">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Arsiv">
+              <MappingFragment StoreEntitySet="Arsiv">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+                <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ArsivGaleri">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.ArsivGaleri">
+              <MappingFragment StoreEntitySet="ArsivGaleri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="ArsivID" ColumnName="ArsivID" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ay">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Ay">
+              <MappingFragment StoreEntitySet="Ay">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BolgeTemsilcilik">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.BolgeTemsilcilik">
+              <MappingFragment StoreEntitySet="BolgeTemsilcilik">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Temsilci" ColumnName="Temsilci" />
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Faks" ColumnName="Faks" />
+                <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Calisanlarimiz">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Calisanlarimiz">
+              <MappingFragment StoreEntitySet="Calisanlarimiz">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="GorevTR" ColumnName="GorevTR" />
+                <ScalarProperty Name="GorevEN" ColumnName="GorevEN" />
+                <ScalarProperty Name="Resim" ColumnName="Resim" />
+                <ScalarProperty Name="Sira" ColumnName="Sira" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EDevlet">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.EDevlet">
+              <MappingFragment StoreEntitySet="EDevlet">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="IsyeriUnvan" ColumnName="IsyeriUnvan" />
+                <ScalarProperty Name="TC" ColumnName="TC" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="CinsiyetId" ColumnName="CinsiyetId" />
+                <ScalarProperty Name="UyelikTarihi" ColumnName="UyelikTarihi" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Enflasyon">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Enflasyon">
+              <MappingFragment StoreEntitySet="Enflasyon">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Aylik1" ColumnName="Aylik1" />
+                <ScalarProperty Name="Aylik6" ColumnName="Aylik6" />
+                <ScalarProperty Name="Aylik12" ColumnName="Aylik12" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FaydaliLinkler">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.FaydaliLinkler">
+              <MappingFragment StoreEntitySet="FaydaliLinkler">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FotoKategori">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.FotoKategori">
+              <MappingFragment StoreEntitySet="FotoKategori">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Galeri">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Galeri">
+              <MappingFragment StoreEntitySet="Galeri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TurID" ColumnName="TurID" />
+                <ScalarProperty Name="KateID" ColumnName="KateID" />
+                <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="DosyaURL" ColumnName="DosyaURL" />
+                <ScalarProperty Name="KapakURL" ColumnName="KapakURL" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+                <ScalarProperty Name="TolId" ColumnName="TolId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Galeri_">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Galeri_">
+              <MappingFragment StoreEntitySet="Galeri_">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TurID" ColumnName="TurID" />
+                <ScalarProperty Name="KateID" ColumnName="KateID" />
+                <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="DosyaURL" ColumnName="DosyaURL" />
+                <ScalarProperty Name="KapakURL" ColumnName="KapakURL" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GaleriFoto">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.GaleriFoto">
+              <MappingFragment StoreEntitySet="GaleriFoto">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="GaleriID" ColumnName="GaleriID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GaleriTur">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.GaleriTur">
+              <MappingFragment StoreEntitySet="GaleriTur">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GenelMerkez">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.GenelMerkez">
+              <MappingFragment StoreEntitySet="GenelMerkez">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Faks" ColumnName="Faks" />
+                <ScalarProperty Name="EPosta" ColumnName="EPosta" />
+                <ScalarProperty Name="Resim" ColumnName="Resim" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Haber">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Haber">
+              <MappingFragment StoreEntitySet="Haber">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+                <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+                <ScalarProperty Name="texteditorTR" ColumnName="texteditorTR" />
+                <ScalarProperty Name="texteditorEN" ColumnName="texteditorEN" />
+                <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="PDF" ColumnName="PDF" />
+                <ScalarProperty Name="TurID" ColumnName="TurID" />
+                <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+                <ScalarProperty Name="BitTarih" ColumnName="BitTarih" />
+                <ScalarProperty Name="Ulusal" ColumnName="Ulusal" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+                <ScalarProperty Name="TolId" ColumnName="TolId" />
+                <ScalarProperty Name="Banner" ColumnName="Banner" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Haber_">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Haber_">
+              <MappingFragment StoreEntitySet="Haber_">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+                <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+                <ScalarProperty Name="texteditorTR" ColumnName="texteditorTR" />
+                <ScalarProperty Name="texteditorEN" ColumnName="texteditorEN" />
+                <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="PDF" ColumnName="PDF" />
+                <ScalarProperty Name="TurID" ColumnName="TurID" />
+                <ScalarProperty Name="BitTarih" ColumnName="BitTarih" />
+                <ScalarProperty Name="Ulusal" ColumnName="Ulusal" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HaberGaleri">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.HaberGaleri">
+              <MappingFragment StoreEntitySet="HaberGaleri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="HaberID" ColumnName="HaberID" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HaberKategori">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.HaberKategori">
+              <MappingFragment StoreEntitySet="HaberKategori">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HaberTur">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.HaberTur">
+              <MappingFragment StoreEntitySet="HaberTur">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hukuk">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Hukuk">
+              <MappingFragment StoreEntitySet="Hukuk">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+                <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="TurID" ColumnName="TurID" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HukukTur">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.HukukTur">
+              <MappingFragment StoreEntitySet="HukukTur">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IL">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.IL">
+              <MappingFragment StoreEntitySet="IL">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="SubeID" ColumnName="SubeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ILce">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.ILce">
+              <MappingFragment StoreEntitySet="ILce">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="ILID" ColumnName="ILID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Iletisim">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Iletisim">
+              <MappingFragment StoreEntitySet="Iletisim">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TurID" ColumnName="TurID" />
+                <ScalarProperty Name="SubeID" ColumnName="SubeID" />
+                <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+                <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+                <ScalarProperty Name="AdTR" ColumnName="AdTR" />
+                <ScalarProperty Name="AdEN" ColumnName="AdEN" />
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
+                <ScalarProperty Name="Faks" ColumnName="Faks" />
+                <ScalarProperty Name="EPosta" ColumnName="EPosta" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+                <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+                <ScalarProperty Name="ilID" ColumnName="ilID" />
+                <ScalarProperty Name="Foto" ColumnName="Foto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IletisimForm">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.IletisimForm">
+              <MappingFragment StoreEntitySet="IletisimForm">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ILTemsilcileri">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.ILTemsilcileri">
+              <MappingFragment StoreEntitySet="ILTemsilcileri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Resim" ColumnName="Resim" />
+                <ScalarProperty Name="ilID" ColumnName="ilID" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="iletisimTur">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.iletisimTur">
+              <MappingFragment StoreEntitySet="iletisimTur">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AdTR" ColumnName="AdTR" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+                <ScalarProperty Name="AdEN" ColumnName="AdEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="kullanici">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.kullanici">
+              <MappingFragment StoreEntitySet="kullanici">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="ResetSifre" ColumnName="ResetSifre" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MainSayfa">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.MainSayfa">
+              <MappingFragment StoreEntitySet="MainSayfa">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Menu">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Menu">
+              <MappingFragment StoreEntitySet="Menu">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AdTR" ColumnName="AdTR" />
+                <ScalarProperty Name="AdEn" ColumnName="AdEn" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="YeniSekme" ColumnName="YeniSekme" />
+                <ScalarProperty Name="AltMenu" ColumnName="AltMenu" />
+                <ScalarProperty Name="Sira" ColumnName="Sira" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MobilIslem">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.MobilIslem">
+              <MappingFragment StoreEntitySet="MobilIslem">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Sira" ColumnName="Sira" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Nurer">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Nurer">
+              <MappingFragment StoreEntitySet="Nurer">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+                <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+                <ScalarProperty Name="texteditorTR" ColumnName="texteditorTR" />
+                <ScalarProperty Name="texteditorEN" ColumnName="texteditorEN" />
+                <ScalarProperty Name="Soru1" ColumnName="Soru1" />
+                <ScalarProperty Name="Cevap1" ColumnName="Cevap1" />
+                <ScalarProperty Name="Soru2" ColumnName="Soru2" />
+                <ScalarProperty Name="Cevap2" ColumnName="Cevap2" />
+                <ScalarProperty Name="Soru3" ColumnName="Soru3" />
+                <ScalarProperty Name="Cevap3" ColumnName="Cevap3" />
+                <ScalarProperty Name="Soru4" ColumnName="Soru4" />
+                <ScalarProperty Name="Cevap4" ColumnName="Cevap4" />
+                <ScalarProperty Name="Soru5" ColumnName="Soru5" />
+                <ScalarProperty Name="Cevap5" ColumnName="Cevap5" />
+                <ScalarProperty Name="Ad1" ColumnName="Ad1" />
+                <ScalarProperty Name="Telefon1" ColumnName="Telefon1" />
+                <ScalarProperty Name="Eposta1" ColumnName="Eposta1" />
+                <ScalarProperty Name="Ad2" ColumnName="Ad2" />
+                <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
+                <ScalarProperty Name="Eposta2" ColumnName="Eposta2" />
+                <ScalarProperty Name="Ad3" ColumnName="Ad3" />
+                <ScalarProperty Name="Telefon3" ColumnName="Telefon3" />
+                <ScalarProperty Name="Eposta3" ColumnName="Eposta3" />
+                <ScalarProperty Name="Ad4" ColumnName="Ad4" />
+                <ScalarProperty Name="Telefon4" ColumnName="Telefon4" />
+                <ScalarProperty Name="Eposta4" ColumnName="Eposta4" />
+                <ScalarProperty Name="Ad5" ColumnName="Ad5" />
+                <ScalarProperty Name="Telefon5" ColumnName="Telefon5" />
+                <ScalarProperty Name="Eposta5" ColumnName="Eposta5" />
+                <ScalarProperty Name="Ad6" ColumnName="Ad6" />
+                <ScalarProperty Name="Telefon6" ColumnName="Telefon6" />
+                <ScalarProperty Name="Eposta6" ColumnName="Eposta6" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+                <ScalarProperty Name="GenelAd" ColumnName="GenelAd" />
+                <ScalarProperty Name="GenelTelefon" ColumnName="GenelTelefon" />
+                <ScalarProperty Name="GenelAdres" ColumnName="GenelAdres" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NurerCalisan">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.NurerCalisan">
+              <MappingFragment StoreEntitySet="NurerCalisan">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NurerSoruCevap">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.NurerSoruCevap">
+              <MappingFragment StoreEntitySet="NurerSoruCevap">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orgutlu">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Orgutlu">
+              <MappingFragment StoreEntitySet="Orgutlu">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ilID" ColumnName="ilID" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Resim" ColumnName="Resim" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+                <ScalarProperty Name="TolId" ColumnName="TolId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pratik">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Pratik">
+              <MappingFragment StoreEntitySet="Pratik">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PratikBilgiler">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.PratikBilgiler">
+              <MappingFragment StoreEntitySet="PratikBilgiler">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+                <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+                <ScalarProperty Name="texteditorTR" ColumnName="texteditorTR" />
+                <ScalarProperty Name="texteditorEN" ColumnName="texteditorEN" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PratikDosya">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.PratikDosya">
+              <MappingFragment StoreEntitySet="PratikDosya">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Yol" ColumnName="Yol" />
+                <ScalarProperty Name="PratikID" ColumnName="PratikID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Roles">
+              <MappingFragment StoreEntitySet="Roles">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sayfa">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Sayfa">
+              <MappingFragment StoreEntitySet="Sayfa">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="MainSayfaId" ColumnName="MainSayfaId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SayfaYetki">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.SayfaYetki">
+              <MappingFragment StoreEntitySet="SayfaYetki">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SayfaId" ColumnName="SayfaId" />
+                <ScalarProperty Name="KulliciId" ColumnName="KulliciId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SiteUyelik">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.SiteUyelik">
+              <MappingFragment StoreEntitySet="SiteUyelik">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="TC" ColumnName="TC" />
+                <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+                <ScalarProperty Name="Onay" ColumnName="Onay" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+                <ScalarProperty Name="Parola" ColumnName="Parola" />
+                <ScalarProperty Name="Token" ColumnName="Token" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SonKonusma">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.SonKonusma">
+              <MappingFragment StoreEntitySet="SonKonusma">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+                <ScalarProperty Name="Texteditor" ColumnName="Texteditor" />
+                <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SoruCevap">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.SoruCevap">
+              <MappingFragment StoreEntitySet="SoruCevap">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+                <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+                <ScalarProperty Name="texteditorTR" ColumnName="texteditorTR" />
+                <ScalarProperty Name="texteditorEN" ColumnName="texteditorEN" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subeler">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Subeler">
+              <MappingFragment StoreEntitySet="Subeler">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="ilID" ColumnName="ilID" />
+                <ScalarProperty Name="Temsilci" ColumnName="Temsilci" />
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SubeTemsilci">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.SubeTemsilci">
+              <MappingFragment StoreEntitySet="SubeTemsilci">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+                <ScalarProperty Name="Resim" ColumnName="Resim" />
+                <ScalarProperty Name="SubeId" ColumnName="SubeId" />
+                <ScalarProperty Name="Sira" ColumnName="Sira" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TefeTufe">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.TefeTufe">
+              <MappingFragment StoreEntitySet="TefeTufe">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+                <ScalarProperty Name="Ayid" ColumnName="Ayid" />
+                <ScalarProperty Name="Yilid" ColumnName="Yilid" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TefeTufeDosya">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.TefeTufeDosya">
+              <MappingFragment StoreEntitySet="TefeTufeDosya">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="TeteTufeID" ColumnName="TeteTufeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Toleyis">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Toleyis">
+              <MappingFragment StoreEntitySet="Toleyis">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="baslikTR" ColumnName="baslikTR" />
+                <ScalarProperty Name="baslikEN" ColumnName="baslikEN" />
+                <ScalarProperty Name="texteditorTR" ColumnName="texteditorTR" />
+                <ScalarProperty Name="texteditorEN" ColumnName="texteditorEN" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UstSlider">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.UstSlider">
+              <MappingFragment StoreEntitySet="UstSlider">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BaslikTR" ColumnName="BaslikTR" />
+                <ScalarProperty Name="BaslikEN" ColumnName="BaslikEN" />
+                <ScalarProperty Name="Kapak" ColumnName="Kapak" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UyeSay">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.UyeSay">
+              <MappingFragment StoreEntitySet="UyeSay">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Toplamisci" ColumnName="Toplamisci" />
+                <ScalarProperty Name="Uyesayisi" ColumnName="Uyesayisi" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UyeSayisiManuel">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.UyeSayisiManuel">
+              <MappingFragment StoreEntitySet="UyeSayisiManuel">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UyeSayisi" ColumnName="UyeSayisi" />
+                <ScalarProperty Name="Metin" ColumnName="Metin" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Yil">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Yil">
+              <MappingFragment StoreEntitySet="Yil">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Yonetim">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Yonetim">
+              <MappingFragment StoreEntitySet="Yonetim">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="OzgecmisTR" ColumnName="OzgecmisTR" />
+                <ScalarProperty Name="OzgecmisEN" ColumnName="OzgecmisEN" />
+                <ScalarProperty Name="Gorev" ColumnName="Gorev" />
+                <ScalarProperty Name="Foto" ColumnName="Foto" />
+                <ScalarProperty Name="UnvanID" ColumnName="UnvanID" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="YonetimUnvan">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.YonetimUnvan">
+              <MappingFragment StoreEntitySet="YonetimUnvan">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Sil" ColumnName="Sil" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ziyaret">
+            <EntityTypeMapping TypeName="TOLEYIS_Model.Ziyaret">
+              <MappingFragment StoreEntitySet="Ziyaret">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

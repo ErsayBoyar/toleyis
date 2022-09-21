@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Enflasyon";
+    Layout = "~/Views/Shared/DuzYaziLayoutEN.cshtml";
+    ViewBag.Baslik = "Inflation Information";
+    ViewBag.Sekme = "Info";
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<!--Page Header End-->
+<!--News Details Start-->
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            @Html.Action("Sidebar", "Info")
+
+            <div class="col-md-9" style="font-size: 17px;">
+                <h5 style=" text-align: -webkit-center; ">Historical Data</h5><br />
+                <div class="table-responsive-md">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Month</th>
+                                <th scope="col">1 Month %</th>
+                                <th scope="col">6 Month %</th>
+                                <th scope="col">12 Month %</th>
+                            </tr>
+                        </thead>
+                        @foreach (var m in Model)
+                        {
+                            //decimal bolunen = Convert.ToDecimal(m.Uyesayisi * 100);
+                            //decimal bolen = Convert.ToDecimal(m.Toplamisci);
+                            //decimal yuzde = bolunen / bolen;
+                            //yuzde = Decimal.Round(yuzde, 2);
+
+                            <tbody>
+                                <tr>
+                                    @if (m.Tarih != null)
+                                    {
+                                        <td data-order="1561723222">@m.Tarih.ToString("MMMM yyyy")</td>
+                                        <td>@m.Aylik1</td>
+                                        <td>@m.Aylik6</td>
+                                        <td>@m.Aylik12</td>
+                                    }
+                                </tr>
+                            </tbody>
+                        }
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Details End-->

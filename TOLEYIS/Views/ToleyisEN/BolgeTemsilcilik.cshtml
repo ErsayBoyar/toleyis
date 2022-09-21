@@ -1,0 +1,184 @@
+﻿
+@{
+    ViewBag.Title = "BolgeTemsilcilik";
+    Layout = "~/Views/Shared/DuzYaziLayoutEN.cshtml";
+    ViewBag.Baslik = "Regional Representatives";
+    ViewBag.Sekme = "Toleyis";
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            @Html.Action("Sidebar", "Home")
+
+            <div class="col-xl-9 col-lg-8">
+                <section class="we-need-help">
+                    <div class="container">
+                        <div>
+                            <div class="we-need-help__left">
+                                <div class="we-need-help__faqs">
+                                    <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
+                                        @*<div class="accrodion active">*@
+                                        @foreach (var m in Model)
+                                        {
+                                            <div class="accrodion">
+                                                <div class="accrodion-title">
+                                                    <h4>@m.BaslikTR</h4>
+                                                </div>
+                                                <div class="accrodion-content">
+                                                    <div class="inner">
+                                                        <ul class="sube-detay-iletisim">
+                                                            <li>
+                                                                <div class="icon">
+                                                                    <img src="~/assets/images/brand/Group 37.png" />
+                                                                </div>
+                                                                <div class="text">
+                                                                    <p><strong style="color: #fe6d10">Representative:</strong> @m.AdTR</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="icon">
+                                                                    <img src="~/assets/images/brand/Group 38.png" />
+                                                                </div>
+                                                                <div class="text">
+                                                                    <p><strong style="color: #fe6d10">Address:</strong> @m.Adres</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="icon">
+                                                                    <img src="~/assets/images/brand/Group 39.png" />
+                                                                </div>
+                                                                <div class="text">
+                                                                    <p><strong style="color: #fe6d10">Phone:</strong> @m.Telefon</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="icon">
+                                                                    <img src="~/assets/images/brand/Group 40.png" />
+                                                                </div>
+                                                                <div class="text">
+                                                                    <p><strong style="color: #fe6d10">E-Mail:</strong> @m.EPosta</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div><!-- /.inner -->
+                                                </div>
+                                            </div>
+                                        }
+
+                                        @*</div>*@
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    /*--------------------------------------------------------------
+    # We Need Help - temsilcilikler
+    --------------------------------------------------------------*/
+    .we-need-help {
+        position: relative;
+        display: block;
+    }
+
+    .we-need-help__left {
+        position: relative;
+        display: block;
+        padding-top: 0;
+    }
+
+    .faq-one-accrodion .accrodion {
+        position: relative;
+        display: block;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+
+    .faq-one-accrodion .accrodion-title {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        background: #231f29;
+        padding: 10px 30px 9px;
+        border: 1px solid #eae5e3;
+        border-radius: 35px;
+        transition: all 200ms linear;
+        transition-delay: 0.1s;
+    }
+
+        .faq-one-accrodion .accrodion-title h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            color: #ffffff;
+            position: relative;
+            -webkit-transition: all 500ms ease;
+            transition: all 500ms ease;
+            font-family: var(--thm-font);
+        }
+
+    .faq-one-accrodion .accrodion + .accrodion {
+        margin-top: 20px;
+    }
+
+    .faq-one-accrodion .accrodion.active .accrodion-title {
+        background: var(--thm-primary);
+        border: 1px solid var(--thm-primary);
+    }
+
+        .faq-one-accrodion .accrodion.active .accrodion-title h4 {
+            color: #ffffff;
+        }
+
+    .faq-one-accrodion .accrodion-title h4::before {
+        content: "\f13a";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 12px;
+        color: #ffffff;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+
+    .faq-one-accrodion .accrodion.active .accrodion-title h4::before {
+        content: "\f139";
+        color: #ffffff;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq-one-accrodion .accrodion-content {
+        position: relative;
+        padding: 6px 30px 4px;
+    }
+
+        .faq-one-accrodion .accrodion-content p {
+            margin: 0;
+        }
+</style>

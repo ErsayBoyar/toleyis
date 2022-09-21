@@ -1,0 +1,44 @@
+﻿@using TOLEYIS.Models;
+@model ViewModel
+
+@{
+    ViewBag.Title = "PratikBilgiler";
+    Layout = "~/Views/Shared/DuzYaziLayoutEN.cshtml";
+    ViewBag.Baslik = "Practical Information";
+    ViewBag.Sekme = "Info";
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<!--Page Header End-->
+<!--News Details Start-->
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            @Html.Action("Sidebar", "Info")
+            <div class="col-md-9">
+                <div class="news-details__left">
+                    <div class="news-details__content">
+                        <h3 class="news-details__title">Practical Information</h3>
+                        @foreach (var m in Model.PratikBilgilers)
+                        {
+                            <p>@Html.Raw(m.texteditorTR)</p>
+                        }
+                        <p class="news-details__text-one">Click on the month you want to see for ITO's inflation figures.</p>
+                        <div class="row">
+                            @foreach (var m in Model.Pratiks)
+                            {
+                                foreach (var k in m.PratikDosya)
+                                {
+                                    <a href="@ViewBag.dosyayolu/@k.Yol" target="_blank" class="btn btn-default" style="background: #f6f4f1; color: #87848d; margin-bottom: 20px; margin-right: 10px; border-radius: 7px; width: 140px; ">@Convert.ToDateTime(m.Tarih).ToString("Y")</a>
+
+                                }
+                            }
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Details End-->

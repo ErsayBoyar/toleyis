@@ -1,0 +1,21 @@
+﻿@model IEnumerable<TOLEYIS.Models.Iletisim>
+@{
+    Layout = null;
+}
+<div class="card" style=" margin-bottom: 30px; border-radius: 8px;">
+    <h5 class="card-header" style="border-radius: 5px; color: #fdfdfd; background-color: #212529; font-weight: 500; padding-block: 17px; text-transform: uppercase;">@ViewBag.il İL TEMSİLCİSİ </h5><br />
+    <div class="card-body overflow-auto" style="height: 12rem; margin-top: -25px; ">
+        <ul class="welcome-one__list" style="padding-left: 10px; margin-top: 0px; margin-bottom: 0px; ">
+            @foreach (var m in Model)
+            {
+                <li>
+                    <p><img src="~/assets/images/brand/Group 37.png" /><strong style="color: #fe6d10"> @m.Unvan:</strong> @m.AdTR</p>
+                </li>
+                <li style=" border-bottom: 1px solid #eae5e3; ">
+                    <p><img src="~/assets/images/brand/Group 39.png" /><strong style="color: #fe6d10"> Telefon:</strong> @m.Telefon</p>
+                </li>
+            }
+
+        </ul>
+    </div>
+</div>

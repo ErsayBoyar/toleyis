@@ -1,0 +1,58 @@
+﻿@using TOLEYIS.Models;
+@model ViewModel
+@{
+    ViewBag.Title = "GenelMerkez";
+    Layout = "~/Views/Shared/DuzYaziLayoutEN.cshtml";
+    ViewBag.Baslik = "General Center";
+    ViewBag.Sekme = "Toleyis";
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<!--Page Header End-->
+<!--News Details Start-->
+<style>
+    @@media only screen and (max-width: 1150px) {
+        .buyuk {
+            display: none;
+        }
+    }
+
+    @@media only screen and (min-width: 1150px) {
+        .kucuk {
+            display: none;
+        }
+    }
+</style>
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            @Html.Action("Sidebar", "Home")
+
+            <div class="col-md-9">
+                <div class="card" style=" margin-bottom: 30px; border-radius: 8px; ">
+                    <h5 class="card-header" style="border-radius: 5px; color: #fdfdfd; background-color: #212529; font-weight: 500; padding-block: 17px; ">GENERAL CENTER <u style="float:right;">İSTANBUL</u></h5>
+                    <div class="card-body" style="height:auto; margin-top: -25px; ">
+                        <ul class="welcome-one__list" style="padding-left: 10px; ">
+                            @foreach (var m in Model.GenelMerkezs)
+                            {
+                                <li><p><img src="~/assets/images/brand/Group 38.png" /><strong style="color: #fe6d10"> Address:</strong> @m.Adres</p></li>
+                                <li><p><img src="~/assets/images/brand/Group 39.png" /><strong style="color: #fe6d10"> Phone:</strong> @m.Telefon</p></li>
+                                <li><p><img src="~/assets/images/brand/GroupFaks.png" /><strong style="color: #fe6d10"> Fax:</strong> @m.Faks</p></li>
+                                <li><p><img src="~/assets/images/brand/Group 40.png" /><strong style="color: #fe6d10"> E-Mail:</strong> @m.EPosta</p></li>
+                            }
+                        </ul>
+                        <div class="genel-merkez-iletisim">
+                            <div class="map buyuk">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d96318.56453822537!2d28.90429833575026!3d41.02623733910827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x14caba29eee2b4f3%3A0xb90e0302ca0fc471!2sAksaray%2C%20Toleyis%2C%20K%C3%BC%C3%A7%C3%BCk%20Langa%20Cad.%2C%20Fatih%2FIstanbul%20-%20Europe!3m2!1d41.0071544!2d28.952029699999997!5e0!3m2!1str!2str!4v1641132377736!5m2!1str!2str" width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                            <div class="map kucuk">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.8240356089773!2d28.949834315277094!3d41.00722447930091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba29eee2b4f3%3A0xb90e0302ca0fc471!2sToleyis!5e0!3m2!1str!2str!4v1642701739139!5m2!1str!2str" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Details End-->

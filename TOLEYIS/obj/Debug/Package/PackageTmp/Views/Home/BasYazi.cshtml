@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "BasYazi";
+    Layout = "~/Views/Shared/DuzYaziLayoutEN.cshtml";
+    ViewBag.Baslik = "Baş Yazı";
+    ViewBag.Sekme = "Home";
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<!--Page Header End-->
+<!--News Details Start-->
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12">
+                @foreach (var m in Model)
+                {
+                    <div class="news-details__left">
+                        <div class="news-details__content">
+                            <h3 class="news-details__title">@m.baslikTR</h3>
+                            <p class="news-details__text-one">@Html.Raw(ViewBag.deger)</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Details End-->

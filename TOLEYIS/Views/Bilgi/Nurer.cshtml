@@ -1,0 +1,367 @@
+﻿
+@{
+    ViewBag.Title = "Nurer";
+    Layout = "~/Views/Shared/DuzYaziLayout.cshtml";
+    ViewBag.Baslik = "Nurer Sigorta";
+    ViewBag.Sekme = "Bilgi";
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<!--Page Header End-->
+<!--News Details Start-->
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            @Html.Action("Sidebar", "Bilgi")
+
+            <div class="col-md-9">                
+                    <div class="news-details__left">
+                        <div class="news-details__content" style=" padding: 0px; ">
+                            <h3 class="news-details__title" style=" text-align: -webkit-center; ">
+                                <img src="~/assets/images/backgrounds/nurerlogo.jpg" style="height: 90px; width: 175px;" />
+                            </h3>
+                            <p class="news-details__text-one">@Html.Raw(ViewBag.deger)</p>
+                        </div>
+                    </div>                
+                <section class="we-need-help">
+                    <div class="container">
+                        <div class="we-need-help__left">
+                            <div class="we-need-help__faqs">
+                                <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
+                                    @foreach (var m in Model)
+                                    {
+                                        {
+                                            if (m.Soru1 != null)
+                                            {
+                                                <div class="accrodion">
+                                                    <div class="accrodion-title">
+                                                        <h4>@Html.Raw(m.Soru1)</h4>
+                                                    </div>
+                                                    <div class="accrodion-content">
+                                                        <div class="inner">
+                                                            <p>@Html.Raw(m.Cevap1)</p>
+                                                        </div><!-- /.inner -->
+                                                    </div>
+                                                </div>
+                                            }
+                                            if (m.Soru2 != null)
+                                            {
+                                                <div class="accrodion">
+                                                    <div class="accrodion-title">
+                                                        <h4>@Html.Raw(m.Soru2)</h4>
+                                                    </div>
+                                                    <div class="accrodion-content">
+                                                        <div class="inner">
+                                                            <p>@Html.Raw(m.Cevap2)</p>
+                                                        </div><!-- /.inner -->
+                                                    </div>
+                                                </div>
+                                            }
+                                            if (m.Soru3 != null)
+                                            {
+                                                <div class="accrodion">
+                                                    <div class="accrodion-title">
+                                                        <h4>@Html.Raw(m.Soru3)</h4>
+                                                    </div>
+                                                    <div class="accrodion-content">
+                                                        <div class="inner">
+                                                            <p>@Html.Raw(m.Cevap3)</p>
+                                                        </div><!-- /.inner -->
+                                                    </div>
+                                                </div>
+                                            }
+                                            if (m.Soru4 != null)
+                                            {
+                                                <div class="accrodion">
+                                                    <div class="accrodion-title">
+                                                        <h4>@Html.Raw(m.Soru4)</h4>
+                                                    </div>
+                                                    <div class="accrodion-content">
+                                                        <div class="inner">
+                                                            <p>@Html.Raw(m.Cevap4)</p>
+                                                        </div><!-- /.inner -->
+                                                    </div>
+                                                </div>
+                                            }
+                                            if (m.Soru5 != null)
+                                            {
+                                                <div class="accrodion">
+                                                    <div class="accrodion-title">
+                                                        <h4>@Html.Raw(m.Soru5)</h4>
+                                                    </div>
+                                                    <div class="accrodion-content">
+                                                        <div class="inner">
+                                                            <p>@Html.Raw(m.Cevap5)</p>
+                                                        </div><!-- /.inner -->
+                                                    </div>
+                                                </div>
+                                            }
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><br />
+                <h3 class="news-details__title" style=" text-align: -webkit-center; ">
+                    Nurer Sigorta İletişim Bilgileri
+                </h3>
+                @{
+                    <div class="row" style=" place-content: center; ">
+                        @foreach (var m in Model)
+                        {
+                            if (m.GenelAd != null)
+                            {
+                                <div class="card col-md-11" style=" height: 212px; padding: 0px 0px 0px 0px; border-radius: 8px; ">
+                                    <h5 class="card-header" style="border-radius: 5px; color: #fdfdfd; background-color: #212529; font-weight: 500; padding-block: 17px; text-transform: uppercase;">@m.GenelAd</h5>
+                                    <div class="card-body" style="height: auto; margin-top: -25px; padding: 0.65rem; ">
+                                        <ul class="welcome-one__list" style="padding-left: 10px; margin-top: 30px;">
+                                            <li>
+                                                <p><img src="~/assets/images/brand/Group 39.png" /><strong style="color: #fe6d10"> Telefon:</strong> @m.GenelTelefon </p>
+                                            </li>
+                                            <li>
+                                                <p><img src="~/assets/images/brand/Group 38.png" /><strong style="color: #fe6d10"> Adres:</strong> @m.GenelAdres</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            }
+
+                        }
+                    </div><br />
+                    <div class="row" style=" place-content: center; ">
+                        @foreach (var m in Model)
+                        {
+                            if (m.Ad1 != null)
+                            {
+                                <div class="card col-md-5" style=" height: 212px; padding: 0px 0px 0px 0px; border-radius: 8px; ">
+
+                                    <h5 class="card-header" style="border-radius: 5px; color: #fdfdfd; background-color: #212529; font-weight: 500; padding-block: 17px; text-transform: uppercase;">@m.Ad1</h5>
+                                    <div class="card-body" style="height: auto; margin-top: -25px; padding: 0.65rem; ">
+                                        <ul class="welcome-one__list" style="padding-left: 10px; margin-top: 30px; ">
+                                            <li style="font-size: 15px;">
+                                                <p><img src="~/assets/images/brand/Group 39.png" /><strong style="color: #fe6d10"> Telefon:</strong> @m.Telefon1 </p>
+                                            </li>
+                                            <li style="font-size: 15px;">
+                                                <p><img src="~/assets/images/brand/Group 40.png" /><strong style="color: #fe6d10"> E-Posta:</strong> @m.Eposta1</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        <div class="col-md-1"></div>
+                        @foreach (var m in Model)
+                        {
+                            if (m.Ad2 != null)
+                            {
+                                <div class="card col-md-5" style=" height: 212px; padding: 0px 0px 0px 0px; border-radius: 8px; ">
+                                    <h5 class="card-header" style="border-radius: 5px; color: #fdfdfd; background-color: #212529; font-weight: 500; padding-block: 17px; text-transform: uppercase;">@m.Ad2</h5>
+                                    <div class="card-body" style="height: auto; margin-top: -25px; padding: 0.65rem; ">
+                                        <ul class="welcome-one__list" style="padding-left: 10px; margin-top: 30px;">
+                                            <li style="font-size: 15px;">
+                                                <p><img src="~/assets/images/brand/Group 39.png" /><strong style="color: #fe6d10"> Telefon:</strong> @m.Telefon2 </p>
+                                            </li>
+                                            <li style="font-size: 15px;">
+                                                <p><img src="~/assets/images/brand/Group 40.png" /><strong style="color: #fe6d10"> E-Posta:</strong> @m.Eposta2</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div><br />
+                    <div class="row" style=" place-content: center; ">
+                        @foreach (var m in Model)
+                        {
+                            if (m.Ad2 != null)
+                            {
+                                <div class="card col-md-5" style=" height: 212px; padding: 0px 0px 0px 0px; border-radius: 8px; ">
+                                    <h5 class="card-header" style="border-radius: 5px; color: #fdfdfd; background-color: #212529; font-weight: 500; padding-block: 17px; text-transform: uppercase;">@m.Ad3</h5>
+                                    <div class="card-body" style="height: auto; margin-top: -25px; padding: 0.65rem; ">
+                                        <ul class="welcome-one__list" style="padding-left: 10px; margin-top: 30px;">
+                                            <li style="font-size: 15px;">
+                                                <p><img src="~/assets/images/brand/Group 39.png" /><strong style="color: #fe6d10"> Telefon:</strong> @m.Telefon3 </p>
+                                            </li>
+                                            <li style="font-size: 15px;">
+                                                <p><img src="~/assets/images/brand/Group 40.png" /><strong style="color: #fe6d10"> E-Posta:</strong> @m.Eposta3</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        <div class="col-md-1"></div>
+                        @foreach (var m in Model)
+                        {
+                            if (m.Ad4 != null)
+                            {
+                                <div class="card col-md-5" style=" height: 212px; padding: 0px 0px 0px 0px; border-radius: 8px; ">
+                                    <h5 class="card-header" style="border-radius: 5px; color: #fdfdfd; background-color: #212529; font-weight: 500; padding-block: 17px; text-transform: uppercase;">@m.Ad4</h5>
+                                    <div class="card-body" style="height: auto; margin-top: -25px; padding: 0.65rem; ">
+                                        <ul class="welcome-one__list" style="padding-left: 10px; margin-top: 30px; font-size: 15px; ">
+                                            <li style="font-size: 15px;">
+                                                <p><img src="~/assets/images/brand/Group 39.png" /><strong style="color: #fe6d10"> Telefon:</strong> @m.Telefon4 </p>
+                                            </li>
+                                            <li style="font-size: 15px;">
+                                                <p><img src="~/assets/images/brand/Group 40.png" /><strong style="color: #fe6d10"> E-Posta:</strong> @m.Eposta4</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div><br />
+                    <div class="row" style=" place-content: center; ">
+                        @foreach (var m in Model)
+                        {
+                            if (m.Ad5 != null)
+                            {
+                                <div class="card col-md-5" style=" height: 212px; padding: 0px 0px 0px 0px; border-radius: 8px; ">
+                                    <h5 class="card-header" style="border-radius: 5px; color: #fdfdfd; background-color: #212529; font-weight: 500; padding-block: 17px; text-transform: uppercase;">@m.Ad5</h5>
+                                    <div class="card-body" style="height: auto; margin-top: -25px; padding: 0.65rem; ">
+                                        <ul class="welcome-one__list" style="padding-left: 10px; margin-top: 30px; font-size: 15px; ">
+                                            <li style="font-size: 15px;">
+                                                <p><img src="~/assets/images/brand/Group 39.png" /><strong style="color: #fe6d10"> Telefon:</strong> @m.Telefon5 </p>
+                                            </li>
+                                            <li style="font-size: 15px;">
+                                                <p><img src="~/assets/images/brand/Group 40.png" /><strong style="color: #fe6d10"> E-Posta:</strong> @m.Eposta5</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        <div class="col-md-1"></div>
+                        @foreach (var m in Model)
+                        {
+                            if (m.Ad6 != null)
+                            {
+                                <div class="card col-md-5" style=" height: 212px; padding: 0px 0px 0px 0px; border-radius: 8px; ">
+                                    <h5 class="card-header" style="border-radius: 5px; color: #fdfdfd; background-color: #212529; font-weight: 500; padding-block: 17px; text-transform: uppercase;">@m.Ad6</h5>
+                                    <div class="card-body" style="height: auto; margin-top: -25px; padding: 0.65rem; ">
+                                        <ul class="welcome-one__list" style="padding-left: 10px; margin-top: 30px; font-size: 15px; ">
+
+                                            <li>
+                                                <p><img src="~/assets/images/brand/Group 39.png" /><strong style="color: #fe6d10"> Telefon:</strong> @m.Telefon6 </p>
+                                            </li>
+                                            <li>
+                                                <p><img src="~/assets/images/brand/Group 40.png" /><strong style="color: #fe6d10"> E-Posta:</strong> @m.Eposta6</p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Details End-->
+
+<style>
+    /*--------------------------------------------------------------
+    # We Need Help - temsilcilikler
+    --------------------------------------------------------------*/
+    .we-need-help {
+        position: relative;
+        display: block;
+    }
+
+    .we-need-help__left {
+        position: relative;
+        display: block;
+        padding-top: 0;
+    }
+
+    .faq-one-accrodion .accrodion {
+        position: relative;
+        display: block;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+
+    .faq-one-accrodion .accrodion-title {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        background: #231f29;
+        padding: 10px 30px 9px;
+        border: 1px solid #eae5e3;
+        border-radius: 35px;
+        transition: all 200ms linear;
+        transition-delay: 0.1s;
+    }
+
+        .faq-one-accrodion .accrodion-title h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            color: #ffffff;
+            position: relative;
+            -webkit-transition: all 500ms ease;
+            transition: all 500ms ease;
+            font-family: var(--thm-font);
+        }
+
+    .faq-one-accrodion .accrodion + .accrodion {
+        margin-top: 20px;
+    }
+
+    .faq-one-accrodion .accrodion.active .accrodion-title {
+        background: var(--thm-primary);
+        border: 1px solid var(--thm-primary);
+    }
+
+        .faq-one-accrodion .accrodion.active .accrodion-title h4 {
+            color: #ffffff;
+        }
+
+    .faq-one-accrodion .accrodion-title h4::before {
+        content: "\f13a";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 12px;
+        color: #ffffff;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+
+    .faq-one-accrodion .accrodion.active .accrodion-title h4::before {
+        content: "\f139";
+        color: #ffffff;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq-one-accrodion .accrodion-content {
+        position: relative;
+        padding: 6px 30px 4px;
+    }
+
+        .faq-one-accrodion .accrodion-content p {
+            margin: 0;
+        }
+</style>

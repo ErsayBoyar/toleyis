@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "AnlasmaliKurumlar";
+    Layout = "~/Views/Shared/DuzYaziLayoutEN.cshtml";
+    ViewBag.Baslik = "Organized Owned Businesses";
+    ViewBag.Sekme = "Info";
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<!--Page Header End-->
+<!--News Details Start-->
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            @Html.Action("Sidebar", "Info")
+            <div class="il-isimleri" style="top:20px; left:0px;"></div>
+
+            <div class="col-xl-9 col-lg-8">
+                @Html.Action("Index", "Harita")
+                <br />
+                <section class="dropdown-sube">
+                    <div class="container">
+                        <div class="row" style=" place-content: center; ">
+                            <div class="dropdown-sube-baslik" style=" margin-right: 33px; ">
+                                <span>PROVINCES:</span>
+                            </div>
+                            <div class="main-dropdown">
+                                <div class="dropdown">
+                                    @Html.DropDownList("Iller", null, "-Choose-", new { @class = "form-control dropdown", onchange = "GetUserDetails(this);", @id = "drpiller", @name = "drpiller" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="dvUserDetails">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Details End-->
+<!--dropdowna göre getirme scripti-->
+<script type="text/javascript">
+    function GetUserDetails(obj) {
+        var selectedUser = $(obj).val();
+        var urlToHit = '/Info/IlSec';
+        $.ajax({
+            url: urlToHit,
+            cache: false,
+            type: "POST",
+            data: { id: selectedUser },
+            success: function (data) {
+                $("#dvUserDetails").html(data);
+            },
+            error: function () {
+                alert("failed");
+            }
+        });
+    }
+</script>
+
+

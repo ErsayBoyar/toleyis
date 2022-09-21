@@ -1,0 +1,63 @@
+﻿@using TOLEYIS.Models;
+@model ViewModel
+
+@{
+    Layout = null;
+}
+<section class="calisanlarimiz">
+    <div class="container">
+        <div class="row" style=" place-content: center; ">
+            <!--Meet Volunteers One Single-->
+            @foreach (var m in Model.SubeTemsilcis)
+            {
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="calisanlarimiz__single">
+                        <div class="calisanlarimiz__img">
+                            @if (m.Resim == null)
+                            {
+                                <img src="~/assets/images/backgrounds/calisanlogo.PNG" />
+                            }
+                            else
+                            {
+                                <img src="@ViewBag.dosyayolu/@m.Resim" alt="" style=" height: auto; ">
+                            }
+                        </div>
+                        <div class="calisanlarimiz__content">
+                            <div class="calisanlarimiz__name">
+                                <h3 style=" line-height: 20px; ">@m.Ad</h3>
+                            </div>
+                            <div class="calisanlarimiz__social-info">
+                                <div class="left">
+                                    <p style=" line-height: 20px; ">@m.Unvan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(`#drpsubeler option[value=${@m.SubeId}]`).attr('selected', 'selected');
+                </script>
+            }
+        </div>
+    </div>
+</section>
+<div class="card" style=" margin-bottom: 30px; border-radius: 8px; ">
+    <h5 class="card-header" style="border-radius: 5px; color: #fdfdfd; background-color: #212529; font-weight: 500; padding-block: 17px; text-transform: uppercase;">@ViewBag.sube</h5><br />
+    <div class="card-body overflow-auto" style=" height: 19rem; margin-top: -25px; ">
+        <ul class="welcome-one__list" style="padding-left: 10px; margin-top: 0px; margin-bottom: 0px; ">
+            @foreach (var m in Model.Iletisims)
+            {
+                <li>
+                    <p><img src="~/assets/images/brand/Group 38.png" /><strong style="color: #fe6d10"> Address:</strong> @m.Adres</p>
+                </li>
+                <li>
+                    <p><img src="~/assets/images/brand/Group 39.png" /><strong style="color: #fe6d10"> Phone:</strong> @m.Telefon</p>
+                </li>
+                <li>
+                    <p><img src="~/assets/images/brand/Group 40.png" /><strong style="color: #fe6d10"> E-Mail:</strong> @m.EPosta</p>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+

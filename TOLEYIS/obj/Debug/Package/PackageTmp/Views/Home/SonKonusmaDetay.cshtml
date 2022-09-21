@@ -1,0 +1,76 @@
+﻿@using TOLEYIS.Models;
+@model IEnumerable<TOLEYIS.Models.SonKonusma>
+@{
+    TOLEYISEntities db = new TOLEYISEntities();
+    ViewBag.Title = "SonKonusmaDetay";
+    Layout = "~/Views/Shared/DuzYaziLayoutEN.cshtml";
+    ViewBag.Baslik = "Detay";
+    ViewBag.Sekme = "Son Konuşma";
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<!--Page Header End-->
+<!--News Details Start-->
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            @Html.Action("SonKonusmaSidebar", "Home")
+
+            <div class="col-xl-7 col-lg-6">
+                @foreach (var m in Model)
+                {
+                    <div class="news-details__left">
+                        <div class="news-details__content">
+                            <ul class="list-unstyled news-details__meta" style="float:right;">
+                                <li><a href="#"><i class="far fa-calendar-alt"></i> @Convert.ToDateTime(m.Tarih).ToString("dd MMMM yyyy")</a></li>
+                            </ul>
+                            <h3 class="news-details__title">@m.Baslik</h3>
+                            <p class="news-details__text-one">@Html.Raw(m.Texteditor)</p>
+                            <br />
+                            <div class="row">
+                                @{
+                                    var yaziId = m.Id;
+
+                                    var onceki = db.SonKonusma.OrderByDescending(d => d.Id).Where(x => x.Sil != true).FirstOrDefault(d => d.Id < yaziId);
+
+                                    if (onceki != null)
+                                    {
+                                        <div class="col-md-4">
+                                            <a href="/Home/SonKonusmaDetay/@onceki.Id" class="thm-btn news-one__btn" style="background: #f6f4f1; color: #87848d;"><i class="fas fa-arrow-left" style="color: #fe6d10;"></i>   Önceki Yazı</a>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="col-md-4">
+                                        </div>
+                                    }
+                                    <div class="col-md-4">
+                                    </div>
+                                    var sonraki = db.SonKonusma.OrderBy(d => d.Id).Where(x => x.Sil != true).FirstOrDefault(d => d.Id > yaziId);
+
+                                    if (sonraki != null)
+                                    {
+                                        <div class="col-md-4">
+                                            <a href="/Home/SonKonusmaDetay/@sonraki.Id" class="thm-btn news-one__btn" style="background: #f6f4f1; color: #87848d;">Sonraki Yazı  <i class="fas fa-arrow-right" style="color: #fe6d10; "></i></a>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="col-md-4">
+                                        </div>
+                                    }
+
+                                }
+
+                            </div>
+
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Details End-->

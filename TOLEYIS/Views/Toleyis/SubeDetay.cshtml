@@ -1,0 +1,161 @@
+﻿@{
+    ViewBag.Title = "SubeDetay";
+    Layout = "~/Views/Shared/DuzYaziLayout.cshtml";
+    ViewBag.Baslik = "Şubelerimiz";
+    ViewBag.Sekme = "Toleyis";
+
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+
+<!--Page Header End-->
+<!--News Details Start-->
+
+
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            @Html.Action("SubeSidebar", "Toleyis")
+
+            <div class="il-isimleri" style="left:0px;"></div>
+            <div class="col-md-9">
+                @*@Html.Action("Index", "Harita")*@
+                <br />
+                <section class="dropdown-sube">
+                    <div class="container clearfix">
+                        <div class="row" style=" place-content: center; ">
+                            <div class="dropdown-sube-baslik" style="margin-right: 33px;">
+                                <span>ŞUBELER:</span>
+                            </div>
+                            <div class="main-dropdown">
+                                <div class="dropdown">
+                                    @Html.DropDownList("Subeler", null, "-Seçiniz-", new { @class = "form-control dropdown", data_live_search = "true", onchange = "GetUserDetails(this);", @id = "drpsubeler", @name = "drpsubeler" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="dvUserDetails">
+                    @{ if (Model != null)
+                        {
+                            <section class="calisanlarimiz">
+                                <div class="container">
+                                    <div class="row" style=" place-content: center; ">
+                                        @foreach (var m in Model.SubeTemsilciss)
+                                        {
+                                            <div class="col-md-4 wow fadeInUp view2" data-wow-delay="100ms" data-target="/Toleyis/GenelYonPopup/@m.Id" data-toggle="modal">
+                                                <!--Meet Volunteers One Single-->
+                                                <div class="calisalarimiz__singlne">
+                                                    <div class="calisanlarimiz__img">
+                                                        @if (m.Resim == null)
+                                                        {
+                                                            <img src="~/assets/images/backgrounds/calisanlogo.png" />
+                                                        }
+                                                        else
+                                                        {
+                                                            <img src="@ViewBag.dosyayolu/@m.Resim" alt="">
+                                                        }
+                                                    </div>
+                                                    <div class="calisanlarimiz__content">
+                                                        <div class="calisanlarimiz__name">
+                                                            <h3>@m.Ad</h3>
+                                                        </div>
+                                                        <div class="calisanlarimiz__social-info">
+                                                            <div class="left">
+                                                                <p>@m.Unvan</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                                </section>
+                                <section class="calisanlarimiz">
+                                    <div class="container">
+                                        <div class="row" style=" place-content: center; ">
+                                            <!--Meet Volunteers One Single-->
+                                            @foreach (var m in Model.SubeTemsilcis)
+                                            {
+                                                <div class="col-md-3 wow fadeInUp" data-wow-delay="500ms">
+                                                    <div class="calisalarimiz__singlne">
+                                                        <div class="calisanlarimiz__img">
+                                                            @if (m.Resim == null)
+                                                            {
+                                                                <img src="~/assets/images/backgrounds/calisanlogo.png" />
+                                                            }
+                                                            else
+                                                            {
+                                                                <img src="@ViewBag.dosyayolu/@m.Resim" alt="">
+                                                            }
+                                                        </div>
+                                                        <div class="calisanlarimiz__content">
+                                                            <div class="calisanlarimiz__name">
+                                                                <h3>@m.Ad</h3>
+                                                            </div>
+                                                            <div class="calisanlarimiz__social-info">
+                                                                <div class="left">
+                                                                    <p>@m.Unvan</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="card" style=" margin-bottom: 30px; border-radius: 8px; ">
+                                    <h5 class="card-header" style="border-radius: 5px; color: #fdfdfd; background-color: #212529; font-weight: 500; padding-block: 17px; text-transform: uppercase;">@ViewBag.sube</h5>
+                                    <div class="card-body" style=" height: 19rem; margin-top: -25px; ">
+                                        <ul class="welcome-one__list" style="padding-left: 10px; ">
+
+                                            @foreach (var m in Model.Iletisims)
+                                            {
+                                                @*<li>
+                                        <p><img src="~/assets/images/brand/Group 37.png" /><strong style="color: #fe6d10"> Temsilci:</strong> @m.AdTR</p>
+                                    </li>*@
+                                                <li>
+                                                    <p><img src="~/assets/images/brand/Group 38.png" /><strong style="color: #fe6d10"> Adres:</strong> @m.Adres</p>
+                                                </li>
+                                                <li>
+                                                    <p><img src="~/assets/images/brand/Group 39.png" /><strong style="color: #fe6d10"> Telefon:</strong> @m.Telefon</p>
+                                                </li>
+                                                <li>
+                                                    <p><img src="~/assets/images/brand/Group 40.png" /><strong style="color: #fe6d10"> E-Posta:</strong> @m.EPosta</p>
+                                                </li>
+                                            }
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                }
+                                }
+                        </div>
+                            </div>
+                        </div>
+    </div>
+</section>
+
+<!--News Details End-->
+<!--dropdowna göre getirme scripti-->
+<script type="text/javascript">
+    function GetUserDetails(obj) {
+        var selectedUser = $(obj).val();
+        var urlToHit = '/Toleyis/SubeIlSec?durum=0';
+        $.ajax({
+            url: urlToHit,
+            cache: false,
+            type: "POST",
+            data: { id: selectedUser },
+            success: function (data) {
+                $("#dvUserDetails").html(data);
+            },
+            error: function () {
+                alert("failed");
+            }
+        });
+    }
+</script>

@@ -1,0 +1,737 @@
+﻿@using TOLEYIS.Models;
+@model ViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/assets/css/anasayfastyle.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+
+<!-- Haber-Slider Start -->
+
+<style>
+    @@media (max-width: 1025px) and (orientation:portrait) {
+        .mobilsliderA {
+            height: 25vh;
+            width: 100%;
+        }
+
+        .mobilsliderB {
+            -webkit-height: -webkit-fill-available;
+        }
+
+        .imgrespo {
+            -webkit-width: 100%;
+            -webkit-height: 87%;
+        }
+    }
+
+    ::marker {
+        display: none !important;
+    }
+
+    .nav {
+        list-style: none;
+    }
+
+    ul.ba {
+        list-style-type: none;
+    }
+</style>
+<div class="container ">
+    <div class="row" style="align-content:center;">
+        @*<div class="col-md-1"></div>*@
+        <div class="col-xl-9">
+            <!-- Carousel wrapper -->
+            <section class="main-slider">
+                <div class="swiper-container thm-swiper__slider mobilsliderA" data-swiper-options='{"slidesPerView": 1, "loop": true,
+    "effect": "fade",
+    "pagination": {
+        "el": "#main-slider-pagination",
+        "type": "bullets",
+        "clickable": true
+      },
+    "navigation": {
+        "nextEl": ".main-slider-button-next",
+        "prevEl": ".main-slider-button-prev",
+        "clickable": true
+    },
+    "autoplay": {
+        "delay": 5000
+    }}'>
+                    <div class="swiper-wrapper mobilsliderB">
+                        @foreach (var m in ViewData["slidee2"] as IEnumerable<TOLEYIS.Models.anaslider>)
+                        {
+
+                            <div class="swiper-slide">
+
+                                @if (m.Kapak == null)
+                                {
+                                    <a href="/Haberler/HaberDetay/@m.Id">
+                                        <div class="image-layer imgrespo" style="background-image: url(../assets/images/backgrounds/calisanlogo.PNG); -webkit-transform: scale(1.2) rotate(0deg);"></div>
+                                        <div class="container">
+                                            <div class="swiper-slide__inner">
+                                                <div class="row" style=" place-content: flex-end center; ">
+                                                    <div class="news-content-info">
+                                                        <p style=" color: #fff; font-size: x-large; ">
+                                                            @m.BaslikTR
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a href="/Haberler/HaberDetay/@m.Id">
+                                        <div class="image-layer" style="background-image: url(@ViewBag.dosyayolu/@m.Kapak); -webkit-transform: scale(1.2) rotate(0deg);"></div>
+                                        <div class="container">
+                                            <div class="swiper-slide__inner">
+                                                <div class="row" style=" place-content: center; ">
+                                                    <div class="news-content-info">
+                                                        <p style=" color: #fff; font-size: x-large; ">
+                                                            @m.BaslikTR
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                }
+
+                            </div>
+
+                        }
+                    </div>
+                    <div class="swiper-pagination" id="main-slider-pagination"></div>
+                    <div class="main-slider-nav">
+                        <div class="main-slider-button-prev"><span class="icon-right-arrow"></span></div>
+                        <div class="main-slider-button-next"><span class="icon-right-arrow"></span> </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Carousel wrapper -->
+        </div>
+        <div class="baskan  col-xl-2">
+            <div class="calisanlarimiz__single" style=" width: fit-content ">
+                <div class="calisanlarimiz__img">
+                    @*<img src="~/assets/images/backgrounds/calisanlogo.PNG" style=" height: 180px;" />*@
+                    <img src="~/assets/images/gallery/bsk-12.png" style=" height: 310px; width: 237px;" />
+                </div>
+                <div class="calisanlarimiz__content" style=" padding: 0px 0px 0px; border: 0px; ">
+                    <div class="calisanlarimiz__name" style="font-size: 15px; background: #3f3a47; border-bottom: 0px solid #eae5e3; text-align: center; padding-bottom: 0; margin-bottom: 0;">
+                        <h3 style=" color: #ffffff; ">CEMAİL BAKINDI</h3>
+                        <p style=" margin-bottom: 0rem; color: #ffffff; ">GENEL BAŞKAN</p>
+                    </div>
+                    <div class="calisanlarimiz__social-info" style="background: #fe6d10; border-radius: inherit; ">
+                        <div class="bot">
+                            <div>
+                                <a href="/AnaSayfa/BasYazi">
+                                    <p style="color: #ffffff">
+                                        <img src="~/assets/images/gallery/Right-2x.png" style=" height: 15px; width: 15px; margin-top:-2px;" />
+                                        BAŞ YAZI
+                                    </p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/AnaSayfa/SonKonusma">
+                                    <p style="color: #ffffff">
+                                        <img src="~/assets/images/gallery/Right-2x.png" style=" height: 15px; width: 15px;  margin-top:-2px;" />
+                                        SON KONUŞMA
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BAŞKAN MOBİL -->
+        <div class="baskanM col-xl-9 ">
+            <div class="calisanlarimiz__single" style=" width: fit-content ">
+                <div class="calisanlarimiz__img">
+                    <img src="~/assets/images/gallery/baskan-mobil.jpeg" style="height:%40; width:%60;" />
+                </div>
+                <div class="calisanlarimiz__content" style=" padding: 0px 0px 0px; border: 0px; ">
+                    <div class="calisanlarimiz__name" style="font-size: 15px; background: #3f3a47; border-bottom: 0px solid #eae5e3; text-align: center; padding-bottom: 0; margin-bottom: 0;">
+                        <h3 style=" color: #ffffff; ">CEMAİL BAKINDI</h3>
+                        <p style=" margin-bottom: 0rem; color: #ffffff; ">GENEL BAŞKAN</p>
+                    </div>
+                    <div class="calisanlarimiz__social-info" style="background: #fe6d10; border-radius: inherit; ">
+                        <div class="bot">
+                            <div>
+                                <a href="/AnaSayfa/BasYazi">
+                                    <p style="color: #ffffff">
+                                        <img src="~/assets/images/gallery/Right-2x.png" style=" height: 15px; width: 15px; margin-top:-2px;" />
+                                        BAŞ YAZI
+                                    </p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/AnaSayfa/SonKonusma">
+                                    <p style="color: #ffffff">
+                                        <img src="~/assets/images/gallery/Right-2x.png" style=" height: 15px; width: 15px;  margin-top:-2px;" />
+                                        SON KONUŞMA
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BAŞKAN MOBİL -->
+    </div>
+</div>
+
+
+<!-- Haber-Slider End -->
+
+<section class="counter-one jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%" style="background-image: url(../assets/images/backgrounds/welcome_one_bg.jpg); padding: 100px 0 45px; ">
+    <div class=" container">
+        <div class="row">
+            @*<div class="col-xl-12">*@
+            @*<ul class="col-xl-12">*@
+            <div class="col-md-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <center>
+                            <div class="icon-box">
+                                <span> <img src="~/assets/images/gallery/butt.png" /></span>
+                            </div>
+                            <div class="mb-3"> </div>
+                            <div class="text">
+                                <a href="https://www.turkiye.gov.tr/csgb-isci-sendikalari-uyelik-islemleri" class="thm-btn event-page__bt_" style=" padding: 2px 40px 2px 40px; margin-top:-15px; color:white;">Sendikalı Ol</a>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <center>
+                            <div class="icon-box">
+                                <div>
+                                    <div class=" thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 10, "slidesPerView": 1, "autoplay": { "delay": 5000 }, "breakpoints": {
+            "0": {
+                "slidesPerView": 1
+            },
+            "375": {
+                "slidesPerView": 1
+            },
+            "575": {
+                "slidesPerView": 1
+            },
+            "767": {
+                "slidesPerView": 1
+            },
+            "991": {
+                "slidesPerView": 1
+            },
+            "1199": {
+                "slidesPerView": 1
+            }
+        }}'>
+                                        <div class="swiper-wrapper">
+                                            <span class="swiper-slide">
+                                                <img src="~/assets/images/gallery/Genclik_ve_Spor_Bakanligi.svg.png" />
+                                            </span><!-- /.swiper-slide -->
+                                            <span class="swiper-slide">
+                                                <img src="~/assets/images/gallery/jokey.png" alt="">
+                                            </span><!-- /.swiper-slide -->
+                                            <span class="swiper-slide">
+                                                <img src="~/assets/images/gallery/palace.png" alt="">
+                                            </span><!-- /.swiper-slide -->
+                                            <span class="swiper-slide">
+                                                <img src="~/assets/images/gallery/thydoco.png" alt="">
+                                            </span><!-- /.swiper-slide -->
+                                            <span class="swiper-slide">
+                                                <img src="~/assets/images/gallery/GELIK.jpg" style="width:125px;" alt="">
+                                            </span><!-- /.swiper-slide -->
+                                            <span class="swiper-slide">
+                                                <img src="~/assets/images/gallery/Club_Med.png" style="width:125px;" alt="">
+                                            </span><!-- /.swiper-slide -->
+                                            <span class="swiper-slide">
+                                                <img src="~/assets/images/gallery/BELTUR.jpg" style="width:125px;" alt="">
+                                            </span><!-- /.swiper-slide -->
+                                            <span class="swiper-slide">
+                                                <img src="~/assets/images/gallery/burfas (2).jpg" style="width:125px;" alt="">
+                                            </span><!-- /.swiper-slide -->
+                                            <span class="swiper-slide">
+                                                <img src="~/assets/images/gallery/spor-istanbul.jpg" style="width:125px;" alt="">
+                                            </span><!-- /.swiper-slide -->
+                                            <span class="swiper-slide">
+                                                <img src="~/assets/images/gallery/isper.jpg" style="width:125px;" alt="">
+                                            </span><!-- /.swiper-slide -->
+                                            <span class="swiper-slide">
+                                                <img src="~/assets/images/gallery/ogretmen-evleri.png" style="width:125px;" alt="">
+                                            </span><!-- /.swiper-slide -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3"> </div>
+                            <div class="text">
+                                <a href="/Toleyis/Orgutlu" class="thm-btn event-page__bt_" style=" padding: 2px 40px 2px 40px; margin-top:-15px; color:white;">Üye İş Yerleri</a>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <center>
+                            <div class="icon-box">
+                                <span><img src="~/assets/images/gallery/anlasmali.png" /></span>
+                            </div>
+                            <div class="mb-3"> </div>
+                            <div class="text">
+                                <a href="/Bilgi/AnlasmaliKurumlar" class="thm-btn event-page__bt_" style=" padding: 2px 20px 2px 20px; margin-top:-15px; color:white;">Anlaşmalı Kurumlar</a>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <center>
+                            <div class="icon-box">
+                                <span><img src="~/assets/images/gallery/har-sub.png" style="width: 60%; height: 125px;" /></span>
+                            </div>
+                            <div class="mb-3"> </div>
+                            <div class="text">
+                                <a href="/Toleyis/SubeDetay" class="thm-btn event-page__bt_" style=" padding: 2px 40px 2px 40px; margin-top:-15px; color:white;">Şubenize Ulaşın</a>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            @*</ul>*@
+            @*</div>*@
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-xl-6 col-lg-6">
+            <div class="we-are-sayac__left">
+                <div class="block-title text-left" style=" margin-bottom: -65px; ">
+                    <h4>Rakamlarla</h4>
+                    <h2>Toleyis</h2><br />
+                </div>
+            </div>
+        </div>
+        <ul class="counter-one__boxS list-unstyled" style="text-align: end;">
+            <li class="counter-one__single wow fadeInLeft" data-wow-delay="200ms" style="display:none;">
+            </li>
+            <li class="counter-one__single wow fadeInLeft" data-wow-delay="200ms" style="text-align: -webkit-center;">
+                <h3 class="counter">81</h3>
+                <div class="counter-one__line"></div>
+                <p class="counter-one__text" style=" margin-bottom: 0rem; ">İL</p>
+                <p style=" margin-bottom: 0rem; color: #88858e00">-</p>
+            </li>
+            <li class="counter-one__single wow fadeInLeft" data-wow-delay="300ms" style="text-align: -webkit-center;">
+
+                <h3 class="counter">@ViewBag.sube</h3>
+                <div class="counter-one__line"></div>
+                <p class="counter-one__text" style=" margin-bottom: 0rem; ">ŞUBE</p>
+                <p style=" margin-bottom: 0rem; color: #88858e00">-</p>
+            </li>
+            <li class="counter-one__single wow fadeInLeft" data-wow-delay="400ms" style="text-align: -webkit-center; ">
+
+                <h3 class="counter">@ViewBag.uye</h3>
+                <div class="counter-one__line"></div>
+                <p class="counter-one__text" style=" margin-bottom: 0rem; ">ÜYE </p>
+                <p style=" margin-bottom: 0rem; font-size:12px; ">@ViewBag.metin</p>
+            </li>
+        </ul>
+
+    </div>
+</section>
+
+<!--Sayac start-->
+<!--Sayac end-->
+<!--Haberler Start-->
+<section class="popular-causes">
+    <div class="container">
+        <div class="block-title text-left">
+            <h4>Toleyis'ten</h4>
+            <h2>Haberler</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="popular-causes__carousel owl-theme owl-carousel">
+                    <!--Popular Causes Single-->
+                    @foreach (var m in Model.Habers)
+                    {
+                        <div class="popular-causes__sinlge">
+                            <div class="popular-causes__img" style="height:230px;">
+                                @if (m.Kapak == null)
+                                {
+                                    <img src="~/assets/images/backgrounds/calisanlogo.PNG" />
+                                }
+                                else
+                                {
+                                    <img src="@ViewBag.dosyayolu/@m.Kapak" alt="" style="height:230px; width:370px;">
+                                }
+                                <div class="popular-causes__category">
+                                    @{ if (m.TurID == 1)
+                                        {
+                                            <p>@m.HaberKategori.Ad</p>
+
+                                        }
+                                        else if (m.TurID == 2)
+                                        {
+                                            <p>Duyuru</p>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                            <div class="popular-causes__content" style="height: 120px;">
+                                <div class="popular-causes__title">
+                                    <p class="list-unstyled news-details__meta" style=" margin-bottom: 10px; ">
+                                        <a> @Convert.ToDateTime(m.Tarih).ToString("dd MMMM yyyy")</a>
+                                    </p>
+                                    <h3>
+                                        <a href="/Haberler/HaberDetay/@m.Id" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical">@m.BaslikTR</a>
+                                    </h3>
+                                    @*<p>@Html.Raw(m.texteditorTR)</p>*@
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Haberler End-->
+<!--Duyurular Start-->
+<section class="counter-one jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%" style="background-image: url(../assets/images/backgrounds/duyuru2.png); padding: 100px 0 45px; ">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6">
+                <div class="welcome-one__right">
+                    <div class="block-title text-left">
+                        <h4>Toleyis</h4>
+                        <h2>Duyurular</h2>
+                    </div>
+                    <ul class="welcome-one__list list-unstyled-duy">
+                        @foreach (var m in Model.Duyurus.Take(5))
+                        {
+                            <li style="padding-bottom: 10px; font-size:15px; font-weight:500; line-height:21px !important;"><a href="/Haberler/HaberDetay/@m.Id" style="color: #2c2634;"><span class="icon-confirmation"></span>@m.BaslikTR</a></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="welcome-one__right_2">
+
+                    <ul class="welcome-one__list list-unstyled-duy">
+                        @foreach (var m in Model.Duyurus.Skip(5).Take(5))
+                        {
+                            <li style="padding-bottom: 10px; font-size:15px; font-weight:500; line-height:21px !important;"><a href="/Haberler/HaberDetay/@m.Id" style="color: #2c2634;"><span class="icon-confirmation"></span>@m.BaslikTR</a></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Duyurular End-->
+<!--Videolar Start-->
+<section class="popular-causes">
+    <div class="container">
+        <div class="block-title text-left">
+            <h4>Toleyis'ten</h4>
+            <h2>Videolar</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="popular-causes__carousel owl-theme owl-carousel videoswiper">
+                    @foreach (var m in Model.Videos)
+                    {<div class="swiper-slide">
+                            <div class="swiper-slide popular-causes__sinlge">
+                                <div class="swiper-car popular-causes__imgd">
+                                    <div class="card-img">
+                                        @if (m.Link == null)
+                                        {
+
+                                        }
+                                        else
+                                        {
+                                            string embed = m.Link;
+                                            string[] kes = embed.Split('/');
+                                            string kesildi = kes[4];
+                                            <img src="http://img.youtube.com/vi/@kesildi/mqdefault.jpg" style="height:100%; width:100%;" />
+                                        }
+
+                                        <a href="@m.Link"></a>
+                                    </div>
+                                    <div class="popular-causes__content" style="height: 120px;">
+                                        <div class="popular-causes__title">
+                                            <h3>
+                                                @m.BaslikTR
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Videolar End-->
+<!--Üye Ol Video Start-->
+<section class="we-are-helping jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
+         style="background-image: url(~/assets/images/backgrounds/welcome_one_bg.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6">
+                <div class="we-are-helping__left">
+                    <div class="block-title text-left">
+                        <h4>Video Anlatım</h4>
+                        <h2>Toleyis'e Nasıl Üye Olabilirsiniz?</h2>
+                    </div>
+                    <div class="video-anlatim">
+                        <a href="https://www.turkiye.gov.tr/csgb-isci-sendikalari-uyelik-islemleri" type="submit" target="_blank" class="button">Kayıt Ol<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="o-video">
+                    <iframe src="https://www.youtube.com/embed/Wup2OOO5Zfo" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Üye Ol Video End-->
+<!-- Galeri-Slider Start -->
+<section class="main-slider main-slider-two">
+    <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
+    "effect": "fade",
+    "pagination": {
+        "el": "#main-slider-pagination",
+        "type": "bullets",
+        "clickable": true
+      },
+    "navigation": {
+        "nextEl": ".main-slider-button-next",
+        "prevEl": ".main-slider-button-prev",
+        "clickable": true
+    },
+    "autoplay": {
+        "delay": 5000
+    }}'>
+
+        <div class="swiper-wrapper">
+            @foreach (var m in Model.AltSliders)
+            {
+
+                if (m.Kapak != null)
+                {<div class="swiper-slide">
+                        <div class="image-layer"
+                             style="background-image: url(@ViewBag.dosyayolu/@m.Kapak);">
+                        </div>
+                        <div class="container">
+                            <div class="swiper-slide__inner" style="padding-top:500px;">
+                                <div class="row">
+                                    <div class="col-xl-12">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+                else if (m.Kapak == null)
+                {
+                    <div class="swiper-slide">
+                        <div class="image-layer"
+                             style="background-image: url(../assets/images/altbanner/bsk.jpg); ">
+                        </div>
+                        <div class="container">
+                            <div class="swiper-slide__inner" style="padding-top:500px;">
+                                <div class="row">
+                                    <div class="col-xl-12">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-layer"
+                             style="background-image: url(../assets/images/altbanner/by.jpg); ">
+                        </div>
+                        <div class="container">
+                            <div class="swiper-slide__inner" style="padding-top:500px;">
+                                <div class="row">
+                                    <div class="col-xl-12">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-layer"
+                             style="background-image: url(../assets/images/altbanner/rte.jpg); ">
+                        </div>
+                        <div class="container">
+                            <div class="swiper-slide__inner" style="padding-top:500px;">
+                                <div class="row">
+                                    <div class="col-xl-12">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-layer"
+                             style="background-image: url(../assets/images/altbanner/sd.jpg); ">
+                        </div>
+                        <div class="container">
+                            <div class="swiper-slide__inner" style="padding-top:500px;">
+                                <div class="row">
+                                    <div class="col-xl-12">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-layer"
+                             style="background-image: url(../assets/images/altbanner/Tansu.jpg); ">
+                        </div>
+                        <div class="container">
+                            <div class="swiper-slide__inner" style="padding-top:500px;">
+                                <div class="row">
+                                    <div class="col-xl-12">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-layer"
+                             style="background-image: url(../assets/images/altbanner/ttr.jpg); ">
+                        </div>
+                        <div class="container">
+                            <div class="swiper-slide__inner" style="padding-top:500px;">
+                                <div class="row">
+                                    <div class="col-xl-12">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+
+            }
+            <div class="swiper-pagination" id="main-slider-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- Galeri-Slider End -->
+<!--Abonelik Start-->
+@*<section class="newsletter-one">
+        <div class="container">
+            <div class="newsletter-one__inner">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="newsletter-one__left">
+                            <div class="newsletter-one__subscriber-box">
+                                <div class="icon">
+                                    <span class="icon-news"></span>
+                                </div>
+                                <div class="text">
+                                    <p>Siteye</p>
+                                    <h4>Kayıt Ol</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9" style="padding-right: 0px; padding-left: 5px;">
+                        <div class="newsletter-one__right col-xl-12">
+                            <form action="/AnaSayfa/Index" method="post" class="newsletter-one__subscribe-form">
+                                <div class="newsletter-one__subscribe-input-box row" style="place-content:center">
+                                    <div class="row col-12" style=" text-align-last: center; ">
+                                        <div class="col-6">
+                                            <input type="text" name="Ad" id="Ad" placeholder="İsim" style=" padding: 0 13px; ">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" name="Soyad" id="Soyad" placeholder="Soyisim" style=" padding: 0 13px; ">
+                                        </div>
+                                    </div>
+                                    <div class="row col-12" style=" text-align-last: center; ">
+                                        <div class="col-6">
+                                            <input type="tel" name="TC" id="TC" placeholder="TC Kimlik No" style=" padding: 0 13px; ">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="email" name="Eposta" id="Eposta" placeholder="E-Posta" style=" padding: 0 13px; ">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="button" id="kayitol" style=" padding: 0 13px; ">Kayıt Ol</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>*@
+<!--Abonelik End-->
+<style>
+    @@media only screen and (max-width: 767px) {
+        .counter-one__boxS {
+            position: relative;
+            display: block;
+            text-align: center !important;
+            margin: -50px -10px 0 -50px;
+        }
+    }
+</style>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+    $('#kayitol').click(function () {
+        var bilgiler = {
+            Ad: $("#Ad").val(),
+            Soyad: $("#Soyad").val(),
+            TC: $("#TC").val(),
+            Eposta: $("#Eposta").val(),
+        }
+        $.ajax({
+            url: '@Url.Action("KayitKontrol","AnaSayfa")',
+            type: "POST",
+            dataType: 'json',
+            data: bilgiler,
+            success: function (response) {
+                alert(response.responseText);
+                window.location.href = '@Url.Action("Index","AnaSayfa")';
+            },
+            error: function () {
+                alert('error');
+            }
+        });
+    });
+    function abc() {
+        //swal("Good job!", "You clicked the button!", "success");
+        //alert("fdafd");
+    }
+</script>

@@ -1,0 +1,142 @@
+﻿@*@model IEnumerable<TOLEYIS.Models.Arsiv>*@
+@using TOLEYIS.Models;
+@model ViewModel 
+
+
+@{
+    ViewBag.Title = "FotoArsiv";
+    Layout = "~/Views/Shared/DuzYaziLayout.cshtml";
+    ViewBag.Baslik = "Arşiv";
+    ViewBag.Sekme = "Ana Sayfa";
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<link href="~/assets/css/arsiv.css" rel="stylesheet" />
+<!--Page Header End-->
+<!--News Details Start-->
+@*<body class="arsiv">*@
+<section class="news-details arsiv">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="projects">
+                    @*<div class="row col-md-12">*@
+                    @foreach (var m in Model.Arsivs)
+                    {
+                        <div class="card col-md-4 item">
+                            <img class="card-img-top work-img" style=" height: 70%; " src="@ViewBag.dosyayolu/@m.Kapak" data-toggle="modal" data-target="#workModal_@m.Id" />
+                            <div class="card-body">
+                                <h2 class="card-text">@m.Baslik</h2>
+                            </div>
+                        </div>
+                    }
+
+                    @*</div>*@
+                </div>
+            </div>
+            @foreach (var m in Model.Arsivs)
+            {
+                <!-- modal1 -->
+                <div class="modal fade" id="workModal_@m.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="upper col-12">
+                                    <div class="col-md-3"></div>
+                                    <div class="product-image col-md-6">
+                                        <img class="active1">
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                </div>
+
+                                <div class="sideImg">
+                                    <ul class="image-list">
+                                        @foreach (var x in Model.ArsivGaleris.Where(x => x.ArsivID == m.Id))
+                                        {
+                                            <li class="image-item">
+                                                <img src="@ViewBag.dosyayolu/@x.Ad">
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- modal1 end -->
+            }
+        </div>
+    </div>
+</section>
+@*</body>*@
+
+<!--News Details End-->
+<script src="~/assets/js/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        'use strict';
+        debugger;
+        //***********isotope js
+        var $projects = $('.projects');
+
+        $projects.isotope({
+            itemSelector: '.item',
+            layoutMode: 'fitRows'
+        });
+
+        $('ul.filters > li').on('click', function (e) {
+            e.preventDefault();
+
+            var filter = $(this).attr('data-filter');
+
+            $('ul.filters > li').removeClass('active');
+            $(this).addClass('active');
+
+            $projects.isotope({ filter: filter });
+
+        });
+
+
+        // ***********bootstarp Modal
+        $('#myModal').on('shown.bs.modal', function () {
+            debugger;
+
+            $('#myInput').trigger('focus')
+        })
+
+
+
+        $(".nav .nav-link").on("click", function () {
+            debugger;
+
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+        });
+
+    });
+
+    // ***********Modal photo
+    const activeImage = document.querySelectorAll(".active1");
+    const productImages = document.querySelectorAll(".image-list img, .card-img-top");
+    console.log(productImages);
+
+    function changeImage(e) {
+        for (i = 0; i < activeImage.length; i++) {
+            activeImage[i].src = e.target.src;
+        }
+    }
+    productImages.forEach(image => image.addEventListener("click", changeImage));
+</script>
+
+<!-- template scripts -->
+<script src="~/assets/js/theme.js"></script>

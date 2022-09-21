@@ -1,0 +1,1016 @@
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\TOLEYIS.dll.config
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\TOLEYIS.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\TOLEYIS.pdb
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\csc.exe
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\csc.exe.config
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\csc.rsp
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\csi.exe
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\csi.exe.config
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\csi.rsp
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.AppContext.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Console.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.IO.Compression.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Net.Http.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.ValueTuple.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\vbc.exe
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\vbc.exe.config
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\vbc.rsp
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\Antlr3.Runtime.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\Newtonsoft.Json.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.Helpers.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.Mvc.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.Optimization.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.Razor.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.WebPages.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\WebGrease.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.Helpers.xml
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.Mvc.xml
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.Optimization.xml
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.Razor.xml
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.WebPages.xml
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\Newtonsoft.Json.xml
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\Antlr3.Runtime.pdb
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\obj\Debug\TOLEYIS.csproj.AssemblyReference.cache
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\obj\Debug\TOLEYIS.dll
+C:\Users\Emine Başarıcı\source\repos\TOLEYIS\TOLEYIS\obj\Debug\TOLEYIS.pdb
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\TOLEYIS.dll.config
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\TOLEYIS.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\TOLEYIS.pdb
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\csc.exe
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\csc.exe.config
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\csc.rsp
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\csi.exe
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\csi.exe.config
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\csi.rsp
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.AppContext.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Console.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.IO.Compression.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Net.Http.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.ValueTuple.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\vbc.exe
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\vbc.exe.config
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\vbc.rsp
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\Antlr3.Runtime.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\EntityFramework.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\Newtonsoft.Json.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\PagedList.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\PagedList.Mvc.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.Helpers.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.Mvc.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.Optimization.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.Razor.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.WebPages.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\WebGrease.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\EntityFramework.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\PagedList.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\PagedList.Mvc.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.Helpers.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.Mvc.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.Optimization.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.Razor.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.WebPages.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\Newtonsoft.Json.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\Antlr3.Runtime.pdb
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.dll
+C:\Users\Emine Başarıcı\Desktop\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.pdb
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\TOLEYIS.dll.config
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\TOLEYIS.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\TOLEYIS.pdb
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\csc.exe
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\csc.exe.config
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\csc.rsp
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\csi.exe
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\csi.exe.config
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\csi.rsp
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.AppContext.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Console.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.IO.Compression.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Net.Http.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.ValueTuple.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\vbc.exe
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\vbc.exe.config
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\vbc.rsp
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\Antlr3.Runtime.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\EntityFramework.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\Newtonsoft.Json.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\PagedList.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\PagedList.Mvc.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.Helpers.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.Mvc.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.Optimization.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.Razor.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.WebPages.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\WebGrease.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\EntityFramework.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\PagedList.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\PagedList.Mvc.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.Helpers.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.Mvc.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.Optimization.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.Razor.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.WebPages.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\Newtonsoft.Json.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\Antlr3.Runtime.pdb
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.AssemblyReference.cache
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.dll
+C:\Users\Emine Başarıcı\Desktop\TOLEYİS HER ŞEY\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.pdb
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\TOLEYIS.dll.config
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\TOLEYIS.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\TOLEYIS.pdb
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\csc.exe
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\csc.exe.config
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\csc.rsp
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\csi.exe
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\csi.exe.config
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\csi.rsp
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.AppContext.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Console.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.IO.Compression.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Net.Http.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.ValueTuple.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\vbc.exe
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\vbc.exe.config
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\vbc.rsp
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\Antlr3.Runtime.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\EntityFramework.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\Newtonsoft.Json.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\PagedList.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\PagedList.Mvc.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.Helpers.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.Mvc.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.Optimization.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.Razor.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.WebPages.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\WebGrease.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\EntityFramework.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\PagedList.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\PagedList.Mvc.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.Helpers.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.Mvc.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.Optimization.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.Razor.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.WebPages.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\Newtonsoft.Json.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\Antlr3.Runtime.pdb
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csprojAssemblyReference.cache
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.dll
+C:\Users\Adminstrator\Desktop\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.pdb
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\TOLEYIS.dll.config
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\TOLEYIS.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\TOLEYIS.pdb
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csc.exe
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csc.exe.config
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csc.rsp
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csi.exe
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csi.exe.config
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csi.rsp
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.AppContext.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Console.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.IO.Compression.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Net.Http.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.ValueTuple.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\vbc.exe
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\vbc.exe.config
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\vbc.rsp
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\Antlr3.Runtime.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\EntityFramework.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\Newtonsoft.Json.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\PagedList.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\PagedList.Mvc.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Helpers.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Mvc.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Optimization.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Razor.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\WebGrease.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\EntityFramework.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\PagedList.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\PagedList.Mvc.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Helpers.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Mvc.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Optimization.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Razor.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\Newtonsoft.Json.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\Antlr3.Runtime.pdb
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.AssemblyReference.cache
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.dll
+C:\Users\EMINE\Downloads\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.pdb
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\TOLEYIS.dll.config
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\TOLEYIS.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\TOLEYIS.pdb
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csc.exe
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csc.exe.config
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csc.rsp
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csi.exe
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csi.exe.config
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csi.rsp
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Buffers.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Memory.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\vbc.exe
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\vbc.exe.config
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\vbc.rsp
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\Antlr3.Runtime.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\EntityFramework.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\Newtonsoft.Json.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\PagedList.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\PagedList.Mvc.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Helpers.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Mvc.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Optimization.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Razor.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\WebGrease.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\EntityFramework.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\Newtonsoft.Json.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\PagedList.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\PagedList.Mvc.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Helpers.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Mvc.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Optimization.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Razor.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\Antlr3.Runtime.pdb
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\tr\System.Web.Razor.resources.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csprojAssemblyReference.cache
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.dll
+C:\Users\Adminstrator\Desktop\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.pdb
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\TOLEYIS.dll.config
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\TOLEYIS.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\TOLEYIS.pdb
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csc.exe
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csc.exe.config
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csc.rsp
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csi.exe
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csi.exe.config
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\csi.rsp
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Buffers.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Memory.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\vbc.exe
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\vbc.exe.config
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\vbc.rsp
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\EntityFramework.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\PagedList.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\PagedList.Mvc.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\WebGrease.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\EntityFramework.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\PagedList.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\PagedList.Mvc.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\tr\System.Web.Razor.resources.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.dll
+C:\Users\user\Desktop\Toleyis(SON3)\Toleyis(SON)\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.pdb
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.dll.config
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.pdb
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.exe
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.exe.config
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.rsp
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.exe
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.exe.config
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.rsp
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Buffers.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Memory.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.exe
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.exe.config
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.rsp
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Antlr3.Runtime.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Newtonsoft.Json.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\PagedList.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\PagedList.Mvc.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Helpers.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Mvc.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Optimization.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Razor.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\WebGrease.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Newtonsoft.Json.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\PagedList.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\PagedList.Mvc.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Helpers.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Mvc.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Optimization.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Razor.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Antlr3.Runtime.pdb
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Razor.resources.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.AssemblyReference.cache
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.dll
+C:\Users\Cats\Desktop\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.pdb
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.dll.config
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.pdb
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.exe
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.exe.config
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.rsp
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.exe
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.exe.config
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.rsp
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Buffers.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Memory.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.exe
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.exe.config
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.rsp
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\PagedList.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\PagedList.Mvc.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\WebGrease.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\PagedList.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\PagedList.Mvc.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Razor.resources.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.dll
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.pdb
+C:\Users\user\Desktop\toleyis_yigit_fix\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csprojAssemblyReference.cache
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.dll.config
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.pdb
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.exe
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.exe.config
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.rsp
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.exe
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.exe.config
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.rsp
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Buffers.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Memory.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.exe
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.exe.config
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.rsp
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\Antlr3.Runtime.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\Newtonsoft.Json.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\PagedList.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\PagedList.Mvc.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Helpers.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Mvc.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Optimization.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Razor.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\WebGrease.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\Newtonsoft.Json.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\PagedList.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\PagedList.Mvc.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Helpers.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Mvc.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Optimization.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Razor.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\Antlr3.Runtime.pdb
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Razor.resources.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.AssemblyReference.cache
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.dll
+C:\Users\EMINE\Downloads\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.pdb
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.dll.config
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.pdb
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.exe
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.exe.config
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.rsp
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.exe
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.exe.config
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.rsp
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Buffers.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Memory.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.exe
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.exe.config
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.rsp
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Antlr3.Runtime.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Newtonsoft.Json.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\PagedList.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\PagedList.Mvc.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Helpers.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Mvc.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Optimization.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Razor.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\WebGrease.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Newtonsoft.Json.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\PagedList.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\PagedList.Mvc.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Helpers.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Mvc.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Optimization.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Razor.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\Antlr3.Runtime.pdb
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Razor.resources.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.AssemblyReference.cache
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.dll
+C:\Users\EMINE\Desktop\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.pdb
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.dll.config
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\TOLEYIS.pdb
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.exe
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.exe.config
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csc.rsp
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.exe
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.exe.config
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\csi.rsp
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Buffers.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Memory.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Numerics.Vectors.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.exe
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.exe.config
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\vbc.rsp
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\Antlr3.Runtime.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\Newtonsoft.Json.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\PagedList.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\PagedList.Mvc.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Helpers.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Mvc.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Optimization.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Razor.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\WebGrease.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\EntityFramework.SqlServer.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\Newtonsoft.Json.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\PagedList.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\PagedList.Mvc.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Helpers.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Mvc.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Optimization.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.Razor.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\Antlr3.Runtime.pdb
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Helpers.resources.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Mvc.resources.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.Razor.resources.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.resources.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Deployment.resources.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\bin\tr\System.Web.WebPages.Razor.resources.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.dll
+D:\İndirilenler\Toleyis\Toleyis\TOLEYIS\obj\Debug\TOLEYIS.pdb
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\TOLEYIS.dll.config
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\TOLEYIS.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\TOLEYIS.pdb
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\csc.exe
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\csc.exe.config
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\csc.rsp
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\csi.exe
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\csi.exe.config
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\csi.rsp
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\Microsoft.Managed.Core.targets
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\System.Buffers.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\System.Collections.Immutable.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\System.Memory.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\System.Numerics.Vectors.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\System.Reflection.Metadata.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\vbc.exe
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\vbc.exe.config
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\vbc.rsp
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\VBCSCompiler.exe
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\roslyn\VBCSCompiler.exe.config
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\Antlr3.Runtime.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\EntityFramework.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\EntityFramework.SqlServer.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\Microsoft.Web.Infrastructure.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\Newtonsoft.Json.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\PagedList.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\PagedList.Mvc.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.Helpers.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.Mvc.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.Optimization.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.Razor.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.WebPages.Deployment.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.WebPages.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.WebPages.Razor.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\WebGrease.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\EntityFramework.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\EntityFramework.SqlServer.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\Newtonsoft.Json.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\PagedList.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\PagedList.Mvc.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.Helpers.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.Mvc.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.Optimization.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.Razor.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.WebPages.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.WebPages.Deployment.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\System.Web.WebPages.Razor.xml
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\Antlr3.Runtime.pdb
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\tr\System.Web.Helpers.resources.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\tr\System.Web.Mvc.resources.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\tr\System.Web.Razor.resources.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\tr\System.Web.WebPages.resources.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\tr\System.Web.WebPages.Deployment.resources.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\bin\tr\System.Web.WebPages.Razor.resources.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\obj\Debug\TOLEYIS.csprojAssemblyReference.cache
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\obj\Debug\TOLEYIS.csproj.CoreCompileInputs.cache
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\obj\Debug\TOLEYIS.csproj.CopyComplete
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\obj\Debug\TOLEYIS.dll
+D:\disk1\repos\repos\toleyis-on-yuz\TOLEYIS\obj\Debug\TOLEYIS.pdb

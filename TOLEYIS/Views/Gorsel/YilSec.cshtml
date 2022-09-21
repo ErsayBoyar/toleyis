@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+@foreach (var m in Model)
+{
+<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+    <!--Popular Causes Single-->
+    @*<div class="videos-gallery__sinlge">
+            <div class="videos-gallery__img" style="background-image:url(@ViewBag.dosyayolu/@m.KapakURL)">
+                <a href="@m.Link"></a>
+            </div>
+            <div class="videos-gallery__content">
+                <div class="videos-gallery__title">
+                    <h3><a href="@m.Link" target="_blank">@m.BaslikTR</a></h3>
+                </div>
+            </div>
+        </div>*@
+    <div class="videos-gallery__sinlge">
+        <a class="swipebox-video" rel="youtube" href="@m.Link" target="_blank">
+            @{
+                string embed = m.Link;
+                string[] kes = embed.Split('/');
+                string kesildi = kes[4];
+            }
+            <img src="http://img.youtube.com/vi/@kesildi/mqdefault.jpg" style=" height: 227px; width: 370px;" />
+
+            <div class="videos-gallery__content">
+                <div class="videos-gallery__title">
+                    <h3 style="font-size: 17px;">@m.BaslikTR</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+}
+
+<br />

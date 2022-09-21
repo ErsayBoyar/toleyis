@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "UyeSayi";
+    Layout = "~/Views/Shared/DuzYaziLayoutEN.cshtml";
+    ViewBag.Baslik = "Number of Members";
+    ViewBag.Sekme = "Toleyis";
+}
+
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<!--Page Header End-->
+<!--News Details Start-->
+<section class="news-details">
+    <div class="container">
+        <div class="row">
+            @Html.Action("Sidebar", "Home")
+
+            <div class="col-md-9" style="font-size: 17px;">
+                <p>According to the statistics of the Ministry of Labor and Social Security, the total number of workers in the accommodation and entertainment sector, the number and percentage of TOLEYIS union members:</p>
+                <div class="table-responsive-md">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Total Number of Workers</th>
+                                <th scope="col">Number of Members</th>
+                                <th scope="col">Percent</th>
+                            </tr>
+                        </thead>
+                        @foreach (var m in Model)
+                        {
+                            decimal bolunen = Convert.ToDecimal(m.Uyesayisi * 100);
+                            decimal bolen = Convert.ToDecimal(m.Toplamisci);
+                            decimal yuzde = bolunen / bolen;
+                            yuzde = Decimal.Round(yuzde, 2);
+
+                            <tbody>
+                                <tr>
+                                    <td data-order="1561723222">@m.Tarih.ToString("d")</td>
+                                    <td>@m.Toplamisci</td>
+                                    <td>@m.Uyesayisi</td>
+                                    <td>@yuzde%</td>
+                                </tr>
+                            </tbody>
+                        }
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Details End-->

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<TOLEYIS.Models.Orgutlu>
+@{
+    Layout = null;
+}
+
+<div class="card" style=" margin-bottom: 30px; border-radius:8px">
+    <h5 class="card-header" style="border-radius: 5px; color: #fdfdfd; background-color: #212529; font-weight: 500; padding-block: 17px; ">ÖRGÜTLÜ İŞ YERLERİ <u style="float: right; text-transform: uppercase;">@ViewBag.il</u></h5>
+    <br /><div class="card-body overflow-auto" style="height: 18rem; margin-top: -25px; ">
+        <ul class="welcome-one__list" style="padding-left: 10px; margin-top: auto; ">
+            @foreach (var m in Model)
+            {
+                <li>
+                    <div class="orgutlu-detay-img">
+                        @if (m.Resim == null)
+                        {
+                            <img src="~/assets/images/resources/orgutluresim.png" />
+                        }
+                        else
+                        {
+                            <img src="@ViewBag.dosyayolu/@m.Resim" alt="">
+                        }
+                    </div>
+                    <div class="orgutlu-detay-content">
+                        <h4>@m.Ad</h4>
+                        @if (m.Website != null && m.Website != "")
+                        {
+                            <p><img src="~/assets/images/brand/Group 38.png" /><strong style="color: #fe6d10"> Web:</strong> <a href="@m.Website">@m.Website</a></p>
+                        }
+                        else 
+                        {
+
+                        }
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+
+

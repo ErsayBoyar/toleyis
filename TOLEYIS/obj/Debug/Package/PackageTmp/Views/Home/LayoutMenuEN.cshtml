@@ -1,0 +1,78 @@
+﻿
+@{
+    Layout = null;
+}
+
+<div class="main-nav__main-navigation clearfix">
+    <ul class=" main-nav__navigation-box float-left">
+        <li>
+            <a href="/Home/Index">HOME</a>
+        </li>
+        <li class="dropdown">
+            <a href="#">TOLEYIS</a>
+            <ul>
+                <li><a href="/ToleyisEN/Tarihce">History</a></li>
+                <li><a href="/ToleyisEN/GenelYonetim">General Management</a></li>
+                <li><a href="/ToleyisEN/GenelMerkez">General Center</a></li>
+                <li><a href="/ToleyisEN/SubeDetay">Suboffices</a></li>
+                <li><a href="/ToleyisEN/BolgeTemsilcilik">Regional Representatives</a></li>
+                <li><a href="/ToleyisEN/IlTemsilcilik">Provincial Representations</a></li>
+                <li><a href="/ToleyisEN/Orgutlu">Organized Workplaces</a></li>
+                <li><a href="/ToleyisEN/Calisanlar">Our employees</a></li>
+                <li><a href="/ToleyisEN/Kurulusİlkeleri">Founding Principles</a></li>
+                <li><a href="/ToleyisEN/CalismaSekli">How it Works</a></li>
+                <li><a href="/ToleyisEN/FaaliyetAlanlari">Areas of Activity</a></li>
+                <li><a href="/ToleyisEN/Uyesayi">Number of Members</a></li>
+            </ul><!-- /.sub-menu -->
+        </li>
+        <li>
+            <a href="/News/Haber">NEWS</a>
+            <ul>
+                @foreach (var m in Model)
+                {
+                    <li><a href="/News/Haber/@m.Id">@m.Ad</a></li>
+                }
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">GALLERY</a>
+            <ul>
+                <li><a href="/Image/FotoGaleri">Photos</a></li>
+                <li><a href="/Image/FotoArsiv">Photo Archive</a></li>
+                <li><a href="/Image/Video">Videos</a></li>
+            </ul><!-- /.sub-menu -->
+        </li>
+        <li class="dropdown">
+            <a href="#">INFO</a>
+            <ul>
+                <li><a href="/Info/AnlasmaliKurumlar">Organized Owned Businesses</a></li>
+                <li><a href="/Info/SoruCevap">Q&A</a></li>
+                @*<li><a href="/Info/Nurer">Nurer Insurance</a></li>*@
+                <li><a href="/Info/Enflasyon">Inflation Information</a></li>
+                <li><a href="/Info/PratikBilgiler">Practical Information</a></li>
+                <li><a href="/Info/TufeUfe">PPI-CPI</a></li>
+                <li><a href="/Info/AclikYoksulluk">Hunger-Poverty Line</a></li>
+            </ul><!-- /.sub-menu -->
+        </li>
+        <li class="dropdown">
+            <a href="#">LAW</a>
+            <ul>
+                <li><a href="/Law/Kararnameler">Decrees</a></li>
+                <li><a href="/Law/Genelgeler">Circulars</a></li>
+                <li><a href="/Law/Kanunlar">Laws</a></li>
+                <li><a href="/Law/Yonetmelikler">Regulations</a></li>
+                <li><a href="/Law/Tebligler">Communique</a></li>
+            </ul><!-- /.sub-menu -->
+        </li>
+        <li class="dropdown">
+            <a href="#">CONTACT</a>
+            <ul>
+                <li><a href="/ToleyisEN/GenelMerkez">General Center</a></li>
+                <li><a href="/ToleyisEN/SubeDetay">Suboffices</a></li>
+                <li><a href="/ToleyisEN/BolgeTemsilcilik">Regional Representatives</a></li>
+                <li><a href="/ToleyisEN/IlTemsilcilik">Provincial Representations</a></li>
+            </ul><!-- /.sub-menu -->
+
+        </li>
+    </ul>
+</div><!-- /.navbar-collapse -->

@@ -1,0 +1,943 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44CB1BAD-77FC-4077-8DC2-31125C74D350}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TOLEYIS</RootNamespace>
+    <AssemblyName>TOLEYIS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AnaSayfaController.cs" />
+    <Compile Include="Controllers\BilgiController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\GorselController.cs" />
+    <Compile Include="Controllers\HaberlerController.cs" />
+    <Compile Include="Controllers\HaritaController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HukukController.cs" />
+    <Compile Include="Controllers\IletisimController.cs" />
+    <Compile Include="Controllers\ImageController.cs" />
+    <Compile Include="Controllers\InfoController.cs" />
+    <Compile Include="Controllers\LawController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\ToleyisController.cs" />
+    <Compile Include="Controllers\ToleyisENController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs" />
+    <Compile Include="Models\Aclik.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AclikDosya.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AltMenu.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AltSlider.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\anaslider.cs" />
+    <Compile Include="Models\AnlasmaliKurumlar.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Arsiv.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ArsivGaleri.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ay.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BolgeTemsilcilik.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Calisanlarimiz.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EDevlet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Enflasyon.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FaydaliLinkler.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FotoKategori.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Galeri.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GaleriFoto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Galerim.cs" />
+    <Compile Include="Models\GaleriTur.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Galeri_.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GenelMerkez.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Haber.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HaberGaleri.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HaberKategori.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HaberTur.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Haber_.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HabGal.cs" />
+    <Compile Include="Models\Hukuk.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HukukTur.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IL.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ILce.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Iletisim.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IletisimForm.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\iletisimTur.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ILTemsilcileri.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\kullanici.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MainSayfa.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Menu.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MobilIslem.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Nurer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NurerCalisan.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NurerSoruCevap.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Orgutlu.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Pratik.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PratikBilgiler.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PratikDosya.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Roles.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sayfa.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SayfaYetki.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SiteUyelik.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SonKonusma.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SoruCevap.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Subeler.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SubeTemsilci.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TefeTufe.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TefeTufeDosya.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Toleyis.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UstSlider.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UyeSay.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UyeSayisiManuel.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewModel.cs" />
+    <Compile Include="Models\Yil.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Yonetim.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\YonetimUnvan.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ziyaret.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="arsiv.html" />
+    <Content Include="assets\css\anasayfastyle.css" />
+    <Content Include="assets\css\animate.min.css" />
+    <Content Include="assets\css\asting.css" />
+    <Content Include="assets\css\bootstrap-datepicker.min.css" />
+    <Content Include="assets\css\bootstrap-select.min.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\fontawesome-all.min.css" />
+    <Content Include="assets\css\gilroy-fonts.css" />
+    <Content Include="assets\css\haberslider.css" />
+    <Content Include="assets\css\jarallax.css" />
+    <Content Include="assets\css\jquery-ui.css" />
+    <Content Include="assets\css\jquery.bootstrap-touchspin.css" />
+    <Content Include="assets\css\jquery.bxslider.css" />
+    <Content Include="assets\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="assets\css\magnific-popup.css" />
+    <Content Include="assets\css\nouislider.min.css" />
+    <Content Include="assets\css\nouislider.pips.css" />
+    <Content Include="assets\css\owl.carousel.min.css" />
+    <Content Include="assets\css\owl.theme.default.min.css" />
+    <Content Include="assets\css\progresscircle.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\slider.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\arsiv.css" />
+    <Content Include="assets\css\swiper.min.css" />
+    <Content Include="assets\css\vegas.min.css" />
+    <Content Include="assets\fonts\fa-brands-400.svg" />
+    <Content Include="assets\fonts\fa-regular-400.svg" />
+    <Content Include="assets\fonts\fa-solid-900.svg" />
+    <Content Include="assets\fonts\icomoon.svg" />
+    <Content Include="assets\images\altbanner\bsk.jpg" />
+    <Content Include="assets\images\altbanner\by.jpg" />
+    <Content Include="assets\images\altbanner\rte.jpg" />
+    <Content Include="assets\images\altbanner\sd.jpg" />
+    <Content Include="assets\images\altbanner\Tansu.jpg" />
+    <Content Include="assets\images\altbanner\ttr.jpg" />
+    <Content Include="assets\images\backgrounds\13489604-728xauto.jpg" />
+    <Content Include="assets\images\backgrounds\14.jpg" />
+    <Content Include="assets\images\backgrounds\1920x1080-white-smoke-solid-color-background.jpg" />
+    <Content Include="assets\images\backgrounds\2029165.jpg" />
+    <Content Include="assets\images\backgrounds\banner.png" />
+    <Content Include="assets\images\backgrounds\banner2.jpg" />
+    <Content Include="assets\images\backgrounds\baskan.jpg" />
+    <Content Include="assets\images\backgrounds\brand-four-bg.jpg" />
+    <Content Include="assets\images\backgrounds\brand-one-bg.png" />
+    <Content Include="assets\images\backgrounds\brand-three-bg.jpg" />
+    <Content Include="assets\images\backgrounds\calisanlogo.PNG" />
+    <Content Include="assets\images\backgrounds\counter_one_bg.jpg" />
+    <Content Include="assets\images\backgrounds\cta-one-bg.jpg" />
+    <Content Include="assets\images\backgrounds\cta-two-bg.jpg" />
+    <Content Include="assets\images\backgrounds\duyuru.png" />
+    <Content Include="assets\images\backgrounds\duyuru2.png" />
+    <Content Include="assets\images\backgrounds\introduction-bg-1-1.png" />
+    <Content Include="assets\images\backgrounds\join_one_bg.jpg" />
+    <Content Include="assets\images\backgrounds\make-donation-bg.png" />
+    <Content Include="assets\images\backgrounds\meet-volunteers-one-bg.png" />
+    <Content Include="assets\images\backgrounds\news-two-bg.jpg" />
+    <Content Include="assets\images\backgrounds\news_one_bg.jpg" />
+    <Content Include="assets\images\backgrounds\nurerlogo.jpg" />
+    <Content Include="assets\images\backgrounds\page-header-bg.jpg" />
+    <Content Include="assets\images\backgrounds\site_footer_bg.jpg" />
+    <Content Include="assets\images\backgrounds\sultanahmet-cami-istanbul-kapak-1280x720.jpg" />
+    <Content Include="assets\images\backgrounds\testimonials-two-bg.jpg" />
+    <Content Include="assets\images\backgrounds\testimonials_one_bg.jpg" />
+    <Content Include="assets\images\backgrounds\welcome_one_bg.jpg" />
+    <Content Include="assets\images\backgrounds\welcome_one_hands.png" />
+    <Content Include="assets\images\backgrounds\welcome_two_hands.png" />
+    <Content Include="assets\images\backgrounds\we_are_helping_bg.jpg" />
+    <Content Include="assets\images\backgrounds\yerli-otomobilimiz-togg-suv.jpg" />
+    <Content Include="assets\images\backgrounds\you_can_help_bg.jpg" />
+    <Content Include="assets\images\blog\author-1-1.jpg" />
+    <Content Include="assets\images\blog\comment-1-1.png" />
+    <Content Include="assets\images\blog\comment-1-2.png" />
+    <Content Include="assets\images\blog\lp-1-1.jpg" />
+    <Content Include="assets\images\blog\lp-1-2.jpg" />
+    <Content Include="assets\images\blog\lp-1-3.jpg" />
+    <Content Include="assets\images\blog\news-details-img-1.jpg" />
+    <Content Include="assets\images\blog\news-page-img-1.jpg" />
+    <Content Include="assets\images\blog\news-page-img-2.jpg" />
+    <Content Include="assets\images\blog\news-page-img-3.jpg" />
+    <Content Include="assets\images\blog\news-page-img-4.jpg" />
+    <Content Include="assets\images\blog\news-page-img-5.jpg" />
+    <Content Include="assets\images\blog\news-page-img-6.jpg" />
+    <Content Include="assets\images\blog\news-two-img-1.jpg" />
+    <Content Include="assets\images\blog\news-two-img-2.jpg" />
+    <Content Include="assets\images\blog\news-two-img-3.jpg" />
+    <Content Include="assets\images\blog\news_one_img_1.jpg" />
+    <Content Include="assets\images\blog\news_one_img_2.jpg" />
+    <Content Include="assets\images\blog\news_one_img_3.jpg" />
+    <Content Include="assets\images\brand\agtif.png" />
+    <Content Include="assets\images\brand\brand_1_img_1.png" />
+    <Content Include="assets\images\brand\brand_1_img_2.png" />
+    <Content Include="assets\images\brand\brand_1_img_3.png" />
+    <Content Include="assets\images\brand\brand_1_img_4.png" />
+    <Content Include="assets\images\brand\brand_1_img_5.png" />
+    <Content Include="assets\images\brand\brand_2_img_1.png" />
+    <Content Include="assets\images\brand\brand_2_img_2.png" />
+    <Content Include="assets\images\brand\brand_2_img_3.png" />
+    <Content Include="assets\images\brand\brand_2_img_4.png" />
+    <Content Include="assets\images\brand\brand_2_img_5.png" />
+    <Content Include="assets\images\brand\Group 37.png" />
+    <Content Include="assets\images\brand\Group 38.png" />
+    <Content Include="assets\images\brand\Group 39.png" />
+    <Content Include="assets\images\brand\Group 40.png" />
+    <Content Include="assets\images\brand\GroupFaks.png" />
+    <Content Include="assets\images\brand\hg.png" />
+    <Content Include="assets\images\brand\iuf.png" />
+    <Content Include="assets\images\brand\nurer.png" />
+    <Content Include="assets\images\brand\turk-is-s.png" />
+    <Content Include="assets\images\event\event-detials-img-1.jpg" />
+    <Content Include="assets\images\event\event-page-img-1.jpg" />
+    <Content Include="assets\images\event\event-page-img-2.jpg" />
+    <Content Include="assets\images\event\event-page-img-3.jpg" />
+    <Content Include="assets\images\event\event-page-img-4.jpg" />
+    <Content Include="assets\images\event\event-page-img-5.jpg" />
+    <Content Include="assets\images\event\event-page-img-6.jpg" />
+    <Content Include="assets\images\event\upcoming-event-img-1.jpg" />
+    <Content Include="assets\images\event\upcoming-event-img-2.jpg" />
+    <Content Include="assets\images\favicons\android-chrome-192x192.png" />
+    <Content Include="assets\images\favicons\android-chrome-512x512.png" />
+    <Content Include="assets\images\favicons\apple-touch-icon.png" />
+    <Content Include="assets\images\favicons\favicon-16x16.png" />
+    <Content Include="assets\images\favicons\favicon-32x32.png" />
+    <Content Include="assets\images\favicons\favicon.ico" />
+    <Content Include="assets\images\gallery\anadolu-hotels.jpg" />
+    <Content Include="assets\images\gallery\anlasmali.png" />
+    <Content Include="assets\images\gallery\antikkapi.jpg" />
+    <Content Include="assets\images\gallery\baskan-mobil.jpeg" />
+    <Content Include="assets\images\gallery\BELTUR.jpg" />
+    <Content Include="assets\images\gallery\bsk-12.png" />
+    <Content Include="assets\images\gallery\bsk-2.png" />
+    <Content Include="assets\images\gallery\burfas %282%29.jpg" />
+    <Content Include="assets\images\gallery\BURFAS.jpg" />
+    <Content Include="assets\images\gallery\butt.png" />
+    <Content Include="assets\images\gallery\BUYUKKULUP.jpg" />
+    <Content Include="assets\images\gallery\canakkale-uni.png" />
+    <Content Include="assets\images\gallery\ciragan.jpg" />
+    <Content Include="assets\images\gallery\club-med-palmiye.png" />
+    <Content Include="assets\images\gallery\Club_Med.png" />
+    <Content Include="assets\images\gallery\daaat.png" />
+    <Content Include="assets\images\gallery\DHM˜.png" />
+    <Content Include="assets\images\gallery\Erzurum_Ataturk_Universitesi.png" />
+    <Content Include="assets\images\gallery\EšAž.png" />
+    <Content Include="assets\images\gallery\gallery-two-img-1.jpg" />
+    <Content Include="assets\images\gallery\gallery-two-img-2.jpg" />
+    <Content Include="assets\images\gallery\gallery-two-img-3.jpg" />
+    <Content Include="assets\images\gallery\gallery-two-img-4.jpg" />
+    <Content Include="assets\images\gallery\gallery_one_img_1.jpg" />
+    <Content Include="assets\images\gallery\gallery_one_img_2.jpg" />
+    <Content Include="assets\images\gallery\gallery_one_img_3.jpg" />
+    <Content Include="assets\images\gallery\gallery_one_img_4.jpg" />
+    <Content Include="assets\images\gallery\gallery_one_img_5.jpg" />
+    <Content Include="assets\images\gallery\GELIK.jpg" />
+    <Content Include="assets\images\gallery\Genclik_ve_Spor_Bakanligi.svg.png" />
+    <Content Include="assets\images\gallery\gonen-kaplicalari.png" />
+    <Content Include="assets\images\gallery\handshake-svgrepo-com.png" />
+    <Content Include="assets\images\gallery\Hapimag.png" />
+    <Content Include="assets\images\gallery\har-sub.png" />
+    <Content Include="assets\images\gallery\hazine-ve-maliye-bakanligi.png" />
+    <Content Include="assets\images\gallery\Image 2.png" />
+    <Content Include="assets\images\gallery\Image 3.png" />
+    <Content Include="assets\images\gallery\Image 4.png" />
+    <Content Include="assets\images\gallery\Image 5.png" />
+    <Content Include="assets\images\gallery\isper.jpg" />
+    <Content Include="assets\images\gallery\izmir-grand-plaza.png" />
+    <Content Include="assets\images\gallery\jokey.png" />
+    <Content Include="assets\images\gallery\karabaglar-belediyesi.jpg" />
+    <Content Include="assets\images\gallery\MarmarisParkHotel.jpg" />
+    <Content Include="assets\images\gallery\ogretmen-evleri.png" />
+    <Content Include="assets\images\gallery\OndokuzMayisUniversitesi.png" />
+    <Content Include="assets\images\gallery\palace.png" />
+    <Content Include="assets\images\gallery\pamukkale-uni.png" />
+    <Content Include="assets\images\gallery\Polisevi.png" />
+    <Content Include="assets\images\gallery\Right-2x.png" />
+    <Content Include="assets\images\gallery\robinson-club.png" />
+    <Content Include="assets\images\gallery\robinson-sarigerme.jpg" />
+    <Content Include="assets\images\gallery\sheraton-atakoy.jpg" />
+    <Content Include="assets\images\gallery\spor-istanbul.jpg" />
+    <Content Include="assets\images\gallery\TaksimOtelBolu.png" />
+    <Content Include="assets\images\gallery\TCDD.png" />
+    <Content Include="assets\images\gallery\thydoco.png" />
+    <Content Include="assets\images\gallery\tui_blue.png" />
+    <Content Include="assets\images\gallery\turkiye-petrolleri.png" />
+    <Content Include="assets\images\gallery\yalova-termal.jpg" />
+    <Content Include="assets\images\gallery\yol-is-sendika.png" />
+    <Content Include="assets\images\loader.png" />
+    <Content Include="assets\images\main-slider\436873.jpg" />
+    <Content Include="assets\images\main-slider\foto-1.png" />
+    <Content Include="assets\images\main-slider\slider-1-1.jpg" />
+    <Content Include="assets\images\main-slider\slider-1-2.jpg" />
+    <Content Include="assets\images\main-slider\slider-1-3.jpg" />
+    <Content Include="assets\images\main-slider\slider-2-1.jpg" />
+    <Content Include="assets\images\main-slider\slider-2-2.jpg" />
+    <Content Include="assets\images\main-slider\slider-3-1.jpg" />
+    <Content Include="assets\images\main-slider\slider-3-2.jpg" />
+    <Content Include="assets\images\main-slider\small-memory-lp-1920x1080.jpg" />
+    <Content Include="assets\images\main-slider\wallpapersden.com_purple-sunrise-4k-vaporwave_1920x1080.jpg" />
+    <Content Include="assets\images\map\charity_activity_map.png" />
+    <Content Include="assets\images\orgutluslider\Dati Yatırım Holding.jpg" />
+    <Content Include="assets\images\orgutluslider\Robinson Club GBH Turizm.jpg" />
+    <Content Include="assets\images\orgutluslider\THY DO_CO.jpg" />
+    <Content Include="assets\images\orgutluslider\TJK.jpeg" />
+    <Content Include="assets\images\orgutluslider\Çırağan Palace Kempinski.jpg" />
+    <Content Include="assets\images\orgutluslider\İberotel Sarıgerme.jpg" />
+    <Content Include="assets\images\resources\footlogo.png" />
+    <Content Include="assets\images\resources\head-one-back.png" />
+    <Content Include="assets\images\resources\logo-vektor.png" />
+    <Content Include="assets\images\resources\logolar.png" />
+    <Content Include="assets\images\resources\become-volunteer-img1.jpg" />
+    <Content Include="assets\images\resources\campaign-details-img-1.jpg" />
+    <Content Include="assets\images\resources\charity_activity_img.jpg" />
+    <Content Include="assets\images\resources\ciftlogo.png" />
+    <Content Include="assets\images\resources\featured-campaigns-img-1.jpg" />
+    <Content Include="assets\images\resources\footer-logo.png" />
+    <Content Include="assets\images\resources\give-helping-two-boxs-img.jpg" />
+    <Content Include="assets\images\resources\ic-1.png" />
+    <Content Include="assets\images\resources\ic-11.png" />
+    <Content Include="assets\images\resources\ic-2.png" />
+    <Content Include="assets\images\resources\ic-3.png" />
+    <Content Include="assets\images\resources\ic-4.png" />
+    <Content Include="assets\images\resources\ic-5.png" />
+    <Content Include="assets\images\resources\ic-6.png" />
+    <Content Include="assets\images\resources\logo-2.png" />
+    <Content Include="assets\images\resources\logo.png" />
+    <Content Include="assets\images\resources\make-donation-img-1.jpg" />
+    <Content Include="assets\images\resources\make-donation-two-img-1.jpg" />
+    <Content Include="assets\images\resources\make-donation-two-img-2.jpg" />
+    <Content Include="assets\images\resources\organizer-img-1.png" />
+    <Content Include="assets\images\resources\orgutluresim.png" />
+    <Content Include="assets\images\resources\popular-causes-3-img-1.jpg" />
+    <Content Include="assets\images\resources\popular-causes-3-img-2.jpg" />
+    <Content Include="assets\images\resources\popular-causes-3-img-3.jpg" />
+    <Content Include="assets\images\resources\popular-causes-3-img-4.jpg" />
+    <Content Include="assets\images\resources\popular-causes-3-img-5.jpg" />
+    <Content Include="assets\images\resources\popular-causes-3-img-6.jpg" />
+    <Content Include="assets\images\resources\popular-causes-img-1.jpg" />
+    <Content Include="assets\images\resources\popular-causes-img-2.jpg" />
+    <Content Include="assets\images\resources\popular-causes-img-3.jpg" />
+    <Content Include="assets\images\resources\popular-causes-img-4.jpg" />
+    <Content Include="assets\images\resources\popular-causes-two-1.jpg" />
+    <Content Include="assets\images\resources\popular-causes-two-2.jpg" />
+    <Content Include="assets\images\resources\popular-causes-two-3.jpg" />
+    <Content Include="assets\images\resources\recent-donation-img-1.jpg" />
+    <Content Include="assets\images\resources\recent-donation-img-2.jpg" />
+    <Content Include="assets\images\resources\recent-donation-img-3.jpg" />
+    <Content Include="assets\images\resources\summary-img-1.jpg" />
+    <Content Include="assets\images\resources\summary-img-2.jpg" />
+    <Content Include="assets\images\resources\three-boxes-hover-img-1.jpg" />
+    <Content Include="assets\images\resources\three-boxes-img-1.jpg" />
+    <Content Include="assets\images\resources\three-boxes-img-2.jpg" />
+    <Content Include="assets\images\resources\three-boxes-img-3.jpg" />
+    <Content Include="assets\images\resources\three_iocn_box_bg-2.png" />
+    <Content Include="assets\images\resources\three_iocn_box_bg-3.png" />
+    <Content Include="assets\images\resources\three_iocn_box_bg.png" />
+    <Content Include="assets\images\resources\toleyis-logo-2.png" />
+    <Content Include="assets\images\resources\toleyis-logo.png" />
+    <Content Include="assets\images\resources\turkbayraklogo.png" />
+    <Content Include="assets\images\resources\united-kingdom.png" />
+    <Content Include="assets\images\resources\Volunteer_one_img-1.jpg" />
+    <Content Include="assets\images\resources\Volunteer_one_img-2.jpg" />
+    <Content Include="assets\images\resources\Volunteer_one_img-3.jpg" />
+    <Content Include="assets\images\resources\Volunteer_one_img-4.jpg" />
+    <Content Include="assets\images\resources\Volunteer_one_img-5.jpg" />
+    <Content Include="assets\images\resources\Volunteer_one_img-6.jpg" />
+    <Content Include="assets\images\resources\welcome-two-img-1.jpg" />
+    <Content Include="assets\images\resources\welcome_one_badge.png" />
+    <Content Include="assets\images\resources\welcome_one_img_1.jpg" />
+    <Content Include="assets\images\resources\we_need_help_bg.png" />
+    <Content Include="assets\images\resources\we_need_help_img.jpg" />
+    <Content Include="assets\images\resources\you_can_help_img.png" />
+    <Content Include="assets\images\shapes\event-details-bottom-shape.png" />
+    <Content Include="assets\images\shapes\give-helping__cause-shape.png" />
+    <Content Include="assets\images\shapes\main-slider-line-shape.png" />
+    <Content Include="assets\images\shapes\slider-three-shape.png" />
+    <Content Include="assets\images\shapes\testimonials-two-shape.png" />
+    <Content Include="assets\images\shapes\welcome-two-shape-1.png" />
+    <Content Include="assets\images\shapes\we_are_helping_arrow.png" />
+    <Content Include="assets\images\shapes\you_can_help_shape.png" />
+    <Content Include="assets\images\testimonials\testimonials-one-icon-1.png" />
+    <Content Include="assets\images\testimonials\testimonials-two-icon-1.png" />
+    <Content Include="assets\images\testimonials\testimonials_one_au_img_1.png" />
+    <Content Include="assets\images\testimonials\testimonials_one_au_img_2.png" />
+    <Content Include="assets\images\testimonials\testimonials_one_au_img_3.png" />
+    <Content Include="assets\images\testimonials\testimonials_two-img-1.png" />
+    <Content Include="assets\images\testimonials\testimonials_two-img-2.png" />
+    <Content Include="assets\images\testimonials\testimonials_two-img-3.png" />
+    <Content Include="assets\js\appear.js" />
+    <Content Include="assets\js\bootstrap-datepicker.min.js" />
+    <Content Include="assets\js\bootstrap-select.min.js" />
+    <Content Include="assets\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\js\countdown.min.js" />
+    <Content Include="assets\js\haberslider.js" />
+    <Content Include="assets\js\isotope.js" />
+    <Content Include="assets\js\jarallax-video.js" />
+    <Content Include="assets\js\jarallax.js" />
+    <Content Include="assets\js\jquery-ui.js" />
+    <Content Include="assets\js\jquery.ajaxchimp.min.js" />
+    <Content Include="assets\js\jquery.bootstrap-touchspin.js" />
+    <Content Include="assets\js\jquery.bxslider.min.js" />
+    <Content Include="assets\js\jquery.counterup.min.js" />
+    <Content Include="assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.validate.min.js" />
+    <Content Include="assets\js\nouislider.min.js" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="assets\js\progresscircle.js" />
+    <Content Include="assets\js\slider.min.js" />
+    <Content Include="assets\js\swiper.min.js" />
+    <Content Include="assets\js\theme.js" />
+    <Content Include="assets\js\TweenMax.min.js" />
+    <Content Include="assets\js\typed-2.0.11.js" />
+    <Content Include="assets\js\vegas.min.js" />
+    <Content Include="assets\js\waypoints.min.js" />
+    <Content Include="assets\js\wow.js" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="HaritaCssJs\css\svg-turkiye-haritasi.css" />
+    <Content Include="HaritaCssJs\js\svg-turkiye-haritasi.js" />
+    <Content Include="assets\fonts\fa-brands-400.eot" />
+    <Content Include="assets\fonts\fa-brands-400.ttf" />
+    <Content Include="assets\fonts\fa-brands-400.woff" />
+    <Content Include="assets\fonts\fa-brands-400.woff2" />
+    <Content Include="assets\fonts\fa-regular-400.eot" />
+    <Content Include="assets\fonts\fa-regular-400.ttf" />
+    <Content Include="assets\fonts\fa-regular-400.woff" />
+    <Content Include="assets\fonts\fa-regular-400.woff2" />
+    <Content Include="assets\fonts\fa-solid-900.eot" />
+    <Content Include="assets\fonts\fa-solid-900.ttf" />
+    <Content Include="assets\fonts\fa-solid-900.woff" />
+    <Content Include="assets\fonts\fa-solid-900.woff2" />
+    <Content Include="assets\fonts\icomoon.eot" />
+    <Content Include="assets\fonts\icomoon.ttf" />
+    <Content Include="assets\fonts\icomoon.woff" />
+    <Content Include="assets\images\favicons\site.webmanifest" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Harita\Index.cshtml" />
+    <Content Include="Views\AnaSayfa\Index.cshtml" />
+    <Content Include="Views\AnaSayfa\Sidebar.cshtml" />
+    <Content Include="Views\Toleyis\Tarihce.cshtml" />
+    <Content Include="Views\Toleyis\GenelYonetim.cshtml" />
+    <Content Include="Views\Shared\DuzYaziLayout.cshtml" />
+    <Content Include="Views\AnaSayfa\LayoutMenu.cshtml" />
+    <Content Include="Views\Toleyis\SubeDetay.cshtml" />
+    <Content Include="Views\Toleyis\Kurulusİlkeleri.cshtml" />
+    <Content Include="Views\Toleyis\CalismaSekli.cshtml" />
+    <Content Include="Views\Toleyis\FaaliyetAlanlari.cshtml" />
+    <Content Include="Views\Toleyis\Calisanlar.cshtml" />
+    <Content Include="Views\Gorsel\Video.cshtml" />
+    <Content Include="Views\Gorsel\YilSec.cshtml" />
+    <Content Include="Views\AnaSayfa\Arama.cshtml" />
+    <Content Include="Views\Haberler\Haber.cshtml" />
+    <Content Include="Views\Haberler\HaberDetay.cshtml" />
+    <Content Include="Views\Hukuk\Kararnameler.cshtml" />
+    <Content Include="Views\Hukuk\SidebarHukuk.cshtml" />
+    <Content Include="Views\Hukuk\Genelgeler.cshtml" />
+    <Content Include="Views\Hukuk\Kanunlar.cshtml" />
+    <Content Include="Views\Hukuk\Yonetmelikler.cshtml" />
+    <Content Include="Views\Hukuk\Tebligler.cshtml" />
+    <Content Include="Views\Toleyis\BolgeTemsilcilik.cshtml" />
+    <Content Include="Views\Toleyis\GenelMerkez.cshtml" />
+    <Content Include="Views\Toleyis\IlTemsilcilik.cshtml" />
+    <Content Include="Views\Bilgi\PratikBilgiler.cshtml" />
+    <Content Include="Views\Iletisim\Sidebar.cshtml" />
+    <Content Include="Views\Iletisim\Index.cshtml" />
+    <Content Include="Views\Bilgi\AnlasmaliKurumlar.cshtml" />
+    <Content Include="Views\Bilgi\Sidebar.cshtml" />
+    <Content Include="Views\Toleyis\Orgutlu.cshtml" />
+    <Content Include="Views\Bilgi\SoruCevap.cshtml" />
+    <Content Include="Views\Bilgi\IlSec.cshtml" />
+    <Content Include="Views\Toleyis\GenelYonPopup.cshtml" />
+    <Content Include="Views\Toleyis\IlSec.cshtml" />
+    <Content Include="Views\Toleyis\TemsilcilikIlSec.cshtml" />
+    <Content Include="Views\Toleyis\SubeIlSec.cshtml" />
+    <Content Include="Views\Toleyis\UyeSayi.cshtml" />
+    <Content Include="Views\Bilgi\Enflasyon.cshtml" />
+    <Content Include="Views\Gorsel\FotoGaleri.cshtml" />
+    <Content Include="Views\Bilgi\Nurer.cshtml" />
+    <Content Include="Views\Haberler\Sidebar.cshtml" />
+    <Content Include="Views\Shared\_LayoutEN.cshtml" />
+    <Content Include="Views\Shared\DuzYaziLayoutEN.cshtml" />
+    <Content Include="Views\Home\LayoutMenuEN.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Sidebar.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
+    <Content Include="Views\Info\PratikBilgiler.cshtml" />
+    <Content Include="Views\Info\AnlasmaliKurumlar.cshtml" />
+    <Content Include="Views\Info\Sidebar.cshtml" />
+    <Content Include="Views\Info\IlSec.cshtml" />
+    <Content Include="Views\Info\SoruCevap.cshtml" />
+    <Content Include="Views\Info\Enflasyon.cshtml" />
+    <Content Include="Views\Info\Nurer.cshtml" />
+    <Content Include="Views\Image\Video.cshtml" />
+    <Content Include="Views\Image\YilSec.cshtml" />
+    <Content Include="Views\Image\FotoGaleri.cshtml" />
+    <Content Include="Views\News\Haber.cshtml" />
+    <Content Include="Views\News\HaberDetay.cshtml" />
+    <Content Include="Views\News\Sidebar.cshtml" />
+    <Content Include="Views\Law\Kararnameler.cshtml" />
+    <Content Include="Views\Law\Genelgeler.cshtml" />
+    <Content Include="Views\Law\Kanunlar.cshtml" />
+    <Content Include="Views\Law\Yonetmelikler.cshtml" />
+    <Content Include="Views\Law\Tebligler.cshtml" />
+    <Content Include="Views\Law\SidebarHukuk.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\Sidebar.cshtml" />
+    <Content Include="Views\ToleyisEN\Tarihce.cshtml" />
+    <Content Include="Views\ToleyisEN\GenelYonetim.cshtml" />
+    <Content Include="Views\ToleyisEN\GenelYonPopup.cshtml" />
+    <Content Include="Views\ToleyisEN\SubeDetay.cshtml" />
+    <Content Include="Views\ToleyisEN\SubeIlSec.cshtml" />
+    <Content Include="Views\ToleyisEN\Calisanlar.cshtml" />
+    <Content Include="Views\ToleyisEN\Kurulusİlkeleri.cshtml" />
+    <Content Include="Views\ToleyisEN\CalismaSekli.cshtml" />
+    <Content Include="Views\ToleyisEN\FaaliyetAlanlari.cshtml" />
+    <Content Include="Views\ToleyisEN\BolgeTemsilcilik.cshtml" />
+    <Content Include="Views\ToleyisEN\GenelMerkez.cshtml" />
+    <Content Include="Views\ToleyisEN\IlTemsilcilik.cshtml" />
+    <Content Include="Views\ToleyisEN\TemsilcilikIlSec.cshtml" />
+    <Content Include="Views\ToleyisEN\Orgutlu.cshtml" />
+    <Content Include="Views\ToleyisEN\IlSec.cshtml" />
+    <Content Include="Views\ToleyisEN\UyeSayi.cshtml" />
+    <Content Include="Views\Toleyis\SubeSidebar.cshtml" />
+    <Content Include="Views\ToleyisEN\SubeSidebar.cshtml" />
+    <Content Include="Views\Gorsel\FotoYilSec.cshtml" />
+    <Content Include="Views\Image\FotoYilSec.cshtml" />
+    <Content Include="Views\AnaSayfa\BasYazi.cshtml" />
+    <Content Include="Views\AnaSayfa\SonKonusma.cshtml" />
+    <Content Include="Views\AnaSayfa\SonKonusmaDetay.cshtml" />
+    <Content Include="Views\AnaSayfa\SonKonusmaSidebar.cshtml" />
+    <Content Include="Views\Home\BasYazi.cshtml" />
+    <Content Include="Views\Home\SonKonusma.cshtml" />
+    <Content Include="Views\Home\SonKonusmaDetay.cshtml" />
+    <Content Include="Views\Home\SonKonusmaSidebar.cshtml" />
+    <Content Include="Views\Bilgi\TufeUfe.cshtml" />
+    <Content Include="Views\Bilgi\AclikYoksulluk.cshtml" />
+    <Content Include="Views\Info\TefeTufe.cshtml" />
+    <Content Include="Views\Info\AclikYoksulluk.cshtml" />
+    <Content Include="Views\Gorsel\FotoArsiv.cshtml" />
+    <Content Include="Views\Info\KurumPopup.cshtml" />
+    <Content Include="Views\Bilgi\KurumPopup.cshtml" />
+    <Content Include="Views\Image\FotoArsiv.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57594</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44300/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

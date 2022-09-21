@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+<style>
+    @@media only screen and (max-width: 1025px) {
+        .sidebar {
+            display: none;
+        }
+    }
+</style>
+<!DOCTYPE html>
+
+<div class="col-md-3" style=" padding-right: 35px; ">
+    <div class="sidebar">
+        <div class="sidebar__single sidebar__category">
+            <h3 class="sidebar__title">Son Konuşmalar</h3>
+            <ul class="sidebar__category-list list-unstyled">
+                @foreach (var m in Model)
+                {
+                    <li><a href="/Home/SonKonusmaDetay/@m.Id" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical">@m.Baslik  <span class="fa fa-angle-right"></span></a></li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
